@@ -1,0 +1,500 @@
+水稻	Rice
+小麦	Wheat
+玉米	Corn
+大豆	Soybean
+棉花	Cotton
+油菜	Rapeseed
+花生	Peanut
+甘蔗	Sugarcane
+马铃薯	Potato
+甜菜	Sugar Beet
+高粱	Sorghum
+谷子	Millet
+燕麦	Oat
+大麦	Barley
+黑麦	Rye
+荞麦	Buckwheat
+薏米	Job's Tears
+芝麻	Sesame
+向日葵	Sunflower
+亚麻	Flax
+苜蓿	Alfalfa
+紫花苜蓿	Medicago Sativa
+红三叶	Red Clover
+白三叶	White Clover
+黑麦草	Ryegrass
+狼尾草	Foxtail Millet
+高丹草	Sudan Grass
+牧草	Forage
+饲料作物	Fodder Crop
+绿肥作物	Green Manure Crop
+苹果	Apple
+梨	Pear
+桃	Peach
+葡萄	Grape
+柑橘	Citrus
+香蕉	Banana
+菠萝	Pineapple
+草莓	Strawberry
+西瓜	Watermelon
+甜瓜	Melon
+番茄	Tomato
+辣椒	Pepper
+茄子	Eggplant
+黄瓜	Cucumber
+西葫芦	Zucchini
+南瓜	Pumpkin
+豆角	Green Bean
+豌豆	Pea
+蚕豆	Broad Bean
+莴苣	Lettuce
+生菜	Leaf Lettuce
+菠菜	Spinach
+韭菜	Chive
+大葱	Green Onion
+大蒜	Garlic
+洋葱	Onion
+胡萝卜	Carrot
+白萝卜	Radish
+芹菜	Celery
+花椰菜	Cauliflower
+松树	Pine
+杉树	Cedar
+柏树	Cypress
+杨树	Poplar
+柳树	Willow
+榆树	Elm
+槐树	Locust Tree
+桦树	Birch
+栎树	Oak
+枫树	Maple
+樟树	Camphor Tree
+楠木	Nanmu
+红木	Rosewood
+乌木	Ebony
+紫檀	Sandalwood
+黄花梨	Huanghuali
+花梨木	Huali Wood
+柚木	Teak
+桃花心木	Mahogany
+胡桃木	Walnut Wood
+竹子	Bamboo
+毛竹	Moso Bamboo
+楠竹	Nan Bamboo
+箭竹	Arrow Bamboo
+苦竹	Bitter Bamboo
+刚竹	Solid Bamboo
+慈竹	Ci Bamboo
+斑竹	Spotted Bamboo
+紫竹	Purple Bamboo
+方竹	Square Bamboo
+耕作	Tillage
+播种	Sowing
+施肥	Fertilization
+灌溉	Irrigation
+排水	Drainage
+除草	Weeding
+病虫害防治	Pest Control
+收获	Harvesting
+储藏	Storage
+加工	Processing
+乌木高效	Ebony Efficient
+松树远程	Pine Remote
+白萝卜综合	Radish Comprehensive
+蚕豆新型	Broad Bean Novel
+香蕉移动	Banana Mobile
+甜菜关键	Sugar Beet Key
+樟树传统	Camphor Tree Traditional
+甜菜小型	Sugar Beet Small
+箭竹固定	Arrow Bamboo Fixed
+实用栎树	Practical Oak
+经典花生	Classic Peanut
+乌木中型	Ebony Medium
+高性能菠萝	High-performance Pineapple
+大型莴苣	Large Lettuce
+低成本楠木	Low-cost Nanmu
+槐树自然	Locust Tree Natural
+甜瓜可持续	Melon Sustainable
+黑麦环保	Rye Eco-friendly
+理论亚麻	Theoretical Flax
+新型白三叶	Novel White Clover
+环保白萝卜	Eco-friendly Radish
+胡萝卜高性能	Carrot High-performance
+数字化芹菜	Digital Celery
+应用香蕉	Applied Banana
+人工莴苣	Artificial Lettuce
+花生人工	Peanut Artificial
+理论蚕豆	Theoretical Broad Bean
+便携榆树	Portable Elm
+杉树智能	Cedar Intelligent
+绿色荞麦	Green Buckwheat
+黄瓜固定	Cucumber Fixed
+菠萝远程	Pineapple Remote
+枫树迷你	Maple Mini
+固定高粱	Fixed Sorghum
+豆角固定	Green Bean Fixed
+竹子固定	Bamboo Fixed
+超大型西瓜	Extra-large Watermelon
+高性能豆角	High-performance Green Bean
+葡萄可持续	Grape Sustainable
+理论茄子	Theoretical Eggplant
+紫花苜蓿智能	Medicago Sativa Intelligent
+饲料作物自然	Fodder Crop Natural
+系统性箭竹	Systematic Arrow Bamboo
+柳树新型	Willow Novel
+标准刚竹	Standard Solid Bamboo
+紫檀核心	Sandalwood Core
+豌豆高性能	Pea High-performance
+高粱创新	Sorghum Innovative
+绿肥作物创新	Green Manure Crop Innovative
+杨树应用	Poplar Applied
+黑麦草创新	Ryegrass Innovative
+莴苣低成本	Lettuce Low-cost
+新型楠竹	Novel Nan Bamboo
+黑麦草低成本	Ryegrass Low-cost
+特殊桦树	Special Birch
+远程柏树	Remote Cypress
+箭竹特殊	Arrow Bamboo Special
+系统性向日葵	Systematic Sunflower
+辣椒自然	Pepper Natural
+综合桃	Comprehensive Peach
+白三叶人工	White Clover Artificial
+南瓜远程	Pumpkin Remote
+重要番茄	Important Tomato
+中型柏树	Medium Cypress
+固定辣椒	Fixed Pepper
+燕麦便携	Oat Portable
+方竹现代	Square Bamboo Modern
+亚麻基础	Flax Basic
+应用刚竹	Applied Solid Bamboo
+甘蔗实用	Sugarcane Practical
+有机黑麦	Organic Rye
+标准黑麦	Standard Rye
+大型楠木	Large Nanmu
+生菜数字化	Leaf Lettuce Digital
+生菜传统	Leaf Lettuce Traditional
+梨特殊	Pear Special
+毛竹迷你	Moso Bamboo Mini
+马铃薯便携	Potato Portable
+豌豆基础	Pea Basic
+人工荞麦	Artificial Buckwheat
+慈竹先进	Ci Bamboo Advanced
+环保紫花苜蓿	Eco-friendly Medicago Sativa
+韭菜低成本	Chive Low-cost
+重要甜瓜	Important Melon
+中型花生	Medium Peanut
+综合大蒜	Comprehensive Garlic
+小型豌豆	Small Pea
+特殊方竹	Special Square Bamboo
+微型豆角	Micro Green Bean
+人工大葱	Artificial Green Onion
+中型生菜	Medium Leaf Lettuce
+高效芹菜	Efficient Celery
+棉花自然	Cotton Natural
+生菜可持续	Leaf Lettuce Sustainable
+重要芝麻	Important Sesame
+实用松树	Practical Pine
+小型花梨木	Small Huali Wood
+草莓便携	Strawberry Portable
+基础栎树	Basic Oak
+慈竹应用	Ci Bamboo Applied
+方竹绿色	Square Bamboo Green
+南瓜中型	Pumpkin Medium
+荞麦综合	Buckwheat Comprehensive
+生态白萝卜	Ecological Radish
+豆角微型	Green Bean Micro
+传统柳树	Traditional Willow
+西瓜新型	Watermelon Novel
+远程棉花	Remote Cotton
+胡萝卜专业	Carrot Professional
+重要楠木	Important Nanmu
+微型柏树	Micro Cypress
+生态韭菜	Ecological Chive
+菠菜标准	Spinach Standard
+甜瓜超大型	Melon Extra-large
+关键桦树	Key Birch
+特殊乌木	Special Ebony
+胡桃木关键	Walnut Wood Key
+环保枫树	Eco-friendly Maple
+现代白三叶	Modern White Clover
+西瓜数字化	Watermelon Digital
+自然胡萝卜	Natural Carrot
+基础油菜	Basic Rapeseed
+大豆固定	Soybean Fixed
+胡萝卜基础	Carrot Basic
+刚竹中型	Solid Bamboo Medium
+现代刚竹	Modern Solid Bamboo
+有机毛竹	Organic Moso Bamboo
+综合杨树	Comprehensive Poplar
+甘蔗智能	Sugarcane Intelligent
+番茄数字化	Tomato Digital
+洋葱迷你	Onion Mini
+环保辣椒	Eco-friendly Pepper
+紫花苜蓿系统性	Medicago Sativa Systematic
+特殊楠竹	Special Nan Bamboo
+胡萝卜传统	Carrot Traditional
+高丹草现代	Sudan Grass Modern
+杉树创新	Cedar Innovative
+胡萝卜低成本	Carrot Low-cost
+生态甘蔗	Ecological Sugarcane
+绿色胡萝卜	Green Carrot
+水稻高性能	Rice High-performance
+豆角综合	Green Bean Comprehensive
+综合柳树	Comprehensive Willow
+荞麦微型	Buckwheat Micro
+黑麦草生态	Ryegrass Ecological
+迷你燕麦	Mini Oat
+数字化马铃薯	Digital Potato
+芹菜应用	Celery Applied
+人工胡桃木	Artificial Walnut Wood
+竹子大型	Bamboo Large
+综合苹果	Comprehensive Apple
+辣椒专业	Pepper Professional
+洋葱现代	Onion Modern
+甜瓜自然	Melon Natural
+大蒜自然	Garlic Natural
+专业菠菜	Professional Spinach
+斑竹理论	Spotted Bamboo Theoretical
+蚕豆可持续	Broad Bean Sustainable
+小麦低成本	Wheat Low-cost
+西葫芦高效	Zucchini Efficient
+南瓜高性能	Pumpkin High-performance
+可持续紫花苜蓿	Sustainable Medicago Sativa
+便携慈竹	Portable Ci Bamboo
+高粱专业	Sorghum Professional
+花生传统	Peanut Traditional
+杉树理论	Cedar Theoretical
+茄子小型	Eggplant Small
+应用慈竹	Applied Ci Bamboo
+小型紫竹	Small Purple Bamboo
+基础棉花	Basic Cotton
+高粱新型	Sorghum Novel
+低成本紫竹	Low-cost Purple Bamboo
+胡萝卜生态	Carrot Ecological
+紫花苜蓿超大型	Medicago Sativa Extra-large
+人工菠菜	Artificial Spinach
+创新栎树	Innovative Oak
+菠萝移动	Pineapple Mobile
+生菜实用	Leaf Lettuce Practical
+蚕豆重要	Broad Bean Important
+移动小麦	Mobile Wheat
+栎树高效	Oak Efficient
+胡桃木高性能	Walnut Wood High-performance
+香蕉实用	Banana Practical
+杉树迷你	Cedar Mini
+现代花生	Modern Peanut
+薏米创新	Job's Tears Innovative
+超大型毛竹	Extra-large Moso Bamboo
+大型洋葱	Large Onion
+小型菠菜	Small Spinach
+超大型大豆	Extra-large Soybean
+先进高粱	Advanced Sorghum
+理论紫檀	Theoretical Sandalwood
+番茄有机	Tomato Organic
+中型辣椒	Medium Pepper
+松树超大型	Pine Extra-large
+菠萝核心	Pineapple Core
+亚麻有机	Flax Organic
+系统性高丹草	Systematic Sudan Grass
+竹子基础	Bamboo Basic
+便携甜菜	Portable Sugar Beet
+应用柳树	Applied Willow
+系统性胡桃木	Systematic Walnut Wood
+油菜迷你	Rapeseed Mini
+栎树中型	Oak Medium
+紫花苜蓿自然	Medicago Sativa Natural
+胡桃木特殊	Walnut Wood Special
+应用栎树	Applied Oak
+葡萄生态	Grape Ecological
+杨树迷你	Poplar Mini
+人工黑麦	Artificial Rye
+菠菜新型	Spinach Novel
+小型松树	Small Pine
+桃花心木核心	Mahogany Core
+胡桃木现代	Walnut Wood Modern
+关键苦竹	Key Bitter Bamboo
+理论草莓	Theoretical Strawberry
+向日葵经典	Sunflower Classic
+薏米超大型	Job's Tears Extra-large
+环保苹果	Eco-friendly Apple
+苜蓿系统性	Alfalfa Systematic
+移动豆角	Mobile Green Bean
+应用南瓜	Applied Pumpkin
+小麦传统	Wheat Traditional
+杨树现代	Poplar Modern
+紫花苜蓿特殊	Medicago Sativa Special
+刚竹数字化	Solid Bamboo Digital
+特殊大葱	Special Green Onion
+综合韭菜	Comprehensive Chive
+核心燕麦	Core Oat
+重要棉花	Important Cotton
+实用辣椒	Practical Pepper
+高性能柳树	High-performance Willow
+现代竹子	Modern Bamboo
+特殊紫竹	Special Purple Bamboo
+慈竹基础	Ci Bamboo Basic
+莴苣现代	Lettuce Modern
+实用黑麦	Practical Rye
+环保槐树	Eco-friendly Locust Tree
+智能番茄	Intelligent Tomato
+系统性西瓜	Systematic Watermelon
+红木超大型	Rosewood Extra-large
+乌木理论	Ebony Theoretical
+花生大型	Peanut Large
+西葫芦微型	Zucchini Micro
+生菜特殊	Leaf Lettuce Special
+重要黄花梨	Important Huanghuali
+基础梨	Basic Pear
+杉树微型	Cedar Micro
+关键甜菜	Key Sugar Beet
+理论苜蓿	Theoretical Alfalfa
+便携芝麻	Portable Sesame
+桦树环保	Birch Eco-friendly
+微型南瓜	Micro Pumpkin
+综合榆树	Comprehensive Elm
+超大型芝麻	Extra-large Sesame
+绿色柏树	Green Cypress
+综合芝麻	Comprehensive Sesame
+创新辣椒	Innovative Pepper
+实用箭竹	Practical Arrow Bamboo
+重要辣椒	Important Pepper
+柑橘智能	Citrus Intelligent
+重要梨	Important Pear
+固定杨树	Fixed Poplar
+狼尾草新型	Foxtail Millet Novel
+楠木智能	Nanmu Intelligent
+移动韭菜	Mobile Chive
+紫檀高效	Sandalwood Efficient
+方竹新型	Square Bamboo Novel
+小型亚麻	Small Flax
+新型高丹草	Novel Sudan Grass
+应用洋葱	Applied Onion
+远程牧草	Remote Forage
+低成本柑橘	Low-cost Citrus
+红三叶智能	Red Clover Intelligent
+乌木新型	Ebony Novel
+紫竹大型	Purple Bamboo Large
+基础红三叶	Basic Red Clover
+薏米迷你	Job's Tears Mini
+榆树高效	Elm Efficient
+竹子传统	Bamboo Traditional
+数字化乌木	Digital Ebony
+重要黄瓜	Important Cucumber
+中型饲料作物	Medium Fodder Crop
+理论松树	Theoretical Pine
+箭竹核心	Arrow Bamboo Core
+综合桃花心木	Comprehensive Mahogany
+草莓综合	Strawberry Comprehensive
+微型莴苣	Micro Lettuce
+大蒜综合	Garlic Comprehensive
+专业菠萝	Professional Pineapple
+生态花椰菜	Ecological Cauliflower
+芝麻远程	Sesame Remote
+桃基础	Peach Basic
+豆角应用	Green Bean Applied
+迷你大麦	Mini Barley
+南瓜超大型	Pumpkin Extra-large
+甜菜系统性	Sugar Beet Systematic
+应用高丹草	Applied Sudan Grass
+环保茄子	Eco-friendly Eggplant
+环保绿肥作物	Eco-friendly Green Manure Crop
+榆树自然	Elm Natural
+传统桃花心木	Traditional Mahogany
+芝麻固定	Sesame Fixed
+特殊毛竹	Special Moso Bamboo
+系统性花梨木	Systematic Huali Wood
+先进黑麦草	Advanced Ryegrass
+饲料作物微型	Fodder Crop Micro
+特殊油菜	Special Rapeseed
+大型葡萄	Large Grape
+系统性大葱	Systematic Green Onion
+栎树小型	Oak Small
+关键香蕉	Key Banana
+新型杨树	Novel Poplar
+智能柑橘	Intelligent Citrus
+人工杉树	Artificial Cedar
+小型燕麦	Small Oat
+理论紫竹	Theoretical Purple Bamboo
+超大型番茄	Extra-large Tomato
+柳树远程	Willow Remote
+传统高粱	Traditional Sorghum
+谷子中型	Millet Medium
+柑橘便携	Citrus Portable
+方竹生态	Square Bamboo Ecological
+超大型甜瓜	Extra-large Melon
+柏树关键	Cypress Key
+生态大葱	Ecological Green Onion
+葡萄智能	Grape Intelligent
+刚竹远程	Solid Bamboo Remote
+毛竹综合	Moso Bamboo Comprehensive
+人工草莓	Artificial Strawberry
+柳树生态	Willow Ecological
+桦树实用	Birch Practical
+特殊饲料作物	Special Fodder Crop
+菠菜理论	Spinach Theoretical
+谷子绿色	Millet Green
+甘蔗现代	Sugarcane Modern
+牧草固定	Forage Fixed
+桃花心木大型	Mahogany Large
+人工柏树	Artificial Cypress
+小麦环保	Wheat Eco-friendly
+迷你方竹	Mini Square Bamboo
+应用桃花心木	Applied Mahogany
+环保甜菜	Eco-friendly Sugar Beet
+芝麻有机	Sesame Organic
+环保楠竹	Eco-friendly Nan Bamboo
+高性能大麦	High-performance Barley
+核心薏米	Core Job's Tears
+苜蓿高效	Alfalfa Efficient
+远程荞麦	Remote Buckwheat
+黑麦草传统	Ryegrass Traditional
+标准慈竹	Standard Ci Bamboo
+芝麻大型	Sesame Large
+亚麻关键	Flax Key
+环保紫竹	Eco-friendly Purple Bamboo
+小麦高性能	Wheat High-performance
+乌木经典	Ebony Classic
+黑麦远程	Rye Remote
+苦竹综合	Bitter Bamboo Comprehensive
+远程樟树	Remote Camphor Tree
+重要桦树	Important Birch
+传统豌豆	Traditional Pea
+小麦大型	Wheat Large
+绿肥作物应用	Green Manure Crop Applied
+移动桃	Mobile Peach
+迷你桃	Mini Peach
+绿色大豆	Green Soybean
+人工紫竹	Artificial Purple Bamboo
+有机香蕉	Organic Banana
+自然豆角	Natural Green Bean
+基础南瓜	Basic Pumpkin
+传统小麦	Traditional Wheat
+人工狼尾草	Artificial Foxtail Millet
+先进甘蔗	Advanced Sugarcane
+有机花椰菜	Organic Cauliflower
+桃花心木超大型	Mahogany Extra-large
+便携西葫芦	Portable Zucchini
+自然玉米	Natural Corn
+固定水稻	Fixed Rice
+莴苣微型	Lettuce Micro
+楠木迷你	Nanmu Mini
+创新燕麦	Innovative Oat
+大蒜特殊	Garlic Special
+乌木远程	Ebony Remote
+低成本花生	Low-cost Peanut
+先进饲料作物	Advanced Fodder Crop
+甘蔗特殊	Sugarcane Special
+低成本茄子	Low-cost Eggplant
+特殊斑竹	Special Spotted Bamboo
+向日葵高效	Sunflower Efficient
+薏米可持续	Job's Tears Sustainable
+关键胡桃木	Key Walnut Wood
+环保香蕉	Eco-friendly Banana
+牧草现代	Forage Modern
+黑麦草中型	Ryegrass Medium
+花椰菜创新	Cauliflower Innovative
+系统性大豆	Systematic Soybean
+花生小型	Peanut Small
+有机白三叶	Organic White Clover
+大葱重要	Green Onion Important
+西瓜小型	Watermelon Small

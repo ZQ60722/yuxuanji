@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #adc1e0 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.floating-ball {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.floating-ball:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.left-ball {
+    top: 50%;
+    left: 20px;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.right-ball {
+    top: 50%;
+    right: 20px;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    background: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
+}
+.sidebar-right {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    background: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
+}
+
+#leftSidebar {
+    left: 0;
+}
+
+#rightSidebar {
+    right: 0;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+.sidebar-right.open {
+    transform: translateX(0);
+}
+.chat-container {
+    transition: margin 0.3s ease;
+}
+
+.ball-text {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #56aaf3;
+}
+
+.floating-ball:hover .ball-text {
+    opacity: 1;
+}
+.fab-button {
+    /* 1. 定位和尺寸 */
+    position: absolute; /* 固定定位，不随页面滚动 */
+    bottom: 6rem;    /* 距离底部 2rem (32px) */
+    right: 2rem;     /* 距离右侧 2rem (32px) */
+    width: 60px;     /* 宽度 */
+    height: 60px;    /* 高度 */
+    border-radius: 50%; /* 关键：设置成正圆形 */
+
+    /* 2. 外观和布局 */
+    background-color: #3B82F6; /* 蓝色背景，和你的主题色保持一致 */
+    color: white;             /* 图标颜色为白色 */
+    border: none;             /* 去掉默认边框 */
+    font-size: 1.5rem;        /* 图标大小 */
+
+    /* 3. 阴影和过渡效果 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 添加阴影，使其“浮”起来 */
+    cursor: pointer;          /* 鼠标悬停时显示手型光标 */
+    transition: all 0.3s ease; /* 所有属性变化都有0.3秒的平滑过渡 */
+
+    /* 4. 布局居中图标 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* 5. 确保在其他元素之上 */
+    z-index: 1000;
+}
+
+/* 6. 悬停和点击反馈 */
+.fab-button:hover {
+    background-color: #2563EB; /* 悬停时颜色变深 */
+    transform: scale(1.1);     /* 悬停时轻微放大 */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* 阴影加深 */
+}
+
+.fab-button:active {
+    transform: scale(0.95); /* 点击时瞬间缩小，提供“按下”的反馈 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* 阴影变浅 */
+}
+/* 模态框样式 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.close-button:hover {
+    color: #000;
+}
+

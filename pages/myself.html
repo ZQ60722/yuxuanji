@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(#feffff, rgba(90, 185, 234, 0.79));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-container {
+            width: 100%;
+            max-width: 900px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .header-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 32px 24px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .avatar-container {
+            position: relative;
+            margin-bottom: 16px;
+        }
+
+        .avatar {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            border:4px solid white;
+        }
+        .avatar:hover{
+            cursor: pointer;
+        }
+        .edit-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .edit-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .header-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .header-subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .content-section {
+            padding: 24px;
+        }
+
+        .info-item {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-icon {
+            font-size: 20px;
+            margin-right: 16px;
+            color: #555;
+            width: 24px;
+        }
+
+        .info-content {
+            flex: 1;
+        }
+
+        .info-label {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            font-size: 16px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .signature-section {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin-bottom: 24px;
+        }
+
+        .signature-title {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .signature-title i {
+            margin-right: 8px;
+        }
+
+        .signature-text {
+            font-style: italic;
+            padding: 4px;
+            color: #666;
+            line-height: 1.6;
+            background-color: rgba(255, 253, 253, 0.6);
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-return {
+            background: #f1f3f5;
+            color: #495057;
+        }
+
+        .btn-return:hover {
+            background: #e9ecef;
+        }
+
+        .btn-save {
+            background: #007bff;
+            color: white;
+        }
+
+        .btn-save:hover {
+            background: #0056b3;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .editable-input {
+            width: 100%;
+            border: none;
+            background: transparent;
+            font-size: inherit;
+            font-weight: inherit;
+            color: inherit;
+            outline: none;
+        }
+
+        .editable-input:focus {
+            background: white;
+            border-radius: 4px;
+            padding: 4px;
+        }
+        .notification {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9999;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            animation: slideDown 0.3s ease-out;
+            transition: all 0.3s ease;
+            min-width: 200px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .notification.hide {
+            animation: slideUp 0.3s ease-out forwards;
+        }
+
+        /* 不同类型的样式 */
+        .notification.info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .notification.success {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            color: #f7faf8;
+        }
+
+        .notification.warning {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .notification.error {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: white;
+        }
+
+        /* 动画效果 */
+        @keyframes slideDown {
+            from {
+                transform: translateX(-50%) translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(-50%) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateX(-50%) translateY(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(-50%) translateY(-100px);
+                opacity: 0;
+            }
+        }
+
+        /* 添加关闭按钮 */
+        .notification::after {
+            content: '×';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 20px;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+
+        .notification:hover::after {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+<div class="profile-container">
+    <!-- 头部区域 -->
+    <div class="header-section">
+        <div class="avatar-container">
+            <input type="file" id="avatarUpload" style="display: none;" accept="image/*">
+            <img src="../img/avatar.jpg" alt="用户头像" class="avatar" id="avatarImage">
+
+            <button class="edit-button" id="editProfileBtn">
+                <i class="fas fa-edit"></i> 编辑资料
+            </button>
+        </div>
+        <h1 class="header-title">个人中心</h1>
+        <p class="header-subtitle">欢迎您，<span id="usernameDisplay"></span></p>
+    </div>
+
+    <!-- 内容区域 -->
+    <div class="content-section">
+        <!-- 账号信息 -->
+        <div class="info-item">
+            <div class="info-icon">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="info-content">
+                <div class="info-label">账号</div>
+                <div class="info-value" data-field="account"></div>
+            </div>
+        </div>
+
+        <!-- 密码信息 -->
+        <div class="info-item">
+            <div class="info-icon">
+                <i class="fas fa-lock"></i>
+            </div>
+            <div class="info-content">
+                <div class="info-label">密码</div>
+                <div class="info-value" data-field="password"></div>
+                <i class="fas fa-eye password-toggle" style="margin-left: 8px; cursor: pointer;"></i>
+            </div>
+        </div>
+
+        <!-- 用户ID -->
+        <div class="info-item">
+            <div class="info-icon">
+                <i class="fas fa-id-card"></i>
+            </div>
+            <div class="info-content">
+                <div class="info-label">用户ID</div>
+                <div class="info-value" data-field="username"></div>
+            </div>
+        </div>
+
+        <!-- 年级专业 -->
+        <div class="info-item">
+            <div class="info-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="info-content">
+                <div class="info-label">年级专业</div>
+                <div class="info-value" data-field="major">未设置</div>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="info-icon">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="info-content">
+                <div class="info-label">预留手机号</div>
+                <div class="info-value" data-field="phone" style="color: #999;">用于忘记密码重置</div>
+            </div>
+        </div>
+
+        <!-- 个人签名 -->
+        <div class="signature-section">
+            <div class="signature-title">
+                <i class="fas fa-quote-left"></i>
+                个人签名
+            </div>
+            <div class="signature-text" data-field="signature">
+                "请在这里编辑你的签名"
+            </div>
+        </div>
+
+        <!-- 操作按钮 -->
+        <div class="action-buttons">
+            <button class="btn btn-return" id="returnBtn">
+                <i class="fas fa-arrow-left"></i> 返回
+            </button>
+            <button class="btn btn-save" id="saveChangesBtn">
+                <i class="fas fa-save"></i> 保存更改
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // 页面加载完成后执行
+    document.addEventListener('DOMContentLoaded', function() {
+        // 从本地存储获取当前登录用户数据
+        const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+
+        if (!currentUser || !currentUser.account) {
+            // 如果没有 currentUser 信息，说明用户没登录或者登录状态过期了
+            alert('您还未登录，请先登录！');
+            // 然后把他跳回登录页面
+            window.location.href = 'loading.html'; // 假设你的登录页是 index.html
+            return; // 后续代码就不执行了
+        }
+
+        // 3. 从完整的 users 数组中，找到这个用户的全部资料（比如专业、签名等）
+        const allUsers = JSON.parse(localStorage.getItem('users')) || [];
+        const userData = allUsers.find(user => user.account === currentUser.account);
+
+        // 4. 再次确认一下，万一数据出了问题呢？
+        if (!userData) {
+            alert('用户数据异常，请重新登录！');
+            window.location.href = 'index.html';
+            return;
+        }
+
+
+        // 显示用户名（如果有对应的元素）
+        const usernameDisplay = document.getElementById("usernameDisplay");
+        if (usernameDisplay) {
+            usernameDisplay.textContent = userData.username || '未设置';
+        }
+
+        // 显示账号（如果有对应的元素）
+        const displayAccount = document.getElementById("display-account");
+        if (displayAccount) {
+            displayAccount.textContent = userData.account || '未设置';
+        }
+
+        // 处理密码显示（隐藏密码，只显示已设置）
+        const passwordElement = document.getElementById("password");
+        if (passwordElement) {
+            // 先检查密码是否存在
+            if (userData.password) {
+                // 初始状态：设置为隐藏（显示星号）
+                passwordElement.textContent = '点击查看';
+
+                // 找到切换按钮
+                const passwordToggle = document.querySelector('.password-toggle');
+                if (passwordToggle) {
+                    // 初始状态：设置图标为“闭眼”（fa-eye-slash）
+                    passwordToggle.classList.remove('fa-eye');
+                    passwordToggle.classList.add('fa-eye-slash');
+
+                    // 添加点击事件
+                    passwordToggle.addEventListener('click', function() {
+                        // 检查当前是否是隐藏状态（通过图标判断更可靠）
+                        const isHidden = this.classList.contains('fa-eye-slash');
+
+                        if (isHidden) {
+                            // 如果是隐藏的，就显示密码，并换成“睁眼”图标
+                            passwordElement.textContent = userData.password;
+                            this.classList.remove('fa-eye-slash');
+                            this.classList.add('fa-eye');
+                        } else {
+                            // 如果是显示的，就隐藏密码，并换成“闭眼”图标
+                            passwordElement.textContent = '********';
+                            this.classList.remove('fa-eye');
+                            this.classList.add('fa-eye-slash');
+                        }
+                    });
+                }
+            } else {
+                // 如果用户没有设置密码，就显示“未设置”
+                passwordElement.textContent = '未设置';
+            }
+        }
+
+
+        // 将用户数据显示在对应的data-field元素上
+        // 注意：这里需要确保HTML中的data-field属性与userData中的键名匹配
+        Object.keys(userData).forEach(key => {
+            const element = document.querySelector(`[data-field="${key}"]`);
+            if (element) {
+                // 特殊处理密码字段
+                if (key === 'password') {
+                    element.textContent = '点击查看';
+                } else {
+                    element.textContent = userData[key] || '未设置';
+                }
+            }
+        });
+
+        // 头像上传功能保持不变
+        const avatarImage = document.getElementById('avatarImage');
+        const avatarUpload = document.getElementById('avatarUpload');
+        avatarImage.addEventListener('click',function () {
+            avatarUpload.click();
+        });
+        document.getElementById('avatarUpload').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    // 1. 更新页面上的头像显示
+                    const avatarDataUrl = e.target.result;
+                    document.getElementById('avatarImage').src = avatarDataUrl;
+
+                    // 2. 获取完整的当前用户数据
+                    let currentUser = JSON.parse(localStorage.getItem('currentUser')) || {};
+
+                    // 3. 只更新头像字段
+                    currentUser.avatar = avatarDataUrl;
+
+                    // 4. 将更新后的完整用户信息存回localStorage
+                    localStorage.setItem('currentUser', JSON.stringify(currentUser));
+
+                    // 提示用户头像已更新
+                    showNotification('头像更新成功！', 'success');
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // 编辑资料按钮事件保持不变
+        document.getElementById('editProfileBtn').addEventListener('click', function() {
+            enableEditMode();
+        });
+
+        // 保存更改按钮事件
+        document.getElementById('saveChangesBtn').addEventListener('click', function() {
+            saveChanges();
+        });
+
+        // 返回按钮事件
+        document.getElementById('returnBtn').addEventListener('click', function() {
+            // 可以跳转到其他页面，比如主页
+            window.location.href = '../index1.html'; // 请替换为实际的主页地址
+        });
+
+        // 密码显示/隐藏切换
+        document.querySelector('.password-toggle').addEventListener('click', function() {
+            const passwordElement = document.querySelector('[data-field="password"]');
+            const icon = this;
+
+            if (passwordElement.textContent === '••••••••') {
+                passwordElement.textContent = userData.password;
+                icon.className = 'fas fa-eye-slash password-toggle';
+            } else {
+                passwordElement.textContent = '••••••••';
+                icon.className = 'fas fa-eye password-toggle';
+            }
+        });
+
+        // 启用编辑模式
+        function enableEditMode() {
+            const editableElements = document.querySelectorAll('[data-field]');
+
+            editableElements.forEach(element => {
+                const field = element.getAttribute('data-field');
+                const currentValue = element.textContent;
+
+                // 创建可编辑的输入框
+                const input = document.createElement('input');
+                input.type = field === 'password' ? 'password' : 'text';
+                input.value = currentValue;
+                input.className = 'editable-input';
+
+                // 替换元素内容
+                element.innerHTML = '';
+                element.appendChild(input);
+            });
+
+            // 更改按钮文字
+            document.getElementById('editProfileBtn').innerHTML = '<i class="fas fa-times"></i> 取消编辑';
+            document.getElementById('editProfileBtn').onclick = disableEditMode;
+        }
+
+        // 禁用编辑模式
+        function disableEditMode() {
+            // 不要手动恢复DOM，直接重新加载数据来刷新页面
+            // 这样可以保证DOM结构始终是正确的
+            loadUserData(); // 假设你有一个从localStorage读取数据并显示到页面的函数
+
+            // 恢复按钮文字和事件
+            document.getElementById('editProfileBtn').innerHTML = '<i class="fas fa-edit"></i> 编辑资料';
+            document.getElementById('editProfileBtn').onclick = enableEditMode;
+        }
+
+        // 保存更改
+        function saveChanges() {
+            // 1. 从 localStorage 获取完整的 users 数组
+            let allUsers = JSON.parse(localStorage.getItem('users')) || [];
+
+            // 2. 从 localStorage 获取当前登录用户的账号，作为查找依据
+            const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+            if (!currentUser || !currentUser.account) {
+                showNotification('登录状态异常，无法保存！', 'error');
+                return;
+            }
+
+            // 3. 在 users 数组中找到当前用户的索引
+            const userIndex = allUsers.findIndex(user => user.account === currentUser.account);
+            if (userIndex === -1) {
+                showNotification('未找到用户信息，无法保存！', 'error');
+                return;
+            }
+
+            // 4. 获取页面上所有编辑框的值，更新到 users 数组对应的对象上
+            const editableElements = document.querySelectorAll('[data-field]');
+            editableElements.forEach(element => {
+                const field = element.getAttribute('data-field');
+                const input = element.querySelector('input');
+                if (input) {
+                    // 直接更新 users 数组里的用户数据
+                    allUsers[userIndex][field] = input.value.trim();
+                }
+            });
+
+            // 5. 将更新后的 users 数组存回 localStorage
+            localStorage.setItem('users', JSON.stringify(allUsers));
+
+            // 6. 【关键】同时更新 currentUser，这样页面上的其他地方（比如顶部导航栏）也能立即生效
+            const updatedUserData = allUsers[userIndex];
+            localStorage.setItem('currentUser', JSON.stringify(updatedUserData));
+
+            showNotification('保存成功！', 'success');
+
+            // 7. 保存后，调用 disableEditMode 来刷新页面并退出编辑模式
+            disableEditMode();
+        }
+        // 显示通知消息
+        function showNotification(message, type = 'info') {
+            // 创建通知元素
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.textContent = message;
+
+            // 添加到页面
+            document.body.appendChild(notification);
+
+            // 自动消失
+            setTimeout(() => {
+                notification.classList.add('hide');
+                setTimeout(() => {
+                    notification.remove();
+                }, 300); // 等待动画完成后再移除
+            }, 3000);
+        }
+
+    });
+    function loadUserData() {
+        // 1. 从 users 数组中重新获取最完整的用户数据，确保是最新版
+        const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+        if (!currentUser || !currentUser.account) return;
+
+        const allUsers = JSON.parse(localStorage.getItem('users')) || [];
+        const userData = allUsers.find(user => user.account === currentUser.account);
+        if (!userData) return;
+
+        // 2. 填充所有带 data-field 的元素
+        document.querySelectorAll('[data-field]').forEach(element => {
+            const field = element.getAttribute('data-field');
+            if (userData[field] !== undefined) {
+                // 特殊处理密码，始终显示为星号
+                if (field === 'password') {
+                    element.textContent = userData.password ? '点击查看' : '未设置';
+                } else {
+                    element.textContent = userData[field] || '未设置';
+                }
+            }
+        });
+
+        // 3. 填充其他非 data-field 的元素
+        const usernameDisplay = document.getElementById("usernameDisplay");
+        if (usernameDisplay) {
+            usernameDisplay.textContent = userData.username || '未设置';
+        }
+
+        // 4. 填充头像
+        const avatarImage = document.getElementById('avatarImage');
+        if (avatarImage && userData.avatar) {
+            avatarImage.src = userData.avatar;
+        }
+    }
+
+</script>
+</body>
+</html>

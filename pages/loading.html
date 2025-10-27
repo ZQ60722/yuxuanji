@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/loading.css">
+    <script src="../js/loading.js"></script>
+</head>
+<body>
+<section>
+    <div class="container right-panel-active">
+        <!-- Sign Up -->
+        <div class="container__form container--signup">
+            <form action="#" class="form" id="form1">
+                <h2 class="form__title">注册</h2>
+                <input type="text" placeholder="用户ID" class="input" name="username" required />
+                <input type="text" placeholder="账号" class="input" name="account" required />
+                <input type="password" placeholder="密码" class="input" name="password" required />
+                <button type="submit" class="btn">注册</button>
+                <div class="feedback" id="feedbackSignup"></div>
+            </form>
+        </div>
+
+        <!-- Sign In -->
+        <div class="container__form container--signin">
+            <form action="#" class="form" id="form2">
+                <h2 class="form__title">登录</h2>
+                <input type="text" placeholder="账号" class="input" />
+                <input type="password" placeholder="密码" class="input" />
+                <a href="#" class="forgot-password" id="forgotPasswordLink">忘记密码？</a>
+                <button type="submit" class="btn">登录</button>
+                <div class="feedback" id="feedbackSignin"></div>
+            </form>
+        </div>
+
+
+        <!-- Overlay -->
+        <div class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__panel overlay--left">
+                    <button class="btn" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay__panel overlay--right">
+                    <button class="btn" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="back-link-container">
+        <a href="../index1.html" class="back-link">暂不登录，返回主界面</a>
+    </div>
+    <div class="modal" id="forgotPasswordModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>重置密码</h2>
+            <p>请输入您注册时使用的手机号</p>
+            <input type="tel" id="resetPhoneInput" placeholder="请输入手机号" class="input" />
+            <div class="modal-buttons">
+                <button id="cancelReset" class="btn btn-secondary">取消</button>
+                <button id="confirmReset" class="btn">确认重置</button>
+            </div>
+            <div class="feedback" id="resetFeedback"></div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

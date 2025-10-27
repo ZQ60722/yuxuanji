@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI智能助手</title>
+    <link rel="stylesheet" href="../css/ai.css">
+    <link rel="stylesheet" href="../css/daohanlan.css">
+    <script src="https://cdn.jsdelivr.net/npm/react@18.0.0/umd/react.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.0.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/daohanlan.js"></script>
+    <script src="../js/ai.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+</head>
+<header>
+    <div class="container1">
+        <div class="logo">
+            <img src="../img/logo.jpg" alt="Logo">
+            <span>译教智师</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index1.html">首页</a></li>
+                <li><a href="shuguan.html" class="active">智能体</a></li>
+                <li><a href="shuyuku.html">术语库</a></li>
+                <li><a href="luntan.html">论坛</a></li>
+                <li><a href="xiaoyu.html">小鱼芊芊</a></li>
+            </ul>
+        </nav>
+
+        <!-- 未登录状态 -->
+        <div class="auth-buttons" id="authButtons">
+            <a href="#" class="login-btn" id="loginBtn">登录与注册</a>
+            <a href="#" class="register-btn" id="aboutBtn">关于我们</a>
+        </div>
+
+        <!-- 已登录状态 -->
+        <div class="user-menu" id="userMenu">
+            <div class="user-avatar">鱼</div>
+            <div class="user-info">
+                <div class="user-name">鱼玄机</div>
+                <div class="user-status">在线</div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-toggle" id="dropdownToggle">个人中心 ▼</button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="myself.html">个人资料</a>
+                    <a href="loading.html" id="logoutBtn">退出登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+<!-- 浮动圆球 -->
+<div class="floating-ball left-ball" onclick="openLeftSidebar()">
+    <i class="fas fa-lightbulb"></i>
+    <div class="ball-text">灵感库</div>
+</div>
+
+<div class="floating-ball right-ball" onclick="openRightSidebar()">
+    <i class="fas fa-book"></i>
+    <div class="ball-text">知识库</div>
+</div>
+
+<!-- 左侧边栏 -->
+<div class="sidebar" id="leftSidebar">
+    <div class="p-6 bg-blue-500 text-white">
+        <h2 class="text-xl font-bold mb-2">灵感库</h2>
+        <p class="text-sm opacity-90">获取创意灵感和建议</p>
+    </div>
+    <div class="p-6">
+        <ul class="space-y-4">
+            <li id="one" class="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
+                <div class="font-medium">写作灵感</div>
+                <div class="text-sm text-gray-600 mt-1">获取文章创作灵感</div>
+            </li>
+            <li id="two" class="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
+                <div class="font-medium">设计思路</div>
+                <div class="text-sm text-gray-600 mt-1">UI/UX设计参考</div>
+            </li>
+            <li id="three" class="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
+                <div class="font-medium">营销策略</div>
+                <div class="text-sm text-gray-600 mt-1">推广活动建议</div>
+            </li>
+            <li id="four" class="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
+                <div class="font-medium">创意技巧</div>
+                <div class="text-sm text-gray-600 mt-1">提高创造力的方法</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 主聊天容器 -->
+<div class="container mx-auto my-8 px-4 max-w-6xl chat-container" id="chatContainer">
+    <div class="flex gap-4 h-[calc(100vh-120px)]"> <!-- 使用flex布局，并设定一个固定高度 -->
+
+        <!-- 左侧：历史记录侧边栏 -->
+        <aside class="w-1/4 bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+            <div class="bg-gray-700 text-white p-4">
+                <h2 class="text-lg font-bold">历史记录</h2>
+            </div>
+            <div class="flex-grow overflow-y-auto p-2" id="historyList">
+                <!-- 历史记录列表会在这里动态生成 -->
+                <div class="history-item p-3 mb-2 rounded-lg cursor-pointer hover:bg-gray-100 bg-blue-50">
+                    <p class="font-semibold text-sm truncate">新的对话</p>
+                    <p class="text-xs text-gray-500">刚刚</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 右侧：原来的聊天区域 -->
+        <main class="flex-grow bg-white rounded-xl shadow-lg overflow-hidden flex flex-col relative">
+            <!-- 头部 -->
+            <div class="bg-blue-500 text-white p-4">
+                <h1 class="text-2xl font-bold text-center">AI智能助手</h1>
+                <p class="text-center text-sm opacity-90">随时为您解答问题</p>
+            </div>
+
+            <!-- 聊天区域 -->
+            <div class="flex-grow overflow-y-auto p-4" id="chatMessages">
+                <div class="flex justify-start mb-4">
+                    <div class="bg-gray-100 rounded-lg p-3 max-w-xs">
+                        <p class="text-gray-800">您好！我是AI助手，有什么可以帮助您的吗？</p>
+                    </div>
+                </div>
+                <!-- 这里可以动态添加更多消息 -->
+            </div>
+            <!-- 新建对话按钮 -->
+            <button id="newChatBtn" class="fab-button" title="新建对话">
+                <!-- 使用Font Awesome的加号图标 -->
+                <i class="fas fa-plus"></i>
+            </button>
+            <!-- 输入区域 -->
+            <div class="p-4 border-t">
+                <div class="flex items-center space-x-2">
+                    <input type="text" id="userInput" placeholder="请输入您的问题..."
+                           class="flex-grow p-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button id="sendButton" class="bg-blue-500 text-white p-3 rounded-full hover:bg-blue-600 transition-colors">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+    </div>
+</div>
+<!-- 右侧边栏 -->
+<div class="sidebar-right" id="rightSidebar">
+    <div class="p-6 bg-green-500 text-white">
+        <h2 class="text-xl font-bold mb-2">知识库</h2>
+        <p class="text-sm opacity-90">查找相关信息和资料</p>
+    </div>
+    <div class="p-6">
+        <ul class="space-y-4">
+            <li class="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
+                <div class="font-medium">技术文档</div>
+                <div class="text-sm text-gray-600 mt-1">编程语言和框架</div>
+            </li>
+            <li class="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
+                <div class="font-medium">历史资料</div>
+                <div class="text-sm text-gray-600 mt-1">重要事件和人物</div>
+            </li>
+            <li class="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
+                <div class="font-medium">科学知识</div>
+                <div class="text-sm text-gray-600 mt-1">物理化学生物等</div>
+            </li>
+            <li class="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
+                <div class="font-medium">文化百科</div>
+                <div class="text-sm text-gray-600 mt-1">各国文化和传统</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div id="modal-body">
+            <!-- 内容将根据点击的li元素动态加载 -->
+        </div>
+    </div>
+</div>
+<!-- 关于我们模态框 -->
+<div id = "aboutModal" class="modal-backdrop"></div>
+<div id="aboutModalContent" class="modal-content1">
+    <span class="modal-close">&times;</span>
+    <h2>关于我们</h2>
+    <p>
+        这里是你的“关于我们”页面内容。你可以写任何你想介绍的信息，比如你的团队故事、使命愿景、联系方式等等。
+    </p>
+    <p>
+        欢迎访问我们的网站，希望你能喜欢！
+    </p>
+</div>
+
+
+<script>
+    // 控制侧边栏开关
+    let leftSidebarOpen = false;
+    let rightSidebarOpen = false;
+
+    function openLeftSidebar() {
+        const sidebar = document.getElementById('leftSidebar');
+
+        if (!leftSidebarOpen) {
+            sidebar.classList.add('open');
+            leftSidebarOpen = true;
+        } else {
+            closeLeftSidebar();
+        }
+    }
+
+    function closeLeftSidebar() {
+        const sidebar = document.getElementById('leftSidebar');
+
+        sidebar.classList.remove('open');
+        leftSidebarOpen = false;
+    }
+
+    function openRightSidebar() {
+        const sidebar = document.getElementById('rightSidebar');
+
+        if (!rightSidebarOpen) {
+            sidebar.classList.add('open');
+            rightSidebarOpen = true;
+        } else {
+            closeRightSidebar();
+        }
+    }
+
+    function closeRightSidebar() {
+        const sidebar = document.getElementById('rightSidebar');
+
+        sidebar.classList.remove('open');
+        rightSidebarOpen = false;
+    }
+
+    // 点击侧边栏外部关闭
+    window.addEventListener('click', function(event) {
+        const leftSidebar = document.getElementById('leftSidebar');
+        const rightSidebar = document.getElementById('rightSidebar');
+
+        if (!event.target.closest('.sidebar') && !event.target.closest('.floating-ball')) {
+            closeLeftSidebar();
+            closeRightSidebar();
+        }
+    });
+
+    // 发送消息功能
+    document.getElementById('sendButton').addEventListener('click', sendMessage);
+    document.getElementById('userInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            sendMessage();
+        }
+    });
+
+    async function sendMessage() {
+        const input = document.getElementById('userInput');
+        const message = input.value.trim();
+
+        if (message !== '') {
+            // 添加用户消息到聊天界面
+            addMessage(message, 'user');
+            input.value = '';
+
+            // 显示加载指示器
+            const loadingMessage = addMessage('正在思考...', 'ai');
+
+            try {
+                // 发送请求到后端
+                const response = await fetch('http://127.0.0.1:8000/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ message: message }),
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(`服务器错误: ${errorData.detail || '未知错误'}`);
+                }
+
+                const data = await response.json();
+
+                // 移除加载消息
+                loadingMessage.remove();
+
+                // 添加AI回复到聊天界面
+                addMessage(data.response, 'ai');
+            } catch (error) {
+                console.error('Error:', error);
+                // 移除加载消息
+                loadingMessage.remove();
+                // 添加错误消息
+                addMessage('抱歉，出现了错误，请稍后再试。', 'ai');
+            }
+        }
+    }
+
+    function addMessage(text, sender) {
+        const chatMessages = document.getElementById('chatMessages');
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `flex ${sender === 'user' ? 'justify-end' : 'justify-start'} mb-4`;
+
+        const messageContent = document.createElement('div');
+        messageContent.className = `${sender === 'user' ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-800'} rounded-lg p-3 max-w-xs`;
+        messageContent.textContent = text;
+
+        messageDiv.appendChild(messageContent);
+        chatMessages.appendChild(messageDiv);
+
+        // 滚动到底部
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+
+        // 返回消息元素，以便后续可以删除（如加载消息）
+        return messageDiv;
+    }
+    document.getElementById('newChatBtn').addEventListener('click',createNewSession);
+    // 从 localStorage 读取历史会话，如果没有则初始化为空数组
+    let allSessions = JSON.parse(localStorage.getItem('chatHistory')) || [];
+    // 当前选中的会话ID，默认为null
+    let currentSessionId = null;
+
+    // 检查是否有历史会话，如果没有，则创建一个新会话
+    if (allSessions.length === 0) {
+        createNewSession();
+    } else {
+        // 如果有历史会话，默认选中第一个
+        currentSessionId = allSessions[0].id;
+        // 渲染第一个会话的内容
+        renderCurrentChat();
+    }
+
+    // --- 工具函数 ---
+
+    // 创建一个新会话
+    function createNewSession() {
+        const newSession = {
+            id: Date.now(), // 使用时间戳作为唯一ID
+            title: '新对话',
+            messages: []
+        };
+        allSessions.unshift(newSession); // 将新会话添加到数组开头
+        currentSessionId = newSession.id;
+        saveToLocalStorage();
+        renderHistoryList(); // 更新左侧列表
+        renderCurrentChat(); // 更新右侧聊天区
+    }
+
+    // 保存数据到 localStorage
+    function saveToLocalStorage() {
+        localStorage.setItem('chatHistory', JSON.stringify(allSessions));
+    }
+
+    // 【新增】删除一个会话
+    function deleteSession(sessionIdToDelete) {
+        // 过滤掉要删除的会话，生成一个新数组
+        allSessions = allSessions.filter(session => session.id !== sessionIdToDelete);
+
+        // 关键判断：如果删除的是当前正在显示的会话
+        if (sessionIdToDelete === currentSessionId) {
+            // 如果列表里还有其他会话，就选中第一个
+            if (allSessions.length > 0) {
+                currentSessionId = allSessions[0].id;
+            } else {
+                // 如果列表空了，就创建一个新会话并选中
+                createNewSession();
+                return; // createNewSession 自己会调用渲染，所以这里直接 return
+            }
+        }
+
+        // 保存并重新渲染
+        saveToLocalStorage();
+        renderHistoryList();
+        renderCurrentChat();
+    }
+
+
+    // --- 渲染函数 ---
+
+    // 渲染左侧的历史会话列表
+    function renderHistoryList() {
+        const historyListEl = document.getElementById('historyList');
+        historyListEl.innerHTML = ''; // 清空现有列表
+
+        allSessions.forEach(session => {
+            // 创建一个容器 div，用于包裹标题和删除按钮
+            const listItem = document.createElement('div');
+            listItem.className = `p-3 rounded-lg cursor-pointer transition-colors relative group ${
+                session.id === currentSessionId ? 'bg-blue-100 text-blue-700' : 'hover:bg-gray-100'
+            }`;
+
+            // 创建标题元素
+            const titleEl = document.createElement('p');
+            titleEl.className = 'font-semibold text-sm truncate pr-8'; // 增加 pr-8 防止文字和按钮重叠
+            titleEl.textContent = session.title;
+
+            // 【新增】创建删除按钮
+            const deleteBtn = document.createElement('button');
+            deleteBtn.innerHTML = '✕'; // 使用一个简单的 'X' 符号
+            deleteBtn.className = 'absolute top-1/2 right-2 transform -translate-y-1/2 text-gray-400 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity p-1';
+            deleteBtn.title = "删除此会话";
+
+            // 【核心】为删除按钮添加点击事件
+            deleteBtn.addEventListener('click', (event) => {
+                event.stopPropagation(); // 阻止事件冒泡，防止触发切换会话
+                if (confirm('确定要删除这个会话吗？')) { // 增加一个确认弹窗，防止误删
+                    deleteSession(session.id);
+                }
+            });
+
+            // 将标题和删除按钮添加到列表项中
+            listItem.appendChild(titleEl);
+            listItem.appendChild(deleteBtn);
+
+            // 【修改】原来的点击事件现在要绑定在 listItem 上，但只针对标题区域
+            // 为了更好的用户体验，我们让点击整个区域（除了删除按钮）都能切换会话
+            listItem.addEventListener('click', () => {
+                // 如果点击的不是删除按钮，就切换会话
+                if (event.target !== deleteBtn) {
+                    currentSessionId = session.id;
+                    renderHistoryList(); // 重新渲染列表以更新高亮
+                    renderCurrentChat(); // 渲染被点击会话的聊天内容
+                }
+            });
+
+            historyListEl.appendChild(listItem);
+        });
+    }
+
+    // 渲染右侧的当前聊天内容
+    function renderCurrentChat() {
+        const chatMessagesEl = document.getElementById('chatMessages');
+        chatMessagesEl.innerHTML = ''; // 清空现有聊天内容
+
+        const currentSession = allSessions.find(s => s.id === currentSessionId);
+
+        if (currentSession && currentSession.messages.length > 0) {
+            currentSession.messages.forEach(msg => {
+                addMessage(msg.content, msg.role);
+            });
+        } else {
+            // 如果会话为空，显示欢迎语
+            addMessage('您好！我是AI助手，有什么可以帮助您的吗？', 'ai');
+        }
+    }
+
+
+    // 发送消息功能
+    document.getElementById('sendButton').addEventListener('click', sendMessage);
+    document.getElementById('userInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            sendMessage();
+        }
+    });
+
+    // --- 核心逻辑：发送消息 ---
+
+    async function sendMessage() {
+        const input = document.getElementById('userInput');
+        const message = input.value.trim();
+
+        if (message === '') return;
+
+        // 找到当前会话
+        let currentSession = allSessions.find(s => s.id === currentSessionId);
+
+        // 如果是第一条消息，更新会话标题
+        if (currentSession.messages.length === 0) {
+            currentSession.title = message.substring(0, 20) + (message.length > 20 ? '...' : '');
+        }
+
+        // 1. 添加用户消息到当前会话的messages数组
+        currentSession.messages.push({ role: 'user', content: message });
+
+        // 2. 立即在界面上显示用户消息
+        addMessage(message, 'user');
+        input.value = '';
+
+        // 3. 显示加载指示器
+        const loadingMessage = addMessage('正在思考...', 'ai');
+
+        try {
+            // 发送请求到后端
+            const response = await fetch('http://127.0.0.1:8000/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: message }),
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(`服务器错误: ${errorData.detail || '未知错误'}`);
+            }
+
+            const data = await response.json();
+
+            // 4. 移除加载消息
+            loadingMessage.remove();
+
+            // 5. 添加AI回复到当前会话的messages数组
+            currentSession.messages.push({ role: 'ai', content: data.response });
+
+            // 6. 在界面上显示AI回复
+            addMessage(data.response, 'ai');
+
+        } catch (error) {
+            console.error('Error:', error);
+            loadingMessage.remove();
+            addMessage('抱歉，出现了错误，请稍后再试。', 'ai');
+        } finally {
+            // 7. 无论成功失败，都保存数据并更新历史列表
+            saveToLocalStorage();
+            renderHistoryList(); // 更新左侧列表（主要是为了更新标题）
+        }
+    }
+
+    function addMessage(text, sender) {
+        const chatMessages = document.getElementById('chatMessages');
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `flex ${sender === 'user' ? 'justify-end' : 'justify-start'} mb-4`;
+
+        const messageContent = document.createElement('div');
+        messageContent.className = `${sender === 'user' ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-800'} rounded-lg p-3 max-w-xs`;
+        messageContent.textContent = text;
+
+        messageDiv.appendChild(messageContent);
+        chatMessages.appendChild(messageDiv);
+
+        // 滚动到底部
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+
+        // 返回消息元素，以便后续可以删除（如加载消息）
+        return messageDiv;
+    }
+
+</script>
+</body>
+</html>

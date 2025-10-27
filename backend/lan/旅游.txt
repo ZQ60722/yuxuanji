@@ -1,0 +1,502 @@
+自然景观	Natural Landscape
+人文景观	Cultural Landscape
+历史遗迹	Historical Relics
+文化遗产	Cultural Heritage
+世界遗产	World Heritage
+国家公园	National Park
+自然保护区	Nature Reserve
+风景名胜区	Scenic Area
+主题公园	Theme Park
+博物馆	Museum
+观光旅游	Sightseeing
+休闲度假	Leisure Vacation
+商务旅行	Business Travel
+会展旅游	MICE Tourism
+文化旅游	Cultural Tourism
+生态旅游	Ecotourism
+乡村旅游	Rural Tourism
+红色旅游	Red Tourism
+医疗旅游	Medical Tourism
+教育旅游	Educational Tourism
+酒店	Hotel
+度假村	Resort
+民宿	Homestay
+青年旅舍	Youth Hostel
+餐厅	Restaurant
+购物中心	Shopping Center
+游客中心	Tourist Center
+旅游交通	Tourist Transportation
+旅游景区	Tourist Attraction
+旅游线路	Tourist Route
+旅行社	Travel Agency
+导游	Tour Guide
+翻译	Interpreter
+旅游保险	Travel Insurance
+旅游咨询	Tourist Information
+旅游投诉	Tourist Complaint
+旅游救援	Tourist Rescue
+旅游规划	Tourism Planning
+旅游营销	Tourism Marketing
+旅游电子商务	Tourism E-commerce
+旅游政策	Tourism Policy
+旅游法规	Tourism Regulation
+旅游标准	Tourism Standard
+旅游统计	Tourism Statistics
+旅游开发	Tourism Development
+旅游管理	Tourism Management
+旅游经济	Tourism Economics
+旅游社会学	Tourism Sociology
+旅游心理学	Tourism Psychology
+传统游客中心	Traditional Tourist Center
+旅游标准智能	Tourism Standard Intelligent
+风景名胜区自然	Scenic Area Natural
+理论自然保护区	Theoretical Nature Reserve
+超大型教育旅游	Extra-large Educational Tourism
+旅游统计有机	Tourism Statistics Organic
+中型酒店	Medium Hotel
+数字化主题公园	Digital Theme Park
+历史遗迹移动	Historical Relics Mobile
+重要自然保护区	Important Nature Reserve
+旅游管理高效	Tourism Management Efficient
+创新生态旅游	Innovative Ecotourism
+世界遗产核心	World Heritage Core
+可持续餐厅	Sustainable Restaurant
+迷你酒店	Mini Hotel
+旅游规划理论	Tourism Planning Theoretical
+系统性风景名胜区	Systematic Scenic Area
+旅游救援高性能	Tourist Rescue High-performance
+生态自然保护区	Ecological Nature Reserve
+旅游咨询核心	Tourist Information Core
+旅游咨询有机	Tourist Information Organic
+旅游心理学小型	Tourism Psychology Small
+旅游救援专业	Tourist Rescue Professional
+青年旅舍专业	Youth Hostel Professional
+历史遗迹便携	Historical Relics Portable
+重要世界遗产	Important World Heritage
+商务旅行微型	Business Travel Micro
+民宿传统	Homestay Traditional
+旅游管理低成本	Tourism Management Low-cost
+游客中心先进	Tourist Center Advanced
+重要旅游社会学	Important Tourism Sociology
+新型风景名胜区	Novel Scenic Area
+旅游线路固定	Tourist Route Fixed
+博物馆现代	Museum Modern
+导游人工	Tour Guide Artificial
+现代酒店	Modern Hotel
+旅游规划创新	Tourism Planning Innovative
+小型商务旅行	Small Business Travel
+自然保护区有机	Nature Reserve Organic
+游客中心远程	Tourist Center Remote
+观光旅游可持续	Sightseeing Sustainable
+可持续旅游统计	Sustainable Tourism Statistics
+专业自然景观	Professional Natural Landscape
+专业旅行社	Professional Travel Agency
+旅游管理有机	Tourism Management Organic
+智能人文景观	Intelligent Cultural Landscape
+主题公园高性能	Theme Park High-performance
+旅游营销环保	Tourism Marketing Eco-friendly
+智能教育旅游	Intelligent Educational Tourism
+自然景观专业	Natural Landscape Professional
+高性能自然景观	High-performance Natural Landscape
+低成本乡村旅游	Low-cost Rural Tourism
+旅游保险基础	Travel Insurance Basic
+教育旅游新型	Educational Tourism Novel
+远程旅游保险	Remote Travel Insurance
+红色旅游移动	Red Tourism Mobile
+度假村专业	Resort Professional
+高性能旅游社会学	High-performance Tourism Sociology
+实用旅游规划	Practical Tourism Planning
+人工旅游统计	Artificial Tourism Statistics
+国家公园综合	National Park Comprehensive
+旅游电子商务人工	Tourism E-commerce Artificial
+生态旅游实用	Ecotourism Practical
+旅游救援绿色	Tourist Rescue Green
+创新旅游咨询	Innovative Tourist Information
+旅游法规中型	Tourism Regulation Medium
+国家公园特殊	National Park Special
+人文景观低成本	Cultural Landscape Low-cost
+系统性翻译	Systematic Interpreter
+旅游管理迷你	Tourism Management Mini
+高性能教育旅游	High-performance Educational Tourism
+理论自然景观	Theoretical Natural Landscape
+民宿核心	Homestay Core
+度假村基础	Resort Basic
+旅游保险高性能	Travel Insurance High-performance
+远程生态旅游	Remote Ecotourism
+导游移动	Tour Guide Mobile
+生态人文景观	Ecological Cultural Landscape
+绿色旅游救援	Green Tourist Rescue
+国家公园迷你	National Park Mini
+自然景观综合	Natural Landscape Comprehensive
+经典旅游救援	Classic Tourist Rescue
+应用主题公园	Applied Theme Park
+低成本旅行社	Low-cost Travel Agency
+创新红色旅游	Innovative Red Tourism
+旅游规划大型	Tourism Planning Large
+小型旅游心理学	Small Tourism Psychology
+国家公园高性能	National Park High-performance
+生态旅游理论	Ecotourism Theoretical
+传统国家公园	Traditional National Park
+会展旅游移动	MICE Tourism Mobile
+绿色国家公园	Green National Park
+环保旅游电子商务	Eco-friendly Tourism E-commerce
+博物馆微型	Museum Micro
+小型度假村	Small Resort
+世界遗产低成本	World Heritage Low-cost
+生态旅游救援	Ecological Tourist Rescue
+文化遗产系统性	Cultural Heritage Systematic
+旅游经济实用	Tourism Economics Practical
+经典旅游管理	Classic Tourism Management
+核心旅游规划	Core Tourism Planning
+旅游经济智能	Tourism Economics Intelligent
+世界遗产基础	World Heritage Basic
+酒店基础	Hotel Basic
+世界遗产迷你	World Heritage Mini
+乡村旅游生态	Rural Tourism Ecological
+智能民宿	Intelligent Homestay
+自然保护区小型	Nature Reserve Small
+旅游投诉系统性	Tourist Complaint Systematic
+大型旅游投诉	Large Tourist Complaint
+实用旅游法规	Practical Tourism Regulation
+标准旅游心理学	Standard Tourism Psychology
+小型自然景观	Small Natural Landscape
+世界遗产环保	World Heritage Eco-friendly
+旅游交通便携	Tourist Transportation Portable
+医疗旅游中型	Medical Tourism Medium
+导游标准	Tour Guide Standard
+基础文化遗产	Basic Cultural Heritage
+旅游法规高效	Tourism Regulation Efficient
+旅游社会学便携	Tourism Sociology Portable
+创新乡村旅游	Innovative Rural Tourism
+旅游线路中型	Tourist Route Medium
+旅游电子商务小型	Tourism E-commerce Small
+经典青年旅舍	Classic Youth Hostel
+商务旅行专业	Business Travel Professional
+自然景观系统性	Natural Landscape Systematic
+超大型旅游心理学	Extra-large Tourism Psychology
+风景名胜区小型	Scenic Area Small
+创新旅游营销	Innovative Tourism Marketing
+有机青年旅舍	Organic Youth Hostel
+文化旅游远程	Cultural Tourism Remote
+旅游开发先进	Tourism Development Advanced
+中型旅游政策	Medium Tourism Policy
+旅游统计高性能	Tourism Statistics High-performance
+移动旅游管理	Mobile Tourism Management
+生态旅游营销	Ecological Tourism Marketing
+旅游景区中型	Tourist Attraction Medium
+小型国家公园	Small National Park
+关键商务旅行	Key Business Travel
+高性能旅游法规	High-performance Tourism Regulation
+传统会展旅游	Traditional MICE Tourism
+有机旅游心理学	Organic Tourism Psychology
+经典旅行社	Classic Travel Agency
+购物中心特殊	Shopping Center Special
+文化旅游中型	Cultural Tourism Medium
+远程历史遗迹	Remote Historical Relics
+翻译绿色	Interpreter Green
+历史遗迹微型	Historical Relics Micro
+旅游规划超大型	Tourism Planning Extra-large
+专业博物馆	Professional Museum
+专业历史遗迹	Professional Historical Relics
+传统观光旅游	Traditional Sightseeing
+旅游规划系统性	Tourism Planning Systematic
+人工翻译	Artificial Interpreter
+购物中心基础	Shopping Center Basic
+移动旅游开发	Mobile Tourism Development
+生态翻译	Ecological Interpreter
+有机购物中心	Organic Shopping Center
+标准旅游营销	Standard Tourism Marketing
+小型生态旅游	Small Ecotourism
+先进风景名胜区	Advanced Scenic Area
+生态旅游管理	Ecological Tourism Management
+有机旅游政策	Organic Tourism Policy
+创新旅游经济	Innovative Tourism Economics
+有机商务旅行	Organic Business Travel
+自然旅游电子商务	Natural Tourism E-commerce
+大型旅游开发	Large Tourism Development
+乡村旅游先进	Rural Tourism Advanced
+乡村旅游实用	Rural Tourism Practical
+新型旅游咨询	Novel Tourist Information
+绿色旅游投诉	Green Tourist Complaint
+高性能旅游管理	High-performance Tourism Management
+生态休闲度假	Ecological Leisure Vacation
+人文景观便携	Cultural Landscape Portable
+自然旅游开发	Natural Tourism Development
+国家公园可持续	National Park Sustainable
+主题公园重要	Theme Park Important
+旅游政策重要	Tourism Policy Important
+大型人文景观	Large Cultural Landscape
+固定旅游咨询	Fixed Tourist Information
+微型旅游标准	Micro Tourism Standard
+医疗旅游经典	Medical Tourism Classic
+餐厅小型	Restaurant Small
+旅游救援中型	Tourist Rescue Medium
+游客中心实用	Tourist Center Practical
+高效商务旅行	Efficient Business Travel
+关键人文景观	Key Cultural Landscape
+创新青年旅舍	Innovative Youth Hostel
+会展旅游专业	MICE Tourism Professional
+国家公园先进	National Park Advanced
+远程风景名胜区	Remote Scenic Area
+会展旅游系统性	MICE Tourism Systematic
+固定休闲度假	Fixed Leisure Vacation
+旅游社会学超大型	Tourism Sociology Extra-large
+旅游经济小型	Tourism Economics Small
+应用酒店	Applied Hotel
+度假村实用	Resort Practical
+历史遗迹新型	Historical Relics Novel
+人工乡村旅游	Artificial Rural Tourism
+旅游营销自然	Tourism Marketing Natural
+国家公园微型	National Park Micro
+旅游咨询固定	Tourist Information Fixed
+教育旅游超大型	Educational Tourism Extra-large
+餐厅重要	Restaurant Important
+游客中心新型	Tourist Center Novel
+风景名胜区迷你	Scenic Area Mini
+旅游社会学智能	Tourism Sociology Intelligent
+旅游法规远程	Tourism Regulation Remote
+医疗旅游标准	Medical Tourism Standard
+旅行社自然	Travel Agency Natural
+远程旅游心理学	Remote Tourism Psychology
+应用翻译	Applied Interpreter
+医疗旅游特殊	Medical Tourism Special
+主题公园便携	Theme Park Portable
+历史遗迹综合	Historical Relics Comprehensive
+大型旅游规划	Large Tourism Planning
+旅游规划关键	Tourism Planning Key
+创新旅游电子商务	Innovative Tourism E-commerce
+旅游法规专业	Tourism Regulation Professional
+旅游线路有机	Tourist Route Organic
+旅游统计生态	Tourism Statistics Ecological
+旅游咨询超大型	Tourist Information Extra-large
+专业旅游心理学	Professional Tourism Psychology
+旅游统计绿色	Tourism Statistics Green
+综合旅游咨询	Comprehensive Tourist Information
+旅游统计经典	Tourism Statistics Classic
+文化遗产传统	Cultural Heritage Traditional
+旅游保险移动	Travel Insurance Mobile
+青年旅舍微型	Youth Hostel Micro
+旅游景区系统性	Tourist Attraction Systematic
+中型主题公园	Medium Theme Park
+文化遗产中型	Cultural Heritage Medium
+旅游保险便携	Travel Insurance Portable
+标准旅游咨询	Standard Tourist Information
+生态旅游小型	Ecotourism Small
+酒店核心	Hotel Core
+理论商务旅行	Theoretical Business Travel
+旅游标准高效	Tourism Standard Efficient
+风景名胜区理论	Scenic Area Theoretical
+低成本民宿	Low-cost Homestay
+历史遗迹环保	Historical Relics Eco-friendly
+智能自然保护区	Intelligent Nature Reserve
+旅行社先进	Travel Agency Advanced
+休闲度假创新	Leisure Vacation Innovative
+文化遗产绿色	Cultural Heritage Green
+旅游标准超大型	Tourism Standard Extra-large
+移动会展旅游	Mobile MICE Tourism
+理论旅游电子商务	Theoretical Tourism E-commerce
+旅游统计先进	Tourism Statistics Advanced
+文化旅游固定	Cultural Tourism Fixed
+关键旅游经济	Key Tourism Economics
+固定旅游统计	Fixed Tourism Statistics
+专业会展旅游	Professional MICE Tourism
+会展旅游理论	MICE Tourism Theoretical
+旅游政策关键	Tourism Policy Key
+专业乡村旅游	Professional Rural Tourism
+小型教育旅游	Small Educational Tourism
+商务旅行移动	Business Travel Mobile
+教育旅游人工	Educational Tourism Artificial
+综合青年旅舍	Comprehensive Youth Hostel
+旅游规划高效	Tourism Planning Efficient
+高效主题公园	Efficient Theme Park
+环保翻译	Eco-friendly Interpreter
+旅行社生态	Travel Agency Ecological
+旅游规划小型	Tourism Planning Small
+现代旅游交通	Modern Tourist Transportation
+购物中心环保	Shopping Center Eco-friendly
+旅游标准经典	Tourism Standard Classic
+人文景观高效	Cultural Landscape Efficient
+导游便携	Tour Guide Portable
+中型民宿	Medium Homestay
+标准自然保护区	Standard Nature Reserve
+旅游经济基础	Tourism Economics Basic
+旅游投诉远程	Tourist Complaint Remote
+博物馆超大型	Museum Extra-large
+旅游景区环保	Tourist Attraction Eco-friendly
+小型酒店	Small Hotel
+新型旅游保险	Novel Travel Insurance
+旅游社会学环保	Tourism Sociology Eco-friendly
+基础旅游统计	Basic Tourism Statistics
+超大型旅游规划	Extra-large Tourism Planning
+小型旅游管理	Small Tourism Management
+有机教育旅游	Organic Educational Tourism
+生态旅游交通	Ecological Tourist Transportation
+旅行社远程	Travel Agency Remote
+关键乡村旅游	Key Rural Tourism
+医疗旅游重要	Medical Tourism Important
+可持续风景名胜区	Sustainable Scenic Area
+风景名胜区智能	Scenic Area Intelligent
+商务旅行系统性	Business Travel Systematic
+微型人文景观	Micro Cultural Landscape
+智能商务旅行	Intelligent Business Travel
+大型导游	Large Tour Guide
+教育旅游高性能	Educational Tourism High-performance
+便携民宿	Portable Homestay
+历史遗迹标准	Historical Relics Standard
+旅游交通环保	Tourist Transportation Eco-friendly
+重要旅游景区	Important Tourist Attraction
+重要旅游交通	Important Tourist Transportation
+便携旅游经济	Portable Tourism Economics
+旅游社会学迷你	Tourism Sociology Mini
+旅游保险微型	Travel Insurance Micro
+固定旅游规划	Fixed Tourism Planning
+数字化旅游交通	Digital Tourist Transportation
+人工教育旅游	Artificial Educational Tourism
+旅游规划迷你	Tourism Planning Mini
+中型医疗旅游	Medium Medical Tourism
+旅游规划绿色	Tourism Planning Green
+旅游政策环保	Tourism Policy Eco-friendly
+主题公园生态	Theme Park Ecological
+绿色酒店	Green Hotel
+民宿人工	Homestay Artificial
+实用休闲度假	Practical Leisure Vacation
+人工文化遗产	Artificial Cultural Heritage
+理论人文景观	Theoretical Cultural Landscape
+大型国家公园	Large National Park
+旅游咨询新型	Tourist Information Novel
+超大型旅游社会学	Extra-large Tourism Sociology
+游客中心重要	Tourist Center Important
+低成本旅游营销	Low-cost Tourism Marketing
+移动旅游社会学	Mobile Tourism Sociology
+旅游交通基础	Tourist Transportation Basic
+绿色旅游交通	Green Tourist Transportation
+博物馆重要	Museum Important
+旅游保险理论	Travel Insurance Theoretical
+高效历史遗迹	Efficient Historical Relics
+生态红色旅游	Ecological Red Tourism
+智能主题公园	Intelligent Theme Park
+旅游救援特殊	Tourist Rescue Special
+远程旅游咨询	Remote Tourist Information
+旅游投诉先进	Tourist Complaint Advanced
+大型旅游法规	Large Tourism Regulation
+生态旅游开发	Ecological Tourism Development
+旅游景区可持续	Tourist Attraction Sustainable
+应用自然保护区	Applied Nature Reserve
+数字化自然景观	Digital Natural Landscape
+旅游景区智能	Tourist Attraction Intelligent
+自然旅游经济	Natural Tourism Economics
+综合旅游规划	Comprehensive Tourism Planning
+传统旅游心理学	Traditional Tourism Psychology
+旅游规划高性能	Tourism Planning High-performance
+旅游线路系统性	Tourist Route Systematic
+固定世界遗产	Fixed World Heritage
+综合博物馆	Comprehensive Museum
+旅游政策专业	Tourism Policy Professional
+固定旅游管理	Fixed Tourism Management
+医疗旅游超大型	Medical Tourism Extra-large
+人工会展旅游	Artificial MICE Tourism
+中型旅游规划	Medium Tourism Planning
+自然保护区高效	Nature Reserve Efficient
+高性能旅游景区	High-performance Tourist Attraction
+旅游法规微型	Tourism Regulation Micro
+餐厅大型	Restaurant Large
+旅游咨询迷你	Tourist Information Mini
+重要旅游救援	Important Tourist Rescue
+高效旅游规划	Efficient Tourism Planning
+翻译环保	Interpreter Eco-friendly
+旅游心理学微型	Tourism Psychology Micro
+重要文化遗产	Important Cultural Heritage
+旅游管理创新	Tourism Management Innovative
+微型观光旅游	Micro Sightseeing
+生态旅游综合	Ecotourism Comprehensive
+现代旅游法规	Modern Tourism Regulation
+可持续旅游法规	Sustainable Tourism Regulation
+会展旅游微型	MICE Tourism Micro
+文化遗产迷你	Cultural Heritage Mini
+高效旅游交通	Efficient Tourist Transportation
+智能旅游咨询	Intelligent Tourist Information
+人文景观创新	Cultural Landscape Innovative
+现代度假村	Modern Resort
+经典旅游景区	Classic Tourist Attraction
+有机自然保护区	Organic Nature Reserve
+生态旅游中型	Ecotourism Medium
+旅行社经典	Travel Agency Classic
+大型翻译	Large Interpreter
+迷你旅游投诉	Mini Tourist Complaint
+旅游统计特殊	Tourism Statistics Special
+旅游标准综合	Tourism Standard Comprehensive
+绿色自然保护区	Green Nature Reserve
+医疗旅游可持续	Medical Tourism Sustainable
+数字化旅游法规	Digital Tourism Regulation
+可持续旅游社会学	Sustainable Tourism Sociology
+标准旅游统计	Standard Tourism Statistics
+旅游交通高效	Tourist Transportation Efficient
+数字化旅游政策	Digital Tourism Policy
+自然观光旅游	Natural Sightseeing
+高性能酒店	High-performance Hotel
+旅游经济理论	Tourism Economics Theoretical
+红色旅游环保	Red Tourism Eco-friendly
+博物馆实用	Museum Practical
+旅游规划人工	Tourism Planning Artificial
+博物馆数字化	Museum Digital
+综合世界遗产	Comprehensive World Heritage
+新型旅游管理	Novel Tourism Management
+国家公园经典	National Park Classic
+文化遗产综合	Cultural Heritage Comprehensive
+微型旅游社会学	Micro Tourism Sociology
+理论民宿	Theoretical Homestay
+医疗旅游关键	Medical Tourism Key
+生态会展旅游	Ecological MICE Tourism
+旅游规划自然	Tourism Planning Natural
+经典民宿	Classic Homestay
+应用文化遗产	Applied Cultural Heritage
+旅游开发高效	Tourism Development Efficient
+经典旅游经济	Classic Tourism Economics
+商务旅行低成本	Business Travel Low-cost
+历史遗迹专业	Historical Relics Professional
+迷你旅游社会学	Mini Tourism Sociology
+观光旅游传统	Sightseeing Traditional
+旅游管理绿色	Tourism Management Green
+便携旅游保险	Portable Travel Insurance
+旅游政策特殊	Tourism Policy Special
+餐厅创新	Restaurant Innovative
+旅游管理经典	Tourism Management Classic
+旅游线路人工	Tourist Route Artificial
+历史遗迹理论	Historical Relics Theoretical
+旅游经济环保	Tourism Economics Eco-friendly
+高性能翻译	High-performance Interpreter
+微型旅游景区	Micro Tourist Attraction
+大型旅游政策	Large Tourism Policy
+应用旅游咨询	Applied Tourist Information
+旅游政策核心	Tourism Policy Core
+世界遗产现代	World Heritage Modern
+旅游标准创新	Tourism Standard Innovative
+综合会展旅游	Comprehensive MICE Tourism
+传统导游	Traditional Tour Guide
+风景名胜区微型	Scenic Area Micro
+旅游交通理论	Tourist Transportation Theoretical
+翻译迷你	Interpreter Mini
+自然景观人工	Natural Landscape Artificial
+商务旅行固定	Business Travel Fixed
+旅游法规绿色	Tourism Regulation Green
+红色旅游大型	Red Tourism Large
+基础旅游咨询	Basic Tourist Information
+酒店环保	Hotel Eco-friendly
+高性能医疗旅游	High-performance Medical Tourism
+迷你导游	Mini Tour Guide
+世界遗产先进	World Heritage Advanced
+有机旅游开发	Organic Tourism Development
+绿色风景名胜区	Green Scenic Area
+翻译经典	Interpreter Classic
+风景名胜区标准	Scenic Area Standard
+旅游社会学高效	Tourism Sociology Efficient
+微型世界遗产	Micro World Heritage
+旅游交通小型	Tourist Transportation Small
+旅行社关键	Travel Agency Key
+应用世界遗产	Applied World Heritage
+旅游电子商务智能	Tourism E-commerce Intelligent
+人工人文景观	Artificial Cultural Landscape
+旅游保险传统	Travel Insurance Traditional
+旅行社重要	Travel Agency Important
+旅游电子商务重要	Tourism E-commerce Important
+旅游统计高效	Tourism Statistics Efficient

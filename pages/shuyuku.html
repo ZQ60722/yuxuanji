@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>术语库</title>
+    <link rel="stylesheet" href="../css/shuyuku.css">
+    <link rel="stylesheet" href="../css/daohanlan.css">
+    <script src="../js/shuyuku.js"></script>
+    <script src="../js/daohanlan.js"></script>
+</head>
+<body>
+<header>
+    <div class="container1">
+        <div class="logo">
+            <img src="../img/logo.jpg" alt="Logo">
+            <span>译教智师</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../index1.html">首页</a></li>
+                <li><a href="ai.html">智能体</a></li>
+                <li><a href="shuyuku.html" class="active">术语库</a></li>
+                <li><a href="luntan.html">论坛</a></li>
+                <li><a href="xiaoyu.html">智能口译</a></li>
+            </ul>
+        </nav>
+
+        <!-- 未登录状态 -->
+        <div class="auth-buttons" id="authButtons">
+            <a href="#" class="login-btn" id="loginBtn">登录与注册</a>
+            <a href="#" class="register-btn" id="aboutBtn">关于我们</a>
+        </div>
+
+        <!-- 已登录状态 -->
+        <div class="user-menu" id="userMenu">
+            <div class="user-avatar">鱼</div>
+            <div class="user-info">
+                <div class="user-name">鱼玄机</div>
+                <div class="user-status">在线</div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-toggle" id="dropdownToggle">个人中心 ▼</button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="myself.html">个人资料</a>
+                    <a href="loading.html" id="logoutBtn">退出登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <!-- 搜索框 -->
+    <div class="container0">
+        <div class="search-bar">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="search-input" placeholder="搜索术语" id="searchInput">
+        </div>
+        <div class="tiao1"></div>
+        <div class="shuyu" id="searchResultsContainer">
+            <!-- 搜索结果将在这里动态显示 -->
+        </div>
+    </div>
+
+    <!-- 2栏 -->
+    <div class="container2">
+        <div class="filter-tags">
+            <div class="filter-tag active" data-filter="recent">最近添加</div>
+            <div class="filter-tag" data-filter="frequent">常用术语</div>
+        </div>
+        <div class="tiao"></div>
+        <div class="content-box">
+            <div class="scroll-view">
+                <div class="content">
+                    <!-- 最近添加 -->
+                    <div id="recentContent" class="tab-content">
+                        <!-- 最近添加的内容将在这里动态显示 -->
+                    </div>
+                    <!-- 常用术语 -->
+                    <div id="frequentContent" class="tab-content" style="display: none;">
+                        <!-- 常用术语的内容将在这里动态显示 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floating-btn" id="addTermBtn">+</div>
+    </div>
+
+    <!-- 3x3 -->
+    <div class="biaoti">📕 术语分类汇总</div>
+    <div class="tiao"></div>
+    <div class="container3">
+        <div class="table">
+            <!-- 第一行 -->
+            <div class="table-row">
+                <!-- 把 data-category 的值放到 href 的参数里 -->
+                <a href="nextone1.html?category=clx" class="table-cell">材料学</a>
+                <a href="nextone1.html?category=smkx" class="table-cell">生命科学</a>
+                <a href="nextone1.html?category=nx" class="table-cell">农学</a>
+            </div>
+            <!-- 第二行 -->
+            <div class="table-row">
+                <a href="nextone1.html?category=hjkx" class="table-cell">环境科学</a>
+                <a href="nextone1.html?category=ly" class="table-cell">旅游</a>
+                <a href="nextone1.html?category=jyx" class="table-cell">教育学</a>
+            </div>
+            <!-- 第三行 -->
+            <div class="table-row">
+                <a href="nextone1.html?category=xlx" class="table-cell">心理学</a>
+                <a href="nextone1.html?category=shx" class="table-cell">社会学</a>
+                <a href="nextone1.html?category=jr" class="table-cell">金融</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 操作 -->
+    <div class="biaoti">🌎 专业术语识别翻译</div>
+    <div class="tiao"></div>
+    <div class="container4">
+        <div class="upload-box" id="uploadBox">
+            <img id="uploadPreview" style="display: none;" alt="上传预览">
+            <span id="uploadText">上传文件</span>
+        </div>
+        <p class="zi">再次点击可重新上传</p>
+        <button class="recognize-button" id="recognizeBtn">术语识别</button>
+    </div>
+</div>
+<div class="result-overlay" id="resultOverlay">
+    <div class="result-panel">
+        <div class="result-header">
+            <h2>术语识别结果</h2>
+            <button class="close-btn" id="closeResultBtn">&times;</button>
+        </div>
+        <div class="result-content" id="resultContent">
+            <!-- 识别结果会动态插入这里 -->
+        </div>
+    </div>
+</div>
+
+<!-- 添加术语对话框 -->
+<div class="modal" id="addTermModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>添加术语</h3>
+            <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="input-group">
+                <label for="sourceTerm">源语言术语</label>
+                <input type="text" id="sourceTerm" placeholder="请输入数据英文">
+            </div>
+            <div class="input-group">
+                <label for="targetTerm">目标语言术语</label>
+                <input type="text" id="targetTerm" placeholder="请输入对应中文">
+            </div>
+            <div class="input-group">
+                <label for="category">学科分类</label>
+                <input type="text" id="category" placeholder="请输入学科分类">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="cancelAddTerm">取消</button>
+            <button id="confirmAddTerm">确定</button>
+        </div>
+    </div>
+</div>
+
+<!-- 文件上传输入 -->
+<input type="file" id="fileInput" style="display: none;" accept=".txt,.docx">
+<!-- 关于我们模态框 -->
+<div id = "aboutModal" class="modal-backdrop"></div>
+<div id="aboutModalContent" class="modal-content1">
+    <span class="modal-close">&times;</span>
+    <h2>关于我们</h2>
+    <p>
+        这里是你的“关于我们”页面内容。你可以写任何你想介绍的信息，比如你的团队故事、使命愿景、联系方式等等。
+    </p>
+    <p>
+        欢迎访问我们的网站，希望你能喜欢！
+    </p>
+</div>
+<!-- 在 <body> 的最后，<script> 标签之前添加 -->
+
+</body>
+</html>

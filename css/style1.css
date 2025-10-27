@@ -1,0 +1,48 @@
+/* 导航栏样式 */
+nav{
+    background: linear-gradient(to right, rgba(102, 142, 201, 0.9), rgba(0, 0, 0, 0.9));
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    height: 48px;
+    width: 100%;
+    padding: 1px 0;
+}
+#logo{
+    font-size: 25px;
+    font-family: 华文行楷;
+    left: 3%;
+    float: left;
+    width: 650px;
+    height: 70px;
+    color: white;
+}
+nav ul {
+    margin-top: 8px;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0.2em;
+    width: 60%;
+    list-style: none;
+    height: 40px;
+    margin-left: 420px;
+}
+nav ul li {
+    padding: 0 0.2em;
+}
+nav ul li a {
+    padding: 0 0.2em;
+    display: block;
+    font-size: large;
+    color: #fafaf6;
+    text-decoration: none;
+}
+nav:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav ul li a:hover {
+    background-color: rgba(183, 193, 199, 0.8);
+}

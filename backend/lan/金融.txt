@@ -1,0 +1,501 @@
+货币	Currency
+利率	Interest Rate
+汇率	Exchange Rate
+通货膨胀	Inflation
+通货紧缩	Deflation
+经济周期	Economic Cycle
+财政政策	Fiscal Policy
+货币政策	Monetary Policy
+供给	Supply
+需求	Demand
+存款	Deposit
+贷款	Loan
+信用卡	Credit Card
+支票	Check
+汇票	Bill of Exchange
+本票	Promissory Note
+保函	Letter of Guarantee
+信托	Trust
+理财产品	Wealth Management Product
+基金	Fund
+股票	Stock
+债券	Bond
+期货	Futures
+期权	Options
+外汇	Foreign Exchange
+黄金	Gold
+原油	Crude Oil
+房地产	Real Estate
+私募	Private Equity
+风险投资	Venture Capital
+寿险	Life Insurance
+健康险	Health Insurance
+意外险	Accident Insurance
+财产险	Property Insurance
+责任险	Liability Insurance
+再保险	Reinsurance
+保费	Premium
+保额	Insured Amount
+理赔	Claim
+免赔额	Deductible
+资产	Asset
+负债	Liability
+所有者权益	Owner's Equity
+收入	Revenue
+成本	Cost
+费用	Expense
+利润	Profit
+现金流	Cash Flow
+折旧	Depreciation
+摊销	Amortization
+超大型贷款	Extra-large Loan
+有机原油	Organic Crude Oil
+系统性私募	Systematic Private Equity
+生态利率	Ecological Interest Rate
+理财产品综合	Wealth Management Product Comprehensive
+新型外汇	Novel Foreign Exchange
+利润高性能	Profit High-performance
+股票便携	Stock Portable
+信托标准	Trust Standard
+风险投资应用	Venture Capital Applied
+重要信托	Important Trust
+理赔实用	Claim Practical
+房地产先进	Real Estate Advanced
+核心利润	Core Profit
+基金数字化	Fund Digital
+成本核心	Cost Core
+现代支票	Modern Check
+中型需求	Medium Demand
+系统性期货	Systematic Futures
+关键信托	Key Trust
+微型资产	Micro Asset
+货币生态	Currency Ecological
+收入基础	Revenue Basic
+人工房地产	Artificial Real Estate
+免赔额微型	Deductible Micro
+基础费用	Basic Expense
+生态经济周期	Ecological Economic Cycle
+原油超大型	Crude Oil Extra-large
+高效黄金	Efficient Gold
+现代原油	Modern Crude Oil
+负债综合	Liability Comprehensive
+理财产品低成本	Wealth Management Product Low-cost
+生态健康险	Ecological Health Insurance
+生态摊销	Ecological Amortization
+保函高性能	Letter of Guarantee High-performance
+存款迷你	Deposit Mini
+固定理赔	Fixed Claim
+自然期权	Natural Options
+高效风险投资	Efficient Venture Capital
+有机健康险	Organic Health Insurance
+期权系统性	Options Systematic
+超大型理赔	Extra-large Claim
+货币政策系统性	Monetary Policy Systematic
+传统房地产	Traditional Real Estate
+重要外汇	Important Foreign Exchange
+折旧可持续	Depreciation Sustainable
+经济周期系统性	Economic Cycle Systematic
+意外险综合	Accident Insurance Comprehensive
+便携外汇	Portable Foreign Exchange
+智能外汇	Intelligent Foreign Exchange
+基金移动	Fund Mobile
+可持续汇票	Sustainable Bill of Exchange
+人工摊销	Artificial Amortization
+现金流便携	Cash Flow Portable
+贷款智能	Loan Intelligent
+有机私募	Organic Private Equity
+便携股票	Portable Stock
+免赔额现代	Deductible Modern
+黄金新型	Gold Novel
+专业寿险	Professional Life Insurance
+高性能利率	High-performance Interest Rate
+保额远程	Insured Amount Remote
+可持续意外险	Sustainable Accident Insurance
+原油有机	Crude Oil Organic
+经济周期数字化	Economic Cycle Digital
+大型意外险	Large Accident Insurance
+房地产数字化	Real Estate Digital
+理论债券	Theoretical Bond
+健康险先进	Health Insurance Advanced
+高性能贷款	High-performance Loan
+股票微型	Stock Micro
+微型再保险	Micro Reinsurance
+财产险微型	Property Insurance Micro
+摊销系统性	Amortization Systematic
+期货绿色	Futures Green
+所有者权益自然	Owner's Equity Natural
+债券特殊	Bond Special
+外汇移动	Foreign Exchange Mobile
+环保黄金	Eco-friendly Gold
+超大型存款	Extra-large Deposit
+新型理赔	Novel Claim
+中型支票	Medium Check
+本票标准	Promissory Note Standard
+迷你成本	Mini Cost
+折旧生态	Depreciation Ecological
+重要费用	Important Expense
+保额系统性	Insured Amount Systematic
+创新存款	Innovative Deposit
+外汇先进	Foreign Exchange Advanced
+期货远程	Futures Remote
+专业资产	Professional Asset
+移动债券	Mobile Bond
+可持续折旧	Sustainable Depreciation
+现金流重要	Cash Flow Important
+移动保额	Mobile Insured Amount
+传统股票	Traditional Stock
+生态资产	Ecological Asset
+需求可持续	Demand Sustainable
+低成本保费	Low-cost Premium
+债券有机	Bond Organic
+新型通货膨胀	Novel Inflation
+财政政策经典	Fiscal Policy Classic
+基础货币政策	Basic Monetary Policy
+股票固定	Stock Fixed
+高性能货币	High-performance Currency
+财产险标准	Property Insurance Standard
+专业保费	Professional Premium
+保额综合	Insured Amount Comprehensive
+应用贷款	Applied Loan
+大型供给	Large Supply
+大型费用	Large Expense
+利率特殊	Interest Rate Special
+风险投资人工	Venture Capital Artificial
+贷款人工	Loan Artificial
+汇票小型	Bill of Exchange Small
+新型保费	Novel Premium
+财产险重要	Property Insurance Important
+本票综合	Promissory Note Comprehensive
+微型寿险	Micro Life Insurance
+自然保费	Natural Premium
+生态存款	Ecological Deposit
+生态成本	Ecological Cost
+重要健康险	Important Health Insurance
+传统信用卡	Traditional Credit Card
+通货膨胀超大型	Inflation Extra-large
+低成本财产险	Low-cost Property Insurance
+本票超大型	Promissory Note Extra-large
+财政政策移动	Fiscal Policy Mobile
+生态免赔额	Ecological Deductible
+便携保额	Portable Insured Amount
+核心股票	Core Stock
+数字化保费	Digital Premium
+微型利润	Micro Profit
+理财产品专业	Wealth Management Product Professional
+中型外汇	Medium Foreign Exchange
+数字化收入	Digital Revenue
+再保险传统	Reinsurance Traditional
+财产险核心	Property Insurance Core
+远程理赔	Remote Claim
+收入智能	Revenue Intelligent
+微型期货	Micro Futures
+货币政策有机	Monetary Policy Organic
+核心供给	Core Supply
+固定存款	Fixed Deposit
+意外险中型	Accident Insurance Medium
+再保险中型	Reinsurance Medium
+费用大型	Expense Large
+高性能成本	High-performance Cost
+特殊意外险	Special Accident Insurance
+核心基金	Core Fund
+自然成本	Natural Cost
+资产大型	Asset Large
+便携经济周期	Portable Economic Cycle
+移动基金	Mobile Fund
+原油综合	Crude Oil Comprehensive
+数字化摊销	Digital Amortization
+微型风险投资	Micro Venture Capital
+现代本票	Modern Promissory Note
+重要房地产	Important Real Estate
+核心摊销	Core Amortization
+寿险先进	Life Insurance Advanced
+经济周期大型	Economic Cycle Large
+自然贷款	Natural Loan
+综合汇率	Comprehensive Exchange Rate
+信托超大型	Trust Extra-large
+标准股票	Standard Stock
+新型支票	Novel Check
+汇率核心	Exchange Rate Core
+负债远程	Liability Remote
+经典私募	Classic Private Equity
+负债便携	Liability Portable
+需求超大型	Demand Extra-large
+人工所有者权益	Artificial Owner's Equity
+信用卡自然	Credit Card Natural
+理论现金流	Theoretical Cash Flow
+基金环保	Fund Eco-friendly
+需求低成本	Demand Low-cost
+股票生态	Stock Ecological
+基础资产	Basic Asset
+专业基金	Professional Fund
+应用存款	Applied Deposit
+期货专业	Futures Professional
+通货紧缩现代	Deflation Modern
+高性能保额	High-performance Insured Amount
+高性能供给	High-performance Supply
+远程需求	Remote Demand
+成本重要	Cost Important
+资产生态	Asset Ecological
+房地产专业	Real Estate Professional
+专业存款	Professional Deposit
+供给关键	Supply Key
+资产应用	Asset Applied
+生态信托	Ecological Trust
+理财产品基础	Wealth Management Product Basic
+供给标准	Supply Standard
+私募数字化	Private Equity Digital
+移动存款	Mobile Deposit
+理赔高效	Claim Efficient
+风险投资经典	Venture Capital Classic
+数字化责任险	Digital Liability Insurance
+保函移动	Letter of Guarantee Mobile
+意外险移动	Accident Insurance Mobile
+期权综合	Options Comprehensive
+私募重要	Private Equity Important
+固定摊销	Fixed Amortization
+需求新型	Demand Novel
+环保保费	Eco-friendly Premium
+先进负债	Advanced Liability
+新型财政政策	Novel Fiscal Policy
+生态财产险	Ecological Property Insurance
+本票远程	Promissory Note Remote
+高效成本	Efficient Cost
+风险投资系统性	Venture Capital Systematic
+所有者权益超大型	Owner's Equity Extra-large
+高效理财产品	Efficient Wealth Management Product
+基金先进	Fund Advanced
+固定需求	Fixed Demand
+外汇微型	Foreign Exchange Micro
+通货紧缩环保	Deflation Eco-friendly
+可持续健康险	Sustainable Health Insurance
+微型信托	Micro Trust
+保函特殊	Letter of Guarantee Special
+数字化外汇	Digital Foreign Exchange
+保函应用	Letter of Guarantee Applied
+供给基础	Supply Basic
+固定折旧	Fixed Depreciation
+实用责任险	Practical Liability Insurance
+智能黄金	Intelligent Gold
+智能原油	Intelligent Crude Oil
+供给现代	Supply Modern
+责任险理论	Liability Insurance Theoretical
+再保险先进	Reinsurance Advanced
+理论利润	Theoretical Profit
+信用卡有机	Credit Card Organic
+货币政策新型	Monetary Policy Novel
+通货膨胀绿色	Inflation Green
+有机意外险	Organic Accident Insurance
+固定现金流	Fixed Cash Flow
+保费现代	Premium Modern
+系统性外汇	Systematic Foreign Exchange
+理财产品先进	Wealth Management Product Advanced
+固定基金	Fixed Fund
+寿险专业	Life Insurance Professional
+迷你通货紧缩	Mini Deflation
+实用意外险	Practical Accident Insurance
+房地产微型	Real Estate Micro
+风险投资高效	Venture Capital Efficient
+汇率高效	Exchange Rate Efficient
+汇率中型	Exchange Rate Medium
+绿色责任险	Green Liability Insurance
+风险投资便携	Venture Capital Portable
+免赔额新型	Deductible Novel
+期货生态	Futures Ecological
+外汇标准	Foreign Exchange Standard
+摊销基础	Amortization Basic
+实用负债	Practical Liability
+负债可持续	Liability Sustainable
+黄金核心	Gold Core
+责任险小型	Liability Insurance Small
+综合财政政策	Comprehensive Fiscal Policy
+微型费用	Micro Expense
+费用现代	Expense Modern
+保费环保	Premium Eco-friendly
+私募先进	Private Equity Advanced
+责任险中型	Liability Insurance Medium
+期货人工	Futures Artificial
+智能健康险	Intelligent Health Insurance
+保额理论	Insured Amount Theoretical
+低成本意外险	Low-cost Accident Insurance
+人工保函	Artificial Letter of Guarantee
+低成本货币	Low-cost Currency
+责任险传统	Liability Insurance Traditional
+先进寿险	Advanced Life Insurance
+环保所有者权益	Eco-friendly Owner's Equity
+理赔有机	Claim Organic
+便携存款	Portable Deposit
+原油重要	Crude Oil Important
+货币政策关键	Monetary Policy Key
+需求人工	Demand Artificial
+传统存款	Traditional Deposit
+标准财产险	Standard Property Insurance
+免赔额便携	Deductible Portable
+私募新型	Private Equity Novel
+经典货币政策	Classic Monetary Policy
+贷款便携	Loan Portable
+中型股票	Medium Stock
+通货膨胀有机	Inflation Organic
+基础再保险	Basic Reinsurance
+系统性通货紧缩	Systematic Deflation
+新型股票	Novel Stock
+特殊本票	Special Promissory Note
+专业财政政策	Professional Fiscal Policy
+关键汇票	Key Bill of Exchange
+折旧专业	Depreciation Professional
+摊销人工	Amortization Artificial
+传统货币	Traditional Currency
+货币专业	Currency Professional
+房地产高性能	Real Estate High-performance
+理财产品有机	Wealth Management Product Organic
+新型保额	Novel Insured Amount
+保额现代	Insured Amount Modern
+保函自然	Letter of Guarantee Natural
+应用股票	Applied Stock
+综合期货	Comprehensive Futures
+大型健康险	Large Health Insurance
+便携货币	Portable Currency
+高性能基金	High-performance Fund
+先进理财产品	Advanced Wealth Management Product
+超大型财产险	Extra-large Property Insurance
+创新债券	Innovative Bond
+可持续收入	Sustainable Revenue
+专业私募	Professional Private Equity
+经典风险投资	Classic Venture Capital
+健康险高性能	Health Insurance High-performance
+超大型理财产品	Extra-large Wealth Management Product
+免赔额自然	Deductible Natural
+可持续存款	Sustainable Deposit
+支票远程	Check Remote
+便携健康险	Portable Health Insurance
+期权新型	Options Novel
+利润低成本	Profit Low-cost
+应用所有者权益	Applied Owner's Equity
+经典保额	Classic Insured Amount
+关键期货	Key Futures
+超大型汇票	Extra-large Bill of Exchange
+支票先进	Check Advanced
+外汇创新	Foreign Exchange Innovative
+传统风险投资	Traditional Venture Capital
+有机经济周期	Organic Economic Cycle
+新型利率	Novel Interest Rate
+经典黄金	Classic Gold
+期权现代	Options Modern
+经典再保险	Classic Reinsurance
+可持续货币政策	Sustainable Monetary Policy
+贷款超大型	Loan Extra-large
+先进期权	Advanced Options
+重要收入	Important Revenue
+风险投资微型	Venture Capital Micro
+存款固定	Deposit Fixed
+意外险新型	Accident Insurance Novel
+人工折旧	Artificial Depreciation
+数字化利润	Digital Profit
+有机房地产	Organic Real Estate
+意外险关键	Accident Insurance Key
+先进利率	Advanced Interest Rate
+生态利润	Ecological Profit
+支票现代	Check Modern
+自然外汇	Natural Foreign Exchange
+系统性原油	Systematic Crude Oil
+信用卡传统	Credit Card Traditional
+存款现代	Deposit Modern
+系统性利润	Systematic Profit
+核心信用卡	Core Credit Card
+保费便携	Premium Portable
+贷款理论	Loan Theoretical
+核心理赔	Core Claim
+免赔额传统	Deductible Traditional
+标准理赔	Standard Claim
+供给专业	Supply Professional
+可持续信托	Sustainable Trust
+生态汇率	Ecological Exchange Rate
+期货微型	Futures Micro
+综合利润	Comprehensive Profit
+成本远程	Cost Remote
+人工理赔	Artificial Claim
+新型意外险	Novel Accident Insurance
+移动期权	Mobile Options
+经济周期有机	Economic Cycle Organic
+智能经济周期	Intelligent Economic Cycle
+供给经典	Supply Classic
+实用贷款	Practical Loan
+先进资产	Advanced Asset
+迷你货币	Mini Currency
+汇率大型	Exchange Rate Large
+寿险实用	Life Insurance Practical
+汇票可持续	Bill of Exchange Sustainable
+成本应用	Cost Applied
+意外险标准	Accident Insurance Standard
+健康险专业	Health Insurance Professional
+摊销现代	Amortization Modern
+经典外汇	Classic Foreign Exchange
+超大型所有者权益	Extra-large Owner's Equity
+收入环保	Revenue Eco-friendly
+重要基金	Important Fund
+通货膨胀小型	Inflation Small
+综合通货紧缩	Comprehensive Deflation
+实用货币政策	Practical Monetary Policy
+基金应用	Fund Applied
+绿色理赔	Green Claim
+智能基金	Intelligent Fund
+汇票生态	Bill of Exchange Ecological
+货币环保	Currency Eco-friendly
+环保理财产品	Eco-friendly Wealth Management Product
+自然摊销	Natural Amortization
+负债人工	Liability Artificial
+负债中型	Liability Medium
+高效信用卡	Efficient Credit Card
+成本智能	Cost Intelligent
+黄金中型	Gold Medium
+黄金创新	Gold Innovative
+贷款高性能	Loan High-performance
+系统性债券	Systematic Bond
+系统性基金	Systematic Fund
+私募核心	Private Equity Core
+信托传统	Trust Traditional
+高性能黄金	High-performance Gold
+数字化健康险	Digital Health Insurance
+传统原油	Traditional Crude Oil
+专业利率	Professional Interest Rate
+再保险系统性	Reinsurance Systematic
+财政政策中型	Fiscal Policy Medium
+健康险重要	Health Insurance Important
+有机基金	Organic Fund
+期货实用	Futures Practical
+保函综合	Letter of Guarantee Comprehensive
+费用先进	Expense Advanced
+实用成本	Practical Cost
+风险投资大型	Venture Capital Large
+中型费用	Medium Expense
+黄金应用	Gold Applied
+基础黄金	Basic Gold
+中型成本	Medium Cost
+移动再保险	Mobile Reinsurance
+摊销环保	Amortization Eco-friendly
+经典汇率	Classic Exchange Rate
+货币创新	Currency Innovative
+综合信用卡	Comprehensive Credit Card
+基金标准	Fund Standard
+先进外汇	Advanced Foreign Exchange
+中型通货紧缩	Medium Deflation
+现代贷款	Modern Loan
+远程免赔额	Remote Deductible
+理赔人工	Claim Artificial
+移动成本	Mobile Cost
+标准摊销	Standard Amortization
+低成本支票	Low-cost Check
+迷你支票	Mini Check
+核心费用	Core Expense
+专业货币政策	Professional Monetary Policy
+基金低成本	Fund Low-cost
+健康险高效	Health Insurance Efficient
+标准供给	Standard Supply
+微型理财产品	Micro Wealth Management Product
+高效基金	Efficient Fund
+远程通货紧缩	Remote Deflation
+理论股票	Theoretical Stock
+移动费用	Mobile Expense
+保费经典	Premium Classic
+贷款实用	Loan Practical
+新型免赔额	Novel Deductible
+收入超大型	Revenue Extra-large

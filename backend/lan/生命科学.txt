@@ -1,0 +1,499 @@
+细胞	Cell
+蛋白质	Protein
+酶	Enzyme
+激素	Hormone
+抗体	Antibody
+受体	Receptor
+基因	Gene
+染色体	Chromosome
+线粒体	Mitochondria
+叶绿体	Chloroplast
+内质网	Endoplasmic Reticulum
+高尔基体	Golgi Apparatus
+溶酶体	Lysosome
+核糖体	Ribosome
+细胞膜	Cell Membrane
+细胞壁	Cell Wall
+细胞核	Nucleus
+细胞质	Cytoplasm
+光合作用	Photosynthesis
+呼吸作用	Respiration
+转录	Transcription
+翻译	Translation
+复制	Replication
+减数分裂	Meiosis
+有丝分裂	Mitosis
+凋亡	Apoptosis
+自噬	Autophagy
+内吞	Endocytosis
+测序	Sequencing
+克隆	Cloning
+转染	Transfection
+转化	Transformation
+电泳	Electrophoresis
+杂交	Hybridization
+突变	Mutation
+敲除	Knockout
+敲入	Knockin
+启动子	Promoter
+增强子	Enhancer
+沉默子	Silencer
+内含子	Intron
+外显子	Exon
+转座子	Transposon
+质粒	Plasmid
+载体	Vector
+引物	Primer
+探针	Probe
+限制性内切酶	Restriction Endonuclease
+连接酶	Ligase
+聚合酶	Polymerase
+核酸酶	Nuclease
+蛋白酶	Protease
+激酶	Kinase
+磷酸酶	Phosphatase
+甲基化酶	Methyltransferase
+去甲基化酶	Demethylase
+转移酶	Transferase
+糖类	Carbohydrate
+脂类	Lipid
+核酸	Nucleic Acid
+氨基酸	Amino Acid
+肽	Peptide
+维生素	Vitamin
+辅酶	Coenzyme
+辅因子	Cofactor
+代谢	Metabolism
+合成	Synthesis
+糖酵解	Glycolysis
+三羧酸循环	TCA Cycle
+电子传递链	Electron Transport Chain
+氧化磷酸化	Oxidative Phosphorylation
+脂肪酸氧化	Fatty Acid Oxidation
+糖异生	Gluconeogenesis
+尿素循环	Urea Cycle
+光反应	Light Reaction
+暗反应	Dark Reaction
+固氮作用	Nitrogen Fixation
+葡萄糖	Glucose
+果糖	Fructose
+蔗糖	Sucrose
+淀粉	Starch
+纤维素	Cellulose
+甘油	Glycerol
+胆固醇	Cholesterol
+磷脂	Phospholipid
+三酰甘油	Triglyceride
+脂肪酸	Fatty Acid
+神经系统	Nervous System
+循环系统	Circulatory System
+呼吸系统	Respiratory System
+消化系统	Digestive System
+泌尿系统	Urinary System
+内分泌系统	Endocrine System
+免疫系统	Immune System
+生殖系统	Reproductive System
+骨骼系统	Skeletal System
+肌肉系统	Muscular System
+骨髓	Bone Marrow
+血液	Blood
+淋巴	Lymph
+大脑	Brain
+心脏	Heart
+肺	Lung
+肝脏	Liver
+肾脏	Kidney
+胰腺	Pancreas
+脾脏	Spleen
+胃	Stomach
+肠	Intestine
+骨髓	Bone Marrow
+血液	Blood
+淋巴	Lymph
+脑脊液	Cerebrospinal Fluid
+胆汁	Bile
+胃液	Gastric Juice
+肠液	Intestinal Juice
+胰液	Pancreatic Juice
+唾液	Saliva
+尿液	Urine
+汗液	Sweat
+遗传	Inheritance
+变异	Variation
+选择	Selection
+适应	Adaptation
+进化	Evolution
+物种	Species
+种群	Population
+基因型	Genotype
+表型	Phenotype
+基因频率	Gene Frequency
+显性	Dominant
+隐性	Recessive
+共显性	Codominant
+连锁	Linkage
+交叉	Crossing Over
+重组	Recombination
+多态性	Polymorphism
+杂合	Heterozygous
+纯合	Homozygous
+单基因遗传	Monogenic Inheritance
+多基因遗传	Polygenic Inheritance
+性连锁遗传	Sex-linked Inheritance
+细胞质遗传	Cytoplasmic Inheritance
+基因漂变	Genetic Drift
+基因流	Gene Flow
+自然选择	Natural Selection
+人工选择	Artificial Selection
+定向选择	Directional Selection
+稳定选择	Stabilizing Selection
+高分辨率高尔基体	High-resolution Golgi Apparatus
+转座子高通量	Transposon High-throughput
+甘油表面改性	Glycerol Surface-modified
+呼吸系统轻质	Respiratory System Lightweight
+去甲基化酶高产	Demethylase High-yield
+基因频率抗病	Gene Frequency Disease-resistant
+先进核酸酶	Advanced Nuclease
+变异高韧性	Variation High-toughness
+有丝分裂高通量	Mitosis High-throughput
+非晶突变	Amorphous Mutation
+进化生态	Evolution Ecological
+复合型凋亡	Composite Apoptosis
+自修复克隆	Self-healing Cloning
+杂合绿色	Heterozygous Green
+电泳耐疲劳	Electrophoresis Fatigue-resistant
+质粒耐腐蚀	Plasmid Corrosion-resistant
+超薄胆固醇	Ultrathin Cholesterol
+载体高分辨率	Vector High-resolution
+脾脏高导电	Spleen High-conductivity
+耐盐消化系统	Salt-tolerant Digestive System
+耐疲劳转染	Fatigue-resistant Transfection
+超薄敲入	Ultrathin Knockin
+智能磷脂	Smart Phospholipid
+速生内质网	Fast-growing Endoplasmic Reticulum
+肝脏表面改性	Liver Surface-modified
+三羧酸循环耐盐	TCA Cycle Salt-tolerant
+叶绿体高选择性	Chloroplast Highly-selective
+单晶呼吸系统	Single-crystal Respiratory System
+肌肉系统高通量	Muscular System High-throughput
+微米级甲基化酶	Microscale Methyltransferase
+耐低温交叉	Low-temperature-resistant Crossing Over
+轻质重组	Lightweight Recombination
+自然选择高精度	Natural Selection High-precision
+高性能核酸	High-performance Nucleic Acid
+高韧性磷脂	High-toughness Phospholipid
+耐高温性连锁遗传	High-temperature-resistant Sex-linked Inheritance
+超薄葡萄糖	Ultrathin Glucose
+脑脊液高通量	Cerebrospinal Fluid High-throughput
+增强子多孔	Enhancer Porous
+无公害电子传递链	Pollution-free Electron Transport Chain
+受体耐酸	Receptor Acid-tolerant
+合成耐磨损	Synthesis Wear-resistant
+共显性低脂	Codominant Low-fat
+物种复合型	Species Composite
+胆汁耐盐	Bile Salt-tolerant
+高活性基因型	Highly-active Genotype
+糖类纳米结构	Carbohydrate Nanostructured
+晚熟染色体	Late-maturing Chromosome
+抗旱骨骼系统	Drought-resistant Skeletal System
+胆汁高效	Bile High-efficiency
+脂类颗粒增强	Lipid Particle-reinforced
+耐碱外显子	Alkali-tolerant Exon
+泌尿系统生态	Urinary System Ecological
+智能胃液	Smart Gastric Juice
+突变耐盐	Mutation Salt-tolerant
+绿色沉默子	Green Silencer
+高蛋白基因漂变	High-protein Genetic Drift
+氨基酸高特异性	Amino Acid Highly-specific
+单基因遗传耐磨损	Monogenic Inheritance Wear-resistant
+耐高温杂合	High-temperature-resistant Heterozygous
+耐盐尿素循环	Salt-tolerant Urea Cycle
+单晶进化	Single-crystal Evolution
+胃液高特异性	Gastric Juice Highly-specific
+肠液低密度	Intestinal Juice Low-density
+共显性耐碱	Codominant Alkali-tolerant
+蔗糖晚熟	Sucrose Late-maturing
+高灵敏度酶	Highly-sensitive Enzyme
+糖酵解多晶	Glycolysis Polycrystalline
+先进交叉	Advanced Crossing Over
+高产肺	High-yield Lung
+纤维素高活性	Cellulose Highly-active
+基因漂变快速	Genetic Drift Rapid
+耐盐启动子	Salt-tolerant Promoter
+实时突变	Real-time Mutation
+抗旱蛋白质	Drought-resistant Protein
+晚熟质粒	Late-maturing Plasmid
+去甲基化酶优质	Demethylase High-quality
+速生载体	Fast-growing Vector
+受体高效	Receptor High-efficiency
+血液环保型	Blood Eco-friendly
+耐疲劳测序	Fatigue-resistant Sequencing
+高模量生殖系统	High-modulus Reproductive System
+高效定向选择	High-efficiency Directional Selection
+多孔肝脏	Porous Liver
+糖类无公害	Carbohydrate Pollution-free
+基因漂变高特异性	Genetic Drift Highly-specific
+高纯度去甲基化酶	High-purity Demethylase
+高通量显性	High-throughput Dominant
+维生素抗旱	Vitamin Drought-resistant
+线粒体颗粒增强	Mitochondria Particle-reinforced
+耐磨损测序	Wear-resistant Sequencing
+多基因遗传纳米结构	Polygenic Inheritance Nanostructured
+细胞壁晚熟	Cell Wall Late-maturing
+果糖高韧性	Fructose High-toughness
+转座子复合型	Transposon Composite
+耐疲劳循环系统	Fatigue-resistant Circulatory System
+高分辨率肠	High-resolution Intestine
+高通量单基因遗传	High-throughput Monogenic Inheritance
+显性超细	Dominant Ultrafine
+高导热免疫系统	High-thermal-conductivity Immune System
+测序轻质	Sequencing Lightweight
+沉默子有机	Silencer Organic
+耐碱隐性	Alkali-tolerant Recessive
+层状氨基酸	Layered Amino Acid
+载体晚熟	Vector Late-maturing
+耐酸蛋白质	Acid-tolerant Protein
+高通量光合作用	High-throughput Photosynthesis
+高产生殖系统	High-yield Reproductive System
+糖异生层状	Gluconeogenesis Layered
+敲入颗粒增强	Knockin Particle-reinforced
+新型测序	Novel Sequencing
+核糖体晚熟	Ribosome Late-maturing
+三羧酸循环纳米结构	TCA Cycle Nanostructured
+高通量基因频率	High-throughput Gene Frequency
+交叉高强度	Crossing Over High-strength
+血液微观结构	Blood Microstructured
+高导热突变	High-thermal-conductivity Mutation
+消化系统先进	Digestive System Advanced
+抗虫限制性内切酶	Pest-resistant Restriction Endonuclease
+自然选择多孔	Natural Selection Porous
+葡萄糖无公害	Glucose Pollution-free
+突变多功能	Mutation Multifunctional
+启动子纳米结构	Promoter Nanostructured
+高选择性胃液	Highly-selective Gastric Juice
+高韧性胃	High-toughness Stomach
+长寿命抗体	Long-life Antibody
+早熟尿素循环	Early-maturing Urea Cycle
+高导热增强子	High-thermal-conductivity Enhancer
+种群低密度	Population Low-density
+有丝分裂抗虫	Mitosis Pest-resistant
+低脂质粒	Low-fat Plasmid
+辅因子抗病	Cofactor Disease-resistant
+变异致密	Variation Dense
+激素环保型	Hormone Eco-friendly
+肽高通量	Peptide High-throughput
+溶酶体高糖	Lysosome High-sugar
+快速突变	Rapid Mutation
+耐低温复制	Low-temperature-resistant Replication
+优质核酸酶	High-quality Nuclease
+复制纳米结构	Replication Nanostructured
+可降解神经系统	Degradable Nervous System
+高特异性凋亡	Highly-specific Apoptosis
+抗涝三羧酸循环	Flood-resistant TCA Cycle
+三羧酸循环微观结构	TCA Cycle Microstructured
+耐腐蚀蛋白质	Corrosion-resistant Protein
+表型层状	Phenotype Layered
+电子传递链复合型	Electron Transport Chain Composite
+杂交高纯度	Hybridization High-purity
+长寿命增强子	Long-life Enhancer
+线粒体耐疲劳	Mitochondria Fatigue-resistant
+杂合高活性	Heterozygous Highly-active
+抗旱大脑	Drought-resistant Brain
+染色体微米级	Chromosome Microscale
+限制性内切酶高强度	Restriction Endonuclease High-strength
+颗粒增强消化系统	Particle-reinforced Digestive System
+高纯度内吞	High-purity Endocytosis
+遗传复合型	Inheritance Composite
+多态性无公害	Polymorphism Pollution-free
+高灵敏度选择	Highly-sensitive Selection
+肾脏层状	Kidney Layered
+高油自然选择	High-oil Natural Selection
+呼吸作用快速	Respiration Rapid
+敲入抗病	Knockin Disease-resistant
+环保型激素	Eco-friendly Hormone
+多基因遗传耐磨损	Polygenic Inheritance Wear-resistant
+激素高稳定性	Hormone High-stability
+凋亡高通量	Apoptosis High-throughput
+肺高产	Lung High-yield
+去甲基化酶绿色	Demethylase Green
+探针颗粒增强	Probe Particle-reinforced
+定向选择纳米结构	Directional Selection Nanostructured
+基因流无公害	Gene Flow Pollution-free
+耐腐蚀聚合酶	Corrosion-resistant Polymerase
+多孔进化	Porous Evolution
+肺可降解	Lung Degradable
+高特异性载体	Highly-specific Vector
+汗液表面改性	Sweat Surface-modified
+抗涝稳定选择	Flood-resistant Stabilizing Selection
+启动子速生	Promoter Fast-growing
+超细胰腺	Ultrafine Pancreas
+耐碱进化	Alkali-tolerant Evolution
+激酶多功能	Kinase Multifunctional
+进化抗病	Evolution Disease-resistant
+实时核酸酶	Real-time Nuclease
+有机免疫系统	Organic Immune System
+显性生态	Dominant Ecological
+受体高纯度	Receptor High-purity
+隐性早熟	Recessive Early-maturing
+抗虫淀粉	Pest-resistant Starch
+糖酵解高导电	Glycolysis High-conductivity
+脑脊液新型	Cerebrospinal Fluid Novel
+耐腐蚀甲基化酶	Corrosion-resistant Methyltransferase
+消化系统晚熟	Digestive System Late-maturing
+杂交微米级	Hybridization Microscale
+呼吸系统先进	Respiratory System Advanced
+耐酸自然选择	Acid-tolerant Natural Selection
+内含子微米级	Intron Microscale
+有机敲入	Organic Knockin
+先进淀粉	Advanced Starch
+无公害胃液	Pollution-free Gastric Juice
+隐性实时	Recessive Real-time
+汗液抗涝	Sweat Flood-resistant
+超细转化	Ultrafine Transformation
+杂交高通量	Hybridization High-throughput
+蛋白质无公害	Protein Pollution-free
+合成抗涝	Synthesis Flood-resistant
+层状葡萄糖	Layered Glucose
+叶绿体耐碱	Chloroplast Alkali-tolerant
+辅因子高通量	Cofactor High-throughput
+高模量高尔基体	High-modulus Golgi Apparatus
+基因型微观结构	Genotype Microstructured
+受体生态	Receptor Ecological
+高蛋白泌尿系统	High-protein Urinary System
+抗虫沉默子	Pest-resistant Silencer
+纤维状显性	Fibrous Dominant
+有机选择	Organic Selection
+抗病葡萄糖	Disease-resistant Glucose
+突变耐疲劳	Mutation Fatigue-resistant
+氧化磷酸化多孔	Oxidative Phosphorylation Porous
+脾脏高效	Spleen High-efficiency
+表面改性探针	Surface-modified Probe
+耐低温肝脏	Low-temperature-resistant Liver
+淀粉高特异性	Starch Highly-specific
+肠耐腐蚀	Intestine Corrosion-resistant
+耐磨损减数分裂	Wear-resistant Meiosis
+基因流纤维状	Gene Flow Fibrous
+抗旱测序	Drought-resistant Sequencing
+三酰甘油高糖	Triglyceride High-sugar
+核酸酶层状	Nuclease Layered
+先进脾脏	Advanced Spleen
+高纯度蔗糖	High-purity Sucrose
+去甲基化酶纤维状	Demethylase Fibrous
+层状糖类	Layered Carbohydrate
+高特异性细胞核	Highly-specific Nucleus
+高尔基体耐疲劳	Golgi Apparatus Fatigue-resistant
+胰液致密	Pancreatic Juice Dense
+转染智能	Transfection Smart
+蛋白酶速生	Protease Fast-growing
+层状神经系统	Layered Nervous System
+低密度细胞壁	Low-density Cell Wall
+光合作用多孔	Photosynthesis Porous
+维生素耐腐蚀	Vitamin Corrosion-resistant
+耐磨损肠	Wear-resistant Intestine
+生殖系统绿色	Reproductive System Green
+选择高特异性	Selection Highly-specific
+果糖微米级	Fructose Microscale
+高导热合成	High-thermal-conductivity Synthesis
+耐疲劳基因频率	Fatigue-resistant Gene Frequency
+无公害多基因遗传	Pollution-free Polygenic Inheritance
+高通量淋巴	High-throughput Lymph
+光反应高导电	Light Reaction High-conductivity
+高分辨率蛋白酶	High-resolution Protease
+抗涝甲基化酶	Flood-resistant Methyltransferase
+维生素高油	Vitamin High-oil
+溶酶体表面改性	Lysosome Surface-modified
+层状纯合	Layered Homozygous
+超细氧化磷酸化	Ultrafine Oxidative Phosphorylation
+甘油耐腐蚀	Glycerol Corrosion-resistant
+心脏非晶	Heart Amorphous
+优质染色体	High-quality Chromosome
+进化低脂	Evolution Low-fat
+辅酶抗涝	Coenzyme Flood-resistant
+适应高效	Adaptation High-efficiency
+聚合酶高精度	Polymerase High-precision
+选择高糖	Selection High-sugar
+高强度多态性	High-strength Polymorphism
+细胞膜高灵敏度	Cell Membrane Highly-sensitive
+肌肉系统新型	Muscular System Novel
+高纯度循环系统	High-purity Circulatory System
+可降解稳定选择	Degradable Stabilizing Selection
+细胞抗旱	Cell Drought-resistant
+共显性轻质	Codominant Lightweight
+表型高通量	Phenotype High-throughput
+受体纳米结构	Receptor Nanostructured
+内吞多孔	Endocytosis Porous
+致密质粒	Dense Plasmid
+抗病激酶	Disease-resistant Kinase
+果糖纤维状	Fructose Fibrous
+高效唾液	High-efficiency Saliva
+耐高温敲入	High-temperature-resistant Knockin
+层状辅酶	Layered Coenzyme
+载体可降解	Vector Degradable
+肽颗粒增强	Peptide Particle-reinforced
+耐低温细胞质	Low-temperature-resistant Cytoplasm
+连锁高模量	Linkage High-modulus
+测序微观结构	Sequencing Microstructured
+耐腐蚀核酸酶	Corrosion-resistant Nuclease
+轻质胃	Lightweight Stomach
+复合型甲基化酶	Composite Methyltransferase
+早熟引物	Early-maturing Primer
+抗旱肠液	Drought-resistant Intestinal Juice
+微米级脾脏	Microscale Spleen
+耐高温循环系统	High-temperature-resistant Circulatory System
+翻译晚熟	Translation Late-maturing
+线粒体耐碱	Mitochondria Alkali-tolerant
+唾液超细	Saliva Ultrafine
+可降解翻译	Degradable Translation
+高导电性连锁遗传	High-conductivity Sex-linked Inheritance
+无公害蛋白质	Pollution-free Protein
+RNA多孔	RNA Porous
+抗病细胞质遗传	Disease-resistant Cytoplasmic Inheritance
+环保型溶酶体	Eco-friendly Lysosome
+高蛋白甲基化酶	High-protein Methyltransferase
+酶高通量	Enzyme High-throughput
+耐碱显性	Alkali-tolerant Dominant
+生态表型	Ecological Phenotype
+激酶耐酸	Kinase Acid-tolerant
+速生复制	Fast-growing Replication
+脂类高糖	Lipid High-sugar
+变异单晶	Variation Single-crystal
+果糖高糖	Fructose High-sugar
+多态性耐高温	Polymorphism High-temperature-resistant
+载体非晶	Vector Amorphous
+隐性高通量	Recessive High-throughput
+脂肪酸高分辨率	Fatty Acid High-resolution
+电子传递链非晶	Electron Transport Chain Amorphous
+免疫系统自修复	Immune System Self-healing
+高导电转化	High-conductivity Transformation
+去甲基化酶高韧性	Demethylase High-toughness
+基因频率轻质	Gene Frequency Lightweight
+高稳定性糖类	High-stability Carbohydrate
+非晶凋亡	Amorphous Apoptosis
+超细有丝分裂	Ultrafine Mitosis
+轻质尿素循环	Lightweight Urea Cycle
+线粒体生态	Mitochondria Ecological
+暗反应高灵敏度	Dark Reaction Highly-sensitive
+耐碱核糖体	Alkali-tolerant Ribosome
+脂肪酸氧化高通量	Fatty Acid Oxidation High-throughput
+转化高强度	Transformation High-strength
+RNA高油	RNA High-oil
+耐碱淋巴	Alkali-tolerant Lymph
+多态性致密	Polymorphism Dense
+早熟限制性内切酶	Early-maturing Restriction Endonuclease
+辅因子耐盐	Cofactor Salt-tolerant
+生态适应	Ecological Adaptation
+抗旱脾脏	Drought-resistant Spleen
+尿素循环生态	Urea Cycle Ecological
+耐酸糖酵解	Acid-tolerant Glycolysis
+高通量葡萄糖	High-throughput Glucose
+层状线粒体	Layered Mitochondria
+超细辅因子	Ultrafine Cofactor
+消化系统耐高温	Digestive System High-temperature-resistant
+甲基化酶多孔	Methyltransferase Porous
+载体速生	Vector Fast-growing
+表型耐酸	Phenotype Acid-tolerant
+激酶速生	Kinase Fast-growing
+骨骼系统高选择性	Skeletal System Highly-selective
+高产细胞膜	High-yield Cell Membrane
+耐疲劳电子传递链	Fatigue-resistant Electron Transport Chain
+

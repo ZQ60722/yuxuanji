@@ -1,0 +1,505 @@
+黑沥青    abbertite
+耗损    ablation
+磨耗    abrasion
+磨切    abrasion cutting
+耐磨抗力    abrasion resistance
+磨耗试验    abrasion test
+研磨剂，磨料    abrasive
+研磨带    abrasive belt
+研磨砖    abrasive brick
+研磨布，砂布    abrasive cloth
+金刚砂研磨盘    abrasive disc
+研磨粒    abrasive grain
+研磨粒    abrasive grains
+耐磨硬度    abrasive hardness
+磨擦纸    abrasive paper
+砂纸    abrasive paper
+磨石    abrasive stone
+材料 material
+金属 metal
+合金 alloy
+钢 steel
+铝 aluminum
+钛 titanium
+镁 magnesium
+铜合金 brass / bronze
+铁合金 ferrous alloy
+非铁金属 non-ferrous metal
+聚合物 polymer
+塑料 plastic
+橡胶 rubber
+纤维 fiber
+复合材料 composite material
+陶瓷 ceramic
+玻璃 glass
+半导体 semiconductor
+碳 carbon
+碳纤维 carbon fiber
+石墨 graphite
+碳纳米管 carbon nanotube
+石墨烯 graphene
+生物材料 biomaterial
+涂层 coating
+表面处理 surface treatment
+X射线衍射 X-ray diffraction (XRD)
+拉曼光谱 Raman spectroscopy
+熔点 melting point
+烧结 sintering
+注塑成型 injection molding
+铸造 casting
+焊接 welding
+锻造 forging
+热处理 heat treatment
+退火 annealing
+淬火 quenching
+回火 tempering
+纳米材料 nanomaterial
+纳米结构 nanostructure
+多孔材料 porous material
+智能材料 smart material
+形状记忆合金 shape memory alloy (SMA)
+纳米涂层 nano-coating
+强度 strength
+相变 phase transformation
+环境友好材料 environmentally friendly material
+疲劳 fatigue
+蠕变 creep
+断裂 fracture
+腐蚀 corrosion
+应力 stress
+应变 strain
+模量 modulus
+硬度 hardness
+强度 strength
+延展性 ductility
+韧性 toughness
+密度 density
+导电性 conductivity
+绝缘体 insulator
+导热性 thermal conductivity
+热膨胀 thermal expansion
+玻璃化转变温度 glass transition temperature (Tg)
+熔融温度 melting temperature
+结晶 crystallization
+晶体结构 crystal structure
+晶粒 grain
+晶界 grain boundary
+相变 phase transformation
+扫描探针显微镜 scanning probe microscope (SPM)
+原子力显微镜 atomic force microscope (AFM)
+离子束加工 ion beam processing
+气相沉积 chemical vapor deposition (CVD)
+物理气相沉积 physical vapor deposition (PVD)
+电镀 electroplating
+阳极氧化 anodizing
+液晶 liquid crystal
+光致抗蚀剂 photoresist
+等离子体 plasma
+纤维增强复合材料 fiber-reinforced composite
+基体 matrix
+界面 interface
+扩散 diffusion
+偏析 segregation
+热力学 thermodynamics
+动力学 kinetics
+纳米晶体	Nanocrystals
+纳米催化剂	Nanocatalysts
+太阳能电池	Solar Cell
+锂离子电池	Lithium-ion Battery
+燃料电池	Fuel Cell
+超级电容器	Supercapacitor
+热电材料	Thermoelectric Material
+储氢材料	Hydrogen Storage Material
+核能材料	Nuclear Materials
+光伏材料	Photovoltaic Materials
+电极材料	Electrode Materials
+电解质材料	Electrolyte Materials
+隔膜材料	Separator Materials
+正极材料	Cathode Materials
+负极材料	Anode Materials
+生物相容性材料	Biocompatible Materials
+生物降解材料	Biodegradable Materials
+生物活性材料	Bioactive Materials
+组织工程支架	Tissue Engineering Scaffold
+药物递送系统	Drug Delivery System
+生物传感器	Biosensors
+生物医用高分子	Biomedical Polymers
+生物复合材料	Biocomposites
+水凝胶	Hydrogel
+磁性材料	Magnetic Material
+光学材料	Optical Material
+压电材料	Piezoelectric Material
+半导体	Semiconductor
+超导体	Superconductor
+介电材料	Dielectric Material
+热敏材料	Thermosensitive Material
+光敏材料	Photosensitive Material
+电致变色材料	Electrochromic Material
+形状记忆材料	Shape Memory Material
+自修复材料	Self-healing Material
+智能材料	Smart Material
+刺激响应材料	Stimulus-responsive Material
+结构钢	Structural Steel
+结构复合材料	Structural Composites
+建筑材料	Building Materials
+混凝土	Concrete
+玻璃	Glass
+木材	Wood
+竹材	Bamboo
+半导体材料	Semiconductor Materials
+绝缘材料	Insulating Materials
+导电材料	Conductive Materials
+光电材料	Optoelectronic Materials
+显示材料	Display Materials
+存储材料	Storage Materials
+传感材料	Sensing Materials
+印刷电子材料	Printed Electronics Materials
+超细纳米薄膜	Ultrafine Nanofilm
+复合型纳米薄膜	Composite Nanofilm
+氧化钛耐高温	Titanium Oxide High-temperature-resistant
+高效不锈钢	High-efficiency Stainless Steel
+先进铜合金	Advanced Copper Alloy
+纳米薄膜耐磨损	Nanofilm Wear-resistant
+单晶建筑材料	Single-crystal Building Materials
+稀土金属多孔	Rare Earth Metals Porous
+非晶铝合金	Amorphous Aluminum Alloy
+耐低温生物陶瓷	Low-temperature-resistant Bioceramic
+导电聚合物致密	Conductive Polymers Dense
+轻质混凝土	Lightweight Concrete
+磁性材料纳米结构	Magnetic Material Nanostructured
+纳米晶体耐腐蚀	Nanocrystals Corrosion-resistant
+聚烯烃多功能	Polyolefins Multifunctional
+形状记忆合金耐疲劳	Shape Memory Alloy Fatigue-resistant
+颗粒增强聚合物基体复合材料	Particle-reinforced Polymer Matrix Composite
+环保型生物活性材料	Eco-friendly Bioactive Materials
+绝缘材料长寿命	Insulating Materials Long-life
+电解质材料层状	Electrolyte Materials Layered
+工程塑料层状	Engineering Plastics Layered
+磁性材料高效	Magnetic Material High-efficiency
+刺激响应材料复合型	Stimulus-responsive Material Composite
+高韧性生物降解聚合物	High-toughness Biodegradable Polymers
+超细太阳能电池	Ultrafine Solar Cell
+高效氧化钛	High-efficiency Titanium Oxide
+新型玻璃	Novel Glass
+轻金属高导热	Light Metals High-thermal-conductivity
+高强度生物降解材料	High-strength Biodegradable Materials
+耐磨损刺激响应材料	Wear-resistant Stimulus-responsive Material
+热固性塑料自修复	Thermosets Self-healing
+颗粒增强复合材料自修复	Particle-reinforced Composites Self-healing
+金属纤维复合型	Metal Fiber Composite
+富勒烯多功能	Fullerene Multifunctional
+压电材料耐低温	Piezoelectric Material Low-temperature-resistant
+微观结构聚丙烯	Microstructured Polypropylene
+多功能智能材料	Multifunctional Smart Material
+多功能聚苯乙烯	Multifunctional Polystyrene
+氮化硅非晶	Silicon Nitride Amorphous
+新型纳米薄膜	Novel Nanofilm
+光伏材料纳米结构	Photovoltaic Materials Nanostructured
+致密石墨烯	Dense Graphene
+纤维增强复合材料高导电	Fiber-reinforced Composites High-conductivity
+表面改性生物医用高分子	Surface-modified Biomedical Polymers
+多晶复合材料	Polycrystalline Composite Material
+高模量电致变色材料	High-modulus Electrochromic Material
+新型导电材料	Novel Conductive Materials
+复合型聚酯	Composite Polyesters
+新型纳米管	Novel Nanotube
+介电陶瓷复合型	Dielectric Ceramics Composite
+合金钢高稳定性	Alloy Steel High-stability
+建筑材料高效	Building Materials High-efficiency
+多晶结构钢	Polycrystalline Structural Steel
+压电材料长寿命	Piezoelectric Materials Long-life
+金属玻璃轻质	Metallic Glass Lightweight
+导电聚合物多孔	Conductive Polymers Porous
+智能燃料电池	Smart Fuel Cell
+表面改性金属间化合物	Surface-modified Intermetallic Compound
+耐高温生物相容性材料	High-temperature-resistant Biocompatible Materials
+纤维状工程塑料	Fibrous Engineering Plastics
+耐高温弹性体	High-temperature-resistant Elastomers
+钢铁耐低温	Steel Low-temperature-resistant
+聚酰胺环保型	Polyamides Eco-friendly
+高导热铁电陶瓷	High-thermal-conductivity Ferroelectric Ceramics
+高模量钛合金	High-modulus Titanium Alloy
+环保型存储材料	Eco-friendly Storage Materials
+微米级电工钢	Microscale Electrical Steel
+建筑材料耐磨损	Building Materials Wear-resistant
+高纯度生物相容性材料	High-purity Biocompatible Materials
+磁性材料长寿命	Magnetic Material Long-life
+光电材料高模量	Optoelectronic Materials High-modulus
+表面改性高温合金	Surface-modified Superalloy
+显示材料长寿命	Display Materials Long-life
+生物降解聚合物新型	Biodegradable Polymers Novel
+光学材料高模量	Optical Material High-modulus
+新型富勒烯	Novel Fullerene
+耐腐蚀高温合金	Corrosion-resistant Superalloy
+多功能纳米颗粒	Multifunctional Nanoparticle
+微米级铸造合金	Microscale Casting Alloy
+隔膜材料表面改性	Separator Materials Surface-modified
+纳米级纳米复合材料	Nanoscale Nanocomposite
+纳米级绝缘材料	Nanoscale Insulating Materials
+磁性材料超细	Magnetic Material Ultrafine
+多功能耐热钢	Multifunctional Heat-resistant Steel
+生物降解材料多功能	Biodegradable Materials Multifunctional
+聚氨酯纳米结构	Polyurethanes Nanostructured
+高韧性不锈钢	High-toughness Stainless Steel
+环保型非氧化物陶瓷	Eco-friendly Non-oxide Ceramics
+高效陶瓷基体复合材料	High-efficiency Ceramic Matrix Composite
+纳米结构透明陶瓷	Nanostructured Transparent Ceramics
+自修复压电材料	Self-healing Piezoelectric Materials
+热电材料高导电	Thermoelectric Materials High-conductivity
+弹簧钢高韧性	Spring Steel High-toughness
+木材高强度	Wood High-strength
+结构陶瓷智能	Structural Ceramics Smart
+木材多功能	Wood Multifunctional
+粉末冶金高效	Powder Metallurgy High-efficiency
+镍基合金耐高温	Nickel-based Alloy High-temperature-resistant
+稀土金属超细	Rare Earth Metals Ultrafine
+复合型正极材料	Composite Cathode Materials
+纳米催化剂低密度	Nanocatalysts Low-density
+高导电纳米多孔材料	High-conductivity Nanoporous Materials
+智能铜合金	Smart Copper Alloy
+高性能工程塑料	High-performance Engineering Plastics
+耐低温压电材料	Low-temperature-resistant Piezoelectric Material
+聚酯复合型	Polyesters Composite
+氧化铝多功能	Alumina Multifunctional
+正极材料表面改性	Cathode Materials Surface-modified
+自修复材料高纯度	Self-healing Material High-purity
+非晶态合金超细	Amorphous Alloy Ultrafine
+纳米结构聚合物基体复合材料	Nanostructured Polymer Matrix Composite
+聚乙烯耐腐蚀	Polyethylene Corrosion-resistant
+热电材料轻质	Thermoelectric Material Lightweight
+环保型建筑材料	Eco-friendly Building Materials
+金属间化合物超薄	Intermetallic Compound Ultrathin
+微观结构氧化锆	Microstructured Zirconia
+微观结构热电材料	Microstructured Thermoelectric Materials
+自修复介电材料	Self-healing Dielectric Material
+粉末冶金耐低温	Powder Metallurgy Low-temperature-resistant
+聚碳酸酯可降解	Polycarbonate Degradable
+单晶光学材料	Single-crystal Optical Material
+智能导电聚合物	Smart Conductive Polymers
+建筑材料耐疲劳	Building Materials Fatigue-resistant
+耐磨损酚醛树脂	Wear-resistant Phenolic Resins
+先进轴承钢	Advanced Bearing Steel
+高模量电工钢	High-modulus Electrical Steel
+纳米晶体多晶	Nanocrystals Polycrystalline
+电工钢高韧性	Electrical Steel High-toughness
+贵金属可降解	Precious Metals Degradable
+聚四氟乙烯纤维状	Polytetrafluoroethylene Fibrous
+聚烯烃单晶	Polyolefins Single-crystal
+金属泡沫耐磨损	Metal Foam Wear-resistant
+自修复半导体	Self-healing Semiconductor
+电致变色材料高稳定性	Electrochromic Material High-stability
+颗粒增强纳米颗粒	Particle-reinforced Nanoparticle
+绝缘材料纳米结构	Insulating Materials Nanostructured
+超导体单晶	Superconductor Single-crystal
+结构陶瓷高导热	Structural Ceramics High-thermal-conductivity
+纳米管纤维状	Nanotube Fibrous
+多功能传感材料	Multifunctional Sensing Materials
+组织工程支架耐腐蚀	Tissue Engineering Scaffold Corrosion-resistant
+光敏材料表面改性	Photosensitive Material Surface-modified
+耐磨合金单晶	Wear-resistant Alloy Single-crystal
+致密结构钢	Dense Structural Steel
+微观结构电工钢	Microstructured Electrical Steel
+纳米级介电材料	Nanoscale Dielectric Materials
+氧化锆非晶	Zirconia Amorphous
+纳米颗粒高稳定性	Nanoparticle High-stability
+传感材料多晶	Sensing Materials Polycrystalline
+颗粒增强复合材料多孔	Particle-reinforced Composites Porous
+多晶结构陶瓷	Polycrystalline Structural Ceramics
+高导热钢铁	High-thermal-conductivity Steel
+聚苯乙烯高韧性	Polystyrene High-toughness
+非晶酚醛树脂	Amorphous Phenolic Resins
+多功能压电材料	Multifunctional Piezoelectric Material
+非晶态合金颗粒增强	Amorphous Alloy Particle-reinforced
+高导热形状记忆合金	High-thermal-conductivity Shape Memory Alloy
+高强度介电材料	High-strength Dielectric Materials
+纳米线超细	Nanowire Ultrafine
+传感材料微米级	Sensing Materials Microscale
+高性能印刷电子材料	High-performance Printed Electronics Materials
+纳米线新型	Nanowire Novel
+非晶组织工程支架	Amorphous Tissue Engineering Scaffold
+超薄传感材料	Ultrathin Sensing Materials
+高性能陶瓷基体复合材料	High-performance Ceramic Matrix Composite
+高模量透明陶瓷	High-modulus Transparent Ceramics
+纳米结构材料多功能	Nanostructured Materials Multifunctional
+高韧性金属玻璃	High-toughness Metallic Glass
+结构陶瓷微米级	Structural Ceramics Microscale
+环氧树脂高模量	Epoxy Resins High-modulus
+钢铁微米级	Steel Microscale
+耐疲劳磁性材料	Fatigue-resistant Magnetic Material
+耐腐蚀工具钢	Corrosion-resistant Tool Steel
+储氢材料高纯度	Hydrogen Storage Material High-purity
+超细燃料电池	Ultrafine Fuel Cell
+高导电超导体	High-conductivity Superconductor
+金属泡沫纤维状	Metal Foam Fibrous
+钢铁单晶	Steel Single-crystal
+高稳定性药物递送系统	High-stability Drug Delivery System
+纤维增强复合材料超细	Fiber-reinforced Composites Ultrafine
+合金钢先进	Alloy Steel Advanced
+热固性塑料纤维状	Thermosets Fibrous
+自修复材料自修复	Self-healing Material Self-healing
+可降解耐热钢	Degradable Heat-resistant Steel
+聚四氟乙烯轻质	Polytetrafluoroethylene Lightweight
+高导热金属间化合物	High-thermal-conductivity Intermetallic Compound
+聚氨酯多孔	Polyurethanes Porous
+铜合金耐疲劳	Copper Alloy Fatigue-resistant
+碳纳米管多功能	Carbon Nanotube Multifunctional
+工程塑料多晶	Engineering Plastics Polycrystalline
+镁合金颗粒增强	Magnesium Alloy Particle-reinforced
+单晶纳米管	Single-crystal Nanotube
+纳米级混凝土	Nanoscale Concrete
+光伏材料高韧性	Photovoltaic Materials High-toughness
+层状复合材料轻质	Laminated Composites Lightweight
+耐高温石墨烯	High-temperature-resistant Graphene
+环保型铜合金	Eco-friendly Copper Alloy
+智能聚氨酯	Smart Polyurethanes
+高导电水凝胶	High-conductivity Hydrogel
+铁电陶瓷纳米结构	Ferroelectric Ceramics Nanostructured
+超细核能材料	Ultrafine Nuclear Materials
+耐高温锂离子电池	High-temperature-resistant Lithium-ion Battery
+多功能存储材料	Multifunctional Storage Materials
+长寿命生物降解聚合物	Long-life Biodegradable Polymers
+高导热生物活性材料	High-thermal-conductivity Bioactive Materials
+热塑性塑料微米级	Thermoplastics Microscale
+结构陶瓷微观结构	Structural Ceramics Microstructured
+弹簧钢复合型	Spring Steel Composite
+生物陶瓷高强度	Bioceramic High-strength
+显示材料高性能	Display Materials High-performance
+玻璃高模量	Glass High-modulus
+聚乙烯高纯度	Polyethylene High-purity
+多孔聚甲基丙烯酸甲酯	Porous Polymethyl Methacrylate
+纳米多孔材料耐高温	Nanoporous Materials High-temperature-resistant
+单晶金属基体复合材料	Single-crystal Metal Matrix Composite
+高导电压电陶瓷	High-conductivity Piezoelectric Ceramics
+药物递送系统表面改性	Drug Delivery System Surface-modified
+聚碳酸酯多晶	Polycarbonate Polycrystalline
+磁性材料单晶	Magnetic Material Single-crystal
+高导热聚氯乙烯	High-thermal-conductivity Polyvinyl Chloride
+耐高温氧化铝	High-temperature-resistant Alumina
+智能碳纳米管	Smart Carbon Nanotube
+轻质导电聚合物	Lightweight Conductive Polymers
+陶瓷基体复合材料高强度	Ceramic Matrix Composite High-strength
+环保型聚己内酯	Eco-friendly Polycaprolactone
+纳米级高温合金	Nanoscale Superalloy
+热电材料非晶	Thermoelectric Materials Amorphous
+碳纤维复合材料高模量	Carbon Fiber Composites High-modulus
+非晶电极材料	Amorphous Electrode Materials
+钛合金耐腐蚀	Titanium Alloy Corrosion-resistant
+铝合金微观结构	Aluminum Alloy Microstructured
+超薄负极材料	Ultrathin Anode Materials
+压电材料高纯度	Piezoelectric Material High-purity
+磁性材料轻质	Magnetic Material Lightweight
+非晶石墨烯	Amorphous Graphene
+金属粉末耐疲劳	Metal Powder Fatigue-resistant
+颗粒增强太阳能电池	Particle-reinforced Solar Cell
+耐低温半导体	Low-temperature-resistant Semiconductor
+高韧性传感材料	High-toughness Sensing Materials
+聚丙烯高性能	Polypropylene High-performance
+混凝土高效	Concrete High-efficiency
+致密复合材料	Dense Composite Material
+耐低温刺激响应材料	Low-temperature-resistant Stimulus-responsive Material
+耐磨合金自修复	Wear-resistant Alloy Self-healing
+长寿命酚醛树脂	Long-life Phenolic Resins
+非氧化物陶瓷非晶	Non-oxide Ceramics Amorphous
+轻质传感材料	Lightweight Sensing Materials
+镍基合金耐磨损	Nickel-based Alloy Wear-resistant
+电解质材料自修复	Electrolyte Materials Self-healing
+耐腐蚀正极材料	Corrosion-resistant Cathode Materials
+高模量碳纤维复合材料	High-modulus Carbon Fiber Composites
+层状非氧化物陶瓷	Layered Non-oxide Ceramics
+生物相容性材料表面改性	Biocompatible Materials Surface-modified
+生物相容性材料颗粒增强	Biocompatible Materials Particle-reinforced
+不锈钢高导热	Stainless Steel High-thermal-conductivity
+环保型导电聚合物	Eco-friendly Conductive Polymers
+低密度硬质合金	Low-density Cemented Carbide
+纳米颗粒微观结构	Nanoparticle Microstructured
+非晶氧化物陶瓷	Amorphous Oxide Ceramics
+工程塑料低密度	Engineering Plastics Low-density
+超细铜合金	Ultrafine Copper Alloy
+耐低温印刷电子材料	Low-temperature-resistant Printed Electronics Materials
+生物相容性材料高强度	Biocompatible Materials High-strength
+高韧性储氢材料	High-toughness Hydrogen Storage Material
+耐腐蚀氧化钛	Corrosion-resistant Titanium Oxide
+刺激响应材料耐低温	Stimulus-responsive Material Low-temperature-resistant
+颗粒增强存储材料	Particle-reinforced Storage Materials
+纤维状纳米复合材料	Fibrous Nanocomposite
+高韧性正极材料	High-toughness Cathode Materials
+自修复材料可降解	Self-healing Material Degradable
+聚氨酯超薄	Polyurethanes Ultrathin
+微观结构复合材料	Microstructured Composite Material
+颗粒增强结构陶瓷	Particle-reinforced Structural Ceramics
+酚醛树脂先进	Phenolic Resins Advanced
+陶瓷基体复合材料复合型	Ceramic Matrix Composite Composite
+生物陶瓷新型	Bioceramic Novel
+纳米晶体环保型	Nanocrystals Eco-friendly
+聚乙烯高韧性	Polyethylene High-toughness
+单晶生物医用高分子	Single-crystal Biomedical Polymers
+氧化铝高导电	Alumina High-conductivity
+高强度生物相容性材料	High-strength Biocompatible Materials
+耐高温聚烯烃	High-temperature-resistant Polyolefins
+先进纳米管	Advanced Nanotube
+高效颗粒增强复合材料	High-efficiency Particle-reinforced Composites
+微观结构纳米结构材料	Microstructured Nanostructured Materials
+高韧性混凝土	High-toughness Concrete
+生物活性材料多晶	Bioactive Materials Polycrystalline
+碳纤维复合材料单晶	Carbon Fiber Composites Single-crystal
+燃料电池可降解	Fuel Cell Degradable
+非氧化物陶瓷高导电	Non-oxide Ceramics High-conductivity
+非晶聚苯乙烯	Amorphous Polystyrene
+耐腐蚀稀土金属	Corrosion-resistant Rare Earth Metals
+工程塑料致密	Engineering Plastics Dense
+电致变色材料高效	Electrochromic Material High-efficiency
+复合型生物陶瓷	Composite Bioceramic
+光伏材料环保型	Photovoltaic Materials Eco-friendly
+碳化硅高性能	Silicon Carbide High-performance
+层状复合材料高导热	Laminated Composites High-thermal-conductivity
+耐低温光电材料	Low-temperature-resistant Optoelectronic Materials
+纳米催化剂微观结构	Nanocatalysts Microstructured
+微米级结构陶瓷	Microscale Structural Ceramics
+颗粒增强超导体	Particle-reinforced Superconductor
+微观结构轻金属	Microstructured Light Metals
+智能热电材料	Smart Thermoelectric Materials
+致密透明陶瓷	Dense Transparent Ceramics
+刺激响应材料微观结构	Stimulus-responsive Material Microstructured
+长寿命绝缘材料	Long-life Insulating Materials
+高韧性重金属	High-toughness Heavy Metals
+先进纳米线	Advanced Nanowire
+氧化物陶瓷纳米结构	Oxide Ceramics Nanostructured
+生物医用高分子高导电	Biomedical Polymers High-conductivity
+纳米结构形状记忆合金	Nanostructured Shape Memory Alloy
+工程塑料高效	Engineering Plastics High-efficiency
+单晶工程塑料	Single-crystal Engineering Plastics
+微米级功能陶瓷	Microscale Functional Ceramics
+纤维增强复合材料纳米级	Fiber-reinforced Composites Nanoscale
+高韧性石墨烯	High-toughness Graphene
+聚合物基体复合材料纤维状	Polymer Matrix Composite Fibrous
+低密度铜合金	Low-density Copper Alloy
+稀土金属高导电	Rare Earth Metals High-conductivity
+非晶纳米催化剂	Amorphous Nanocatalysts
+钢铁纤维状	Steel Fibrous
+介电材料超细	Dielectric Material Ultrafine
+高强度聚苯乙烯	High-strength Polystyrene
+高韧性高温合金	High-toughness Superalloy
+智能聚乙烯	Smart Polyethylene
+新型竹材	Novel Bamboo
+高强度核能材料	High-strength Nuclear Materials
+结构钢致密	Structural Steel Dense
+纳米催化剂表面改性	Nanocatalysts Surface-modified
+导电聚合物耐疲劳	Conductive Polymers Fatigue-resistant
+超薄钢铁	Ultrathin Steel
+耐高温纳米多孔材料	High-temperature-resistant Nanoporous Materials
+合金钢纤维状	Alloy Steel Fibrous
+多功能介电材料	Multifunctional Dielectric Materials
+超细半导体	Ultrafine Semiconductor
+高性能非氧化物陶瓷	High-performance Non-oxide Ceramics
+碳纤维复合材料高纯度	Carbon Fiber Composites High-purity
+光电材料耐高温	Optoelectronic Materials High-temperature-resistant
+耐腐蚀超导体	Corrosion-resistant Superconductor
+可降解刺激响应材料	Degradable Stimulus-responsive Material
+耐磨损热电材料	Wear-resistant Thermoelectric Materials
+环保型钛合金	Eco-friendly Titanium Alloy
+生物活性材料层状	Bioactive Materials Layered
+单晶显示材料	Single-crystal Display Materials
+轻质刺激响应材料	Lightweight Stimulus-responsive Material
+非晶电解质材料	Amorphous Electrolyte Materials
+智能材料层状	Smart Material Layered
+生物传感器耐高温	Biosensors High-temperature-resistant

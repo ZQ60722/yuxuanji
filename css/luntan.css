@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    position: relative;
+}
+:root {
+    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    --card-hover-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    height: 100vh;
+}
+
+/* 主容器样式 */
+.main-container {
+    margin-top: 2rem;
+    padding: 16px;
+}
+
+/* 搜索框样式 */
+.search-container {
+    background: white;
+    border-radius: 50px;
+    padding: 8px 20px;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 2rem;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    color: #6c757d;
+}
+
+/* 分类标签样式 */
+.category-pills {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.category-pill {
+    padding: 8px 20px;
+    border-radius: 50px;
+    background: white;
+    border: 2px solid #e9ecef;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.category-pill:hover, .category-pill.active {
+    background: var(--primary-gradient);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-2px);
+}
+
+/* 问题卡片样式 */
+.question-card {
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.question-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.question-card .card-title {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.question-card .card-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.question-card .card-title a:hover {
+    color: #3498db;
+}
+
+.question-meta {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.question-meta i {
+    margin-right: 5px;
+}
+
+/* 统计卡片样式 */
+.stats-card {
+    margin-top: 40px;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 2rem;
+}
+
+.stats-card .card-header {
+    background: var(--primary-gradient);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 1rem;
+}
+
+.stats-card .card-body {
+    padding: 1.5rem;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.stat-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.stat-value {
+    font-weight: 700;
+    color: #495057;
+}
+
+/* 发布按钮样式 */
+.publish-btn {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.publish-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+/*我的问答*/
+.my-btn {
+    margin-top: 16px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(245, 87, 108, 0.3);
+}
+
+.my-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(245, 87, 108, 0.4);
+}
+/* 模态框动画和样式 */
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+}
+
+/* 问题详情模态框 - 从右侧滑入 */
+#questionDetailModal .modal-dialog {
+    transform: translate(100%, 0);
+}
+
+#questionDetailModal.show .modal-dialog {
+    transform: translate(0, 0);
+}
+
+/* 发布问题模态框 - 从左侧滑入 */
+#publishQuestionModal .modal-dialog {
+    transform: translate(-100%, 0);
+}
+
+#publishQuestionModal.show .modal-dialog {
+    transform: translate(0, 0);
+}
+
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    border-bottom: 1px solid #e9ecef;
+    padding: 20px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: 1px solid #e9ecef;
+    padding: 15px 20px;
+}
+
+/* 回答区域样式 */
+.answer-item {
+    border-bottom: 1px solid #e9ecef;
+    padding: 15px 0;
+}
+
+.answer-item:last-child {
+    border-bottom: none;
+}
+
+.answer-author {
+    font-weight: 600;
+    color: #2575fc;
+}
+
+.answer-time {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+/* 发布表单样式 */
+.form-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px 15px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 0 0.25rem rgba(37, 117, 252, 0.25);
+}
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .category-pills {
+        justify-content: center;
+    }
+
+    .main-container {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术论坛 - 分享与交流</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/daohanlan.css">
+    <link rel="stylesheet" href="../css/luntan.css">
+    <script src="../js/daohanlan.js"></script>
+    <style>
+        nav ul{
+            padding: 0;
+            margin: 0;
+            position: relative;
+            z-index: 1001;
+        }
+    </style>
+</head>
+<!-- 导航栏 -->
+<header>
+    <div class="container1">
+        <div class="logo">
+            <img src="../img/logo.jpg" alt="Logo">
+            <span>译教智师</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index1.html">首页</a></li>
+                <li><a href="ai.html">智能体</a></li>
+                <li><a href="shuyuku.html">术语库</a></li>
+                <li><a href="luntan.html" class="active">论坛</a></li>
+                <li><a href="xiaoyu.html">智能口译</a></li>
+            </ul>
+        </nav>
+
+        <!-- 未登录状态 -->
+        <div class="auth-buttons" id="authButtons">
+            <a href="#" class="login-btn" id="loginBtn">登录与注册</a>
+            <a href="#" class="register-btn" id="aboutBtn">关于我们</a>
+        </div>
+
+        <!-- 已登录状态 -->
+        <div class="user-menu" id="userMenu">
+            <div class="user-avatar">鱼</div>
+            <div class="user-info">
+                <div class="user-name">鱼玄机</div>
+                <div class="user-status">在线</div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-toggle" id="dropdownToggle">个人中心 ▼</button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="myself.html">个人资料</a>
+                    <a href="loading.html" id="logoutBtn">退出登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+<!-- 主内容区 -->
+<div class="container main-container">
+    <div class="row">
+        <!-- 左侧内容区 -->
+        <div class="col-lg-8">
+            <!-- 搜索框 -->
+            <div class="search-container d-flex align-items-center">
+                <i class="bi bi-search me-2"></i>
+                <input type="text" class="form-control" placeholder="搜索问题、关键词、用户名...">
+                <button type="button"><i class="bi bi-funnel"></i></button>
+            </div>
+
+            <!-- 分类标签 -->
+            <div class="category-pills">
+                <div class="category-pill active">全部</div>
+                <div class="category-pill">
+                    <i class="bi bi-laptop me-1"></i>电脑相关
+                </div>
+                <div class="category-pill">
+                    <i class="bi bi-book me-1"></i>专业课程
+                </div>
+                <div class="category-pill">
+                    <i class="bi bi-three-dots me-1"></i>其他
+                </div>
+            </div>
+
+            <!-- 问题列表 -->
+            <div id="questions-container">
+                <!-- 示例问题卡片 1 -->
+                <div class="card question-card" data-question-id="1">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title">
+                            </h5>
+                            <span class="badge bg-primary"></span>
+                        </div>
+                        <p class="card-text text-muted"></p>
+                        <div class="question-meta d-flex justify-content-between">
+                            <div>
+                                <i class="bi bi-person-circle"></i>
+                                <span class="ms-3"><i class="bi bi-chat-dots"></i></span>
+                                <span class="ms-3"><i class="bi bi-eye"></i></span>
+                            </div>
+                            <div>
+                                <i class="bi bi-clock"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 示例问题卡片 2 -->
+                <div class="card question-card" data-question-id="2">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title">
+
+                            </h5>
+                            <span class="badge bg-success"></span>
+                        </div>
+                        <p class="card-text text-muted"></p>
+                        <div class="question-meta d-flex justify-content-between">
+                            <div>
+                                <i class="bi bi-person-circle"></i>
+                                <span class="ms-3"><i class="bi bi-chat-dots"></i></span>
+                                <span class="ms-3"><i class="bi bi-eye"></i></span>
+                            </div>
+                            <div>
+                                <i class="bi bi-clock"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 示例问题卡片 3 -->
+                <div class="card question-card" data-question-id="3">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title">
+                                <a href="#"></a>
+                            </h5>
+                            <span class="badge bg-info"></span>
+                        </div>
+                        <p class="card-text text-muted"></p>
+                        <div class="question-meta d-flex justify-content-between">
+                            <div>
+                                <i class="bi bi-person-circle"></i>
+                                <span class="ms-3"><i class="bi bi-chat-dots"></i></span>
+                                <span class="ms-3"><i class="bi bi-eye"></i></span>
+                            </div>
+                            <div>
+                                <i class="bi bi-clock"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分页 -->
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">上一页</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">下一页</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- 右侧边栏 -->
+        <div class="col-lg-4">
+            <!-- 论坛统计卡片 -->
+            <div class="card stats-card">
+                <div class="card-header">
+                    <i class="bi bi-graph-up me-2"></i>论坛统计
+                </div>
+                <div class="card-body">
+                    <div class="stat-item">
+                        <span>总问题数</span>
+                        <span class="stat-value">1,234</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>总回答数</span>
+                        <span class="stat-value">5,678</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 热门标签 -->
+            <div class="card stats-card">
+                <div class="card-header">
+                    <i class="bi bi-tags me-2"></i>热门标签
+                </div>
+                <div class="card-body">
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-secondary">Python</span>
+                        <span class="badge bg-secondary">JavaScript</span>
+                        <span class="badge bg-secondary">Java</span>
+                        <span class="badge bg-secondary">Android</span>
+                        <span class="badge bg-secondary">Web开发</span>
+                        <span class="badge bg-secondary">数据库</span>
+                        <span class="badge bg-secondary">算法</span>
+                        <span class="badge bg-secondary">机器学习</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 发布新问题按钮 -->
+            <button class="publish-btn" data-bs-toggle="modal" data-bs-target="#publishQuestionModal">
+                <i class="bi bi-plus-circle me-2"></i>发布问题
+            </button>
+            <button class="my-btn">
+                <i class="bi bi-layers-fill me-2"></i>我的问答
+            </button>
+        </div>
+    </div>
+</div>
+<!-- 问题详情模态框 (从右侧滑入) -->
+<div class="modal fade" id="questionDetailModal" tabindex="-1" aria-labelledby="questionDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="questionDetailModalLabel">问题详情</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- 问题内容 -->
+                <div class="question-detail mb-4">
+                    <h4 id="detailQuestionTitle">如何使用Python进行数据分析？</h4>
+                    <div class="mb-2">
+                        <span class="badge bg-primary">电脑相关</span>
+                    </div>
+                    <p id="detailQuestionContent">我是初学者，想了解Python在数据分析领域的应用，应该从哪里开始？</p>
+                    <div class="question-meta">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-person-circle me-2"></i>
+                            <span>提问者: 张三</span>
+                        </div>
+                        <div class="question-stats">
+                            <div class="question-stat">
+                                <i class="bi bi-eye"></i>
+                                <span>256 浏览</span>
+                            </div>
+                            <div class="question-stat">
+                                <i class="bi bi-clock"></i>
+                                <span>2小时前</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 回答列表 -->
+                <div class="answers-section">
+                    <h5 class="mb-3">全部回答 (12)</h5>
+
+                    <!-- 回答项 1 -->
+                    <div class="answer-item">
+                        <div class="d-flex justify-content-between mb-2">
+                            <div class="answer-author">李四</div>
+                            <div class="answer-time">1小时前</div>
+                        </div>
+                        <p>Python在数据分析领域非常强大，推荐你从Pandas库开始学习，它是专门用于数据处理的库。然后可以学习NumPy进行数值计算，Matplotlib和Seaborn用于数据可视化。</p>
+                        <div class="d-flex gap-3 mt-2">
+                            <button class="btn btn-sm btn-outline-secondary">
+                                <i class="bi bi-hand-thumbs-up"></i> 赞同 (5)
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary">
+                                <i class="bi bi-reply"></i> 回复
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 回答项 2 -->
+                    <div class="answer-item">
+                        <div class="d-flex justify-content-between mb-2">
+                            <div class="answer-author">王五</div>
+                            <div class="answer-time">30分钟前</div>
+                        </div>
+                        <p>建议你先学习Python基础语法，然后再专门学习数据分析相关的库。可以找一些实战项目来做，比如分析股票数据、天气数据等，这样学习效果会更好。</p>
+                        <div class="d-flex gap-3 mt-2">
+                            <button class="btn btn-sm btn-outline-secondary">
+                                <i class="bi bi-hand-thumbs-up"></i> 赞同 (3)
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary">
+                                <i class="bi bi-reply"></i> 回复
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="写下你的回答...">
+                    <button class="btn btn-primary" type="button">提交回答</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 发布新问题模态框 (从左侧滑入) -->
+<div class="modal fade" id="publishQuestionModal" tabindex="-1" aria-labelledby="publishQuestionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="publishQuestionModalLabel">发布新问题</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="publishQuestionForm">
+                    <div class="mb-3">
+                        <label for="questionTitle" class="form-label">问题标题</label>
+                        <input type="text" class="form-control" id="questionTitle" placeholder="请输入问题标题" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="questionCategory" class="form-label">问题分类</label>
+                        <select class="form-select" id="questionCategory" required>
+                            <option value="" selected disabled>请选择分类</option>
+                            <option value="computer">电脑相关</option>
+                            <option value="course">专业课程</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="questionContent" class="form-label">问题描述</label>
+                        <textarea class="form-control" id="questionContent" rows="6" placeholder="请详细描述你的问题..." required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="questionTags" class="form-label">标签</label>
+                        <input type="text" class="form-control" id="questionTags" placeholder="输入标签，用逗号分隔">
+                        <div class="form-text">例如: Python, 数据分析, 初学者</div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="submitQuestionBtn">发布问题</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id = "aboutModal" class="modal-backdrop"></div>
+
+<div id="aboutModalContent" class="modal-content1">
+    <span class="modal-close">&times;</span>
+    <h2>关于我们</h2>
+    <p>
+        这里是你的“关于我们”页面内容。你可以写任何你想介绍的信息，比如你的团队故事、使命愿景、联系方式等等。
+    </p>
+    <p>
+        欢迎访问我们的网站，希望你能喜欢！
+    </p>
+</div>
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // 分类标签点击事件
+    document.querySelectorAll('.category-pill').forEach(pill => {
+        pill.addEventListener('click', function() {
+            // 移除所有active类
+            document.querySelectorAll('.category-pill').forEach(p => {
+                p.classList.remove('active');
+            });
+            // 添加active类到当前点击的标签
+            this.classList.add('active');
+
+            // 这里可以添加筛选逻辑
+            const category = this.textContent.trim();
+            console.log('选择了分类:', category);
+            // TODO: 根据分类筛选问题
+        });
+    });
+
+    // 搜索功能
+    document.querySelector('.search-container input').addEventListener('keyup', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            console.log('搜索:', searchTerm);
+            // TODO: 实现搜索逻辑
+        }
+    });
+
+    document.querySelectorAll('.question-card').forEach(card => {
+        card.addEventListener('click', function() {
+            const questionId = this.getAttribute('data-question-id');
+            const questionTitle = this.querySelector('.card-title').textContent;
+            const questionContent = this.querySelector('.card-text').textContent;
+
+            // 更新模态框内容
+            document.getElementById('detailQuestionTitle').textContent = questionTitle;
+            document.getElementById('detailQuestionContent').textContent = questionContent;
+
+            // 显示问题详情模态框
+            const questionDetailModal = new bootstrap.Modal(document.getElementById('questionDetailModal'));
+            questionDetailModal.show();
+
+            console.log('查看问题详情:', questionId);
+            // TODO: 根据问题ID获取详细内容和回答
+        });
+    });
+
+    // 发布新问题表单提交
+    document.getElementById('submitQuestionBtn').addEventListener('click', function() {
+        const title = document.getElementById('questionTitle').value;
+        const category = document.getElementById('questionCategory').value;
+        const content = document.getElementById('questionContent').value;
+        const tags = document.getElementById('questionTags').value;
+
+        if (!title || !category || !content) {
+            alert('请填写必要信息');
+            return;
+        }
+
+        console.log('发布新问题:', { title, category, content, tags });
+        // TODO: 提交问题到后端
+
+        // 关闭模态框
+        const publishQuestionModal = bootstrap.Modal.getInstance(document.getElementById('publishQuestionModal'));
+        publishQuestionModal.hide();
+
+        // 重置表单
+        document.getElementById('publishQuestionForm').reset();
+
+        // 显示成功提示
+        alert('问题发布成功！');
+    });
+</script>
+<script>
+    // 问题数据（实际项目中应该从后端API获取）
+    const questionsData = [
+        // 第一页数据
+        [
+            {
+                id: 1,
+                title: "如何优化VS Code在荣耀MagicBook上的性能？",
+                content: "最近在使用VS Code时感觉有些卡顿，特别是在打开大文件时。有没有什么优化建议可以提高性能？",
+                category: "电脑相关",
+                categoryClass: "bg-primary",
+                author: "张三",
+                answers: 12,
+                views: 156,
+                time: "2小时前"
+            },
+            {
+                id: 2,
+                title: "Android Studio配置常见问题汇总",
+                content: "刚安装好Android Studio，但在配置环境时遇到了几个问题，包括SDK下载失败、模拟器启动缓慢等...",
+                category: "专业课程",
+                categoryClass: "bg-success",
+                author: "李四",
+                answers: 8,
+                views: 89,
+                time: "5小时前"
+            },
+            {
+                id: 3,
+                title: "荣耀MagicBook 14值得购买吗？",
+                content: "看到荣耀MagicBook 14最近有优惠，2799元的价格挺吸引人的。想问问大家这款笔记本的使用体验如何？",
+                category: "其他",
+                categoryClass: "bg-info",
+                author: "王五",
+                answers: 23,
+                views: 342,
+                time: "1天前"
+            }
+        ],
+        // 第二页数据
+        [
+            {
+                id: 4,
+                title: "JavaScript异步编程最佳实践",
+                content: "在学习JavaScript异步编程时，对Promise、async/await的使用还有些困惑，求大神指点...",
+                category: "Web开发",
+                categoryClass: "bg-warning",
+                author: "赵六",
+                answers: 15,
+                views: 234,
+                time: "3小时前"
+            },
+            {
+                id: 5,
+                title: "MySQL索引优化技巧分享",
+                content: "最近项目查询速度较慢，分析后发现是索引使用不当。分享一些MySQL索引优化的经验...",
+                category: "数据库",
+                categoryClass: "bg-danger",
+                author: "钱七",
+                answers: 9,
+                views: 167,
+                time: "6小时前"
+            },
+            {
+                id: 6,
+                title: "机器学习入门推荐书籍",
+                content: "想开始学习机器学习，不知道从哪本书入手比较好？求推荐适合新手的教材...",
+                category: "机器学习",
+                categoryClass: "bg-secondary",
+                author: "孙八",
+                answers: 31,
+                views: 456,
+                time: "8小时前"
+            }
+        ],
+        // 第三页数据
+        [
+            {
+                id: 7,
+                title: "Java多线程编程常见陷阱",
+                content: "在开发多线程应用时遇到了死锁、竞态条件等问题，总结了一些常见的陷阱和解决方案...",
+                category: "Java",
+                categoryClass: "bg-primary",
+                author: "周九",
+                answers: 18,
+                views: 289,
+                time: "12小时前"
+            },
+            {
+                id: 8,
+                title: "Android开发性能优化指南",
+                content: "整理了一份Android应用性能优化的完整指南，包括内存管理、UI渲染优化等方面...",
+                category: "Android",
+                categoryClass: "bg-success",
+                author: "吴十",
+                answers: 22,
+                views: 378,
+                time: "1天前"
+            },
+            {
+                id: 9,
+                title: "算法面试必备知识点",
+                content: "准备算法面试，整理了必会的数据结构和算法知识点，包括时间复杂度分析等...",
+                category: "算法",
+                categoryClass: "bg-info",
+                author: "郑十一",
+                answers: 45,
+                views: 567,
+                time: "2天前"
+            }
+        ]
+    ];
+
+    let currentPage = 1;
+    const questionsPerPage = 3;
+    const totalPages = questionsData.length;
+
+    // 渲染问题卡片
+    function renderQuestions(page) {
+        const container = document.getElementById('questions-container');
+        const questions = questionsData[page - 1];
+
+        // 清空容器
+        container.innerHTML = '';
+
+        // 生成问题卡片HTML
+        questions.forEach(question => {
+            const cardHTML = `
+            <div class="card question-card" data-question-id="${question.id}">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title">
+                            <a href="#" onclick="showQuestionDetail(${question.id}); return false;">${question.title}</a>
+                        </h5>
+                        <span class="badge ${question.categoryClass}">${question.category}</span>
+                    </div>
+                    <p class="card-text text-muted">${question.content}</p>
+                    <div class="question-meta d-flex justify-content-between">
+                        <div>
+                            <i class="bi bi-person-circle"></i> ${question.author}
+                            <span class="ms-3"><i class="bi bi-chat-dots"></i> ${question.answers} 回答</span>
+                            <span class="ms-3"><i class="bi bi-eye"></i> ${question.views} 浏览</span>
+                        </div>
+                        <div>
+                            <i class="bi bi-clock"></i> ${question.time}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+            container.innerHTML += cardHTML;
+        });
+    }
+
+    // 更新分页控件
+    function updatePagination() {
+        const pagination = document.querySelector('.pagination');
+        let paginationHTML = '';
+
+        // 上一页
+        paginationHTML += `
+        <li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+            <a class="page-link" href="#" onclick="changePage(${currentPage - 1}); return false;">上一页</a>
+        </li>
+    `;
+
+        // 页码
+        for (let i = 1; i <= totalPages; i++) {
+            paginationHTML += `
+            <li class="page-item ${i === currentPage ? 'active' : ''}">
+                <a class="page-link" href="#" onclick="changePage(${i}); return false;">${i}</a>
+            </li>
+        `;
+        }
+
+        // 下一页
+        paginationHTML += `
+        <li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
+            <a class="page-link" href="#" onclick="changePage(${currentPage + 1}); return false;">下一页</a>
+        </li>
+    `;
+
+        pagination.innerHTML = paginationHTML;
+    }
+
+    // 切换页面
+    function changePage(page) {
+        if (page < 1 || page > totalPages) return;
+
+        currentPage = page;
+        renderQuestions(currentPage);
+        updatePagination();
+
+        // 滚动到问题列表顶部
+        document.getElementById('questions-container').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // 显示问题详情（模态框功能）
+    function showQuestionDetail(questionId) {
+        // 查找问题数据
+        let question = null;
+        for (let page of questionsData) {
+            question = page.find(q => q.id === questionId);
+            if (question) break;
+        }
+
+        if (!question) return;
+
+        // 创建或更新模态框
+        let modal = document.getElementById('questionModal');
+        if (!modal) {
+            // 如果模态框不存在，创建一个
+            modal = document.createElement('div');
+            modal.className = 'modal fade';
+            modal.id = 'questionModal';
+            modal.tabIndex = '-1';
+            modal.innerHTML = `
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body" id="modalBody"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary">回答问题</button>
+                    </div>
+                </div>
+            </div>
+        `;
+            document.body.appendChild(modal);
+        }
+
+        // 更新模态框内容
+        document.getElementById('modalTitle').textContent = question.title;
+        document.getElementById('modalBody').innerHTML = `
+        <div class="mb-3">
+            <span class="badge ${question.categoryClass} me-2">${question.category}</span>
+            <small class="text-muted">
+                <i class="bi bi-person-circle"></i> ${question.author} ·
+                <i class="bi bi-clock"></i> ${question.time} ·
+                <i class="bi bi-eye"></i> ${question.views} 浏览
+            </small>
+        </div>
+        <p>${question.content}</p>
+        <hr>
+        <h6>回答 (${question.answers})</h6>
+        <div class="answers-container">
+            <p class="text-muted">暂无回答，快来第一个回答吧！</p>
+        </div>
+    `;
+
+        // 显示模态框（需要Bootstrap）
+        const modalInstance = new bootstrap.Modal(modal);
+        modalInstance.show();
+    }
+
+    // 初始化页面
+    document.addEventListener('DOMContentLoaded', function() {
+        renderQuestions(currentPage);
+        updatePagination();
+    });
+</script>
+
+</body>
+</html>

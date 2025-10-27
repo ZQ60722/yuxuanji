@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>术语库 - 材料学</title>
+    <style>
+        /* --- 全局和变量设置 --- */
+        :root {
+            --primary-color: #2c3e50;      /* 深灰蓝，用于侧边栏和文字 */
+            --accent-color: #3498db;       /* 亮蓝色，用于高亮和链接 */
+            --background-color: #f4f7f6;   /* 浅灰背景 */
+            --card-bg-color: #ffffff;      /* 卡片背景色 */
+            --text-color: #333;            /* 主要文字颜色 */
+            --border-color: #e0e0e0;       /* 边框颜色 */
+            --sidebar-width: 260px;        /* 侧边栏宽度 */
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        /* --- 应用主容器 --- */
+        .app-container {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* --- 左侧导航栏 --- */
+        .sidebar {
+            width: var(--sidebar-width);
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            box-sizing: border-box; /* 让padding不影响总宽度 */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-title {
+            background-color: #56aaf3;
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #ecf0f1;
+        }
+
+        .nav-item {
+            display: block;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            color: #bdc3c7;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease; /* 平滑过渡效果 */
+            font-weight: 500;
+        }
+
+        .nav-item:hover {
+            background-color: #34495e;
+            color: white;
+            transform: translateX(5px); /* 鼠标悬停时轻微右移 */
+        }
+
+        .nav-item.active {
+            background-color: var(--accent-color);
+            color: white;
+            font-weight: bold;
+        }
+
+        /* --- 右侧主内容区 --- */
+        .main-content {
+            flex-grow: 1; /* 占据剩余所有空间 */
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* 如果内容太多，允许滚动 */
+        }
+
+        .content-header {
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            flex-shrink: 0;
+        }
+
+        .content-header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: var(--primary-color);
+        }
+
+        .content-header p {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin: 5px 0 0 0;
+        }
+
+        /* --- 三栏数据网格 --- */
+        .terms-grid {
+            display: flex;
+            gap: 30px; /* 三栏之间的间距 */
+            flex-grow: 1;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        .terms-column {
+            flex: 1; /* 每一栏平均分配宽度 */
+            display: flex;
+            flex-direction: column; /* 让卡片从上到下排列 */
+            gap: 15px; /* 卡片之间的间距 */
+        }
+
+        /* --- 单个术语卡片样式 --- */
+        .term-card {
+            background-color: var(--card-bg-color);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-left: 4px solid var(--accent-color); /* 左边框作为装饰 */
+        }
+
+        .term-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .term-chinese {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin: 0 0 8px 0;
+        }
+
+        .term-english {
+            font-size: 1rem;
+            color: #555;
+            margin: 0;
+            font-style: italic;
+        }
+        .terms-grid::-webkit-scrollbar {
+            width: 8px; /* 滚动条的宽度 */
+        }
+
+        .terms-grid::-webkit-scrollbar-track {
+            background: #f1f1f1; /* 滚动条轨道的颜色 */
+            border-radius: 4px;
+        }
+
+        .terms-grid::-webkit-scrollbar-thumb {
+            background: #c1c1c1; /* 滚动条滑块的颜色 */
+            border-radius: 4px;
+        }
+
+        .terms-grid::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8; /* 鼠标悬停在滑块上时的颜色 */
+        }
+    </style>
+</head>
+<script>
+    // 页面加载完成后执行
+    document.addEventListener('DOMContentLoaded', () => {
+        // 1. 从URL获取当前分类
+        const urlParams = new URLSearchParams(window.location.search);
+        const currentCategory = urlParams.get('category') || 'clx'; // 默认为 clx
+
+        // 2. 更新左侧导航的高亮状态
+        updateActiveNav(currentCategory);
+
+        // 3. 从后端加载数据并渲染页面
+        loadAndRenderPage(currentCategory);
+    });
+
+    /**
+     * 更新左侧导航栏的高亮状态
+     */
+    function updateActiveNav(category) {
+        const navItems = document.querySelectorAll('.nav-item');
+        navItems.forEach(item => {
+            if (item.getAttribute('href').includes(`category=${category}`)) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    }
+
+    /**
+     * 从后端API获取数据并渲染页面
+     */
+    async function loadAndRenderPage(category) {
+        try {
+            // 1. 显示加载状态
+            showLoadingState();
+
+            // 2. 构建API URL并请求数据
+            // 注意：这里假设你的后端和前端在同一个域名下
+            const apiUrl = `http://127.0.0.1:5000/api/words/${category}`;
+            const response = await fetch(apiUrl);
+
+            // 3. 检查响应是否成功
+            if (!response.ok) {
+                // 如果后端返回404，说明note_id无效
+                if (response.status === 404) {
+                    throw new Error('该分类暂无数据或分类不正确');
+                }
+                throw new Error(`网络请求失败: ${response.statusText}`);
+            }
+
+            // 4. 解析JSON数据
+            const data = await response.json();
+
+            // 5. 渲染数据到页面
+            renderPage(data);
+
+        } catch (error) {
+            // 6. 如果任何环节出错，显示错误信息
+            console.error('加载数据时出错:', error);
+            showErrorState(error.message);
+        }
+    }
+
+    /**
+     * 渲染数据到页面
+     * @param {object} data - 从后端获取的数据（一个键值对对象）
+     */
+    function renderPage(data) {
+        // 检查数据是否有效
+        if (!data || typeof data !== 'object' || Array.isArray(data)) {
+            throw new Error('从后端获取的数据格式不正确，期望一个对象。');
+        }
+
+        // 获取分类信息
+        const urlParams = new URLSearchParams(window.location.search);
+        const currentCategory = urlParams.get('category') || 'clx';
+        const categoryMap = {
+            'clx': { title: '材料学', desc: '探索材料世界的专业术语' },
+            'smkx': { title: '生命科学', desc: '揭示生命现象的奥秘' },
+            'nx': { title: '农学', desc: '农业科学与技术的术语库' },
+            'hjkx': { title: '环境科学', desc: '关注我们赖以生存的地球' },
+            'ly': { title: '旅游', desc: '行万里路，读万卷书' },
+            'jyx': { title: '教育学', desc: '传道授业解惑的专业词汇' },
+            'xlx': { title: '心理学', desc: '探索人类内心世界的科学' },
+            'shx': { title: '社会学', desc: '理解社会结构与变迁' },
+            'jr': { title: '金融', desc: '经济与金融领域的核心术语' }
+        };
+        const categoryInfo = categoryMap[currentCategory];
+
+        // --- 核心改动：直接构建完整的HTML，然后一次性赋值 ---
+
+        // 1. 先构建所有术语卡片的HTML
+        let termsHtml = '';
+        let index = 0;
+        // 为了方便分配到三栏，我们先把数据分组
+        const columnsData = [[], [], []];
+        for (const [chineseTerm, englishTerm] of Object.entries(data)) {
+            columnsData[index % 3].push({ chinese: chineseTerm, english: englishTerm });
+            index++;
+        }
+
+        // 生成每一列的HTML
+        columnsData.forEach(column => {
+            termsHtml += '<div class="terms-column">';
+            column.forEach(word => {
+                termsHtml += `
+                <div class="term-card">
+                    <p class="term-chinese">${word.chinese}</p>
+                    <p class="term-english">${word.english}</p>
+                </div>
+            `;
+            });
+            termsHtml += '</div>';
+        });
+
+        // 2. 构建完整的页面内容HTML（包含标题和术语卡片）
+        const finalHtml = `
+        <header class="content-header">
+            <h1 id="category-title">${categoryInfo.title}</h1>
+            <p id="category-desc">${categoryInfo.desc}</p>
+        </header>
+        <div class="terms-grid">
+            ${termsHtml}
+        </div>
+    `;
+
+        // 3. 找到主内容容器，并用新的HTML替换它的全部内容
+        const mainContent = document.querySelector('.main-content');
+        if (mainContent) {
+            mainContent.innerHTML = finalHtml;
+        }
+    }
+
+    /**
+     * 显示加载中的状态
+     */
+    function showLoadingState() {
+        const mainContent = document.querySelector('.main-content');
+        if(mainContent) {
+            mainContent.innerHTML = `
+                <header class="content-header">
+                    <h1>加载中...</h1>
+                </header>
+                <div class="terms-grid">
+                    <div class="loading-placeholder"></div>
+                    <div class="loading-placeholder"></div>
+                    <div class="loading-placeholder"></div>
+                </div>
+               `;
+        }
+        // 可以在CSS里加一个 .loading-placeholder 的动画效果
+    }
+
+    /**
+     * 显示错误信息
+     */
+    function showErrorState(message) {
+        const mainContent = document.querySelector('.main-content');
+        mainContent.innerHTML = `
+        <div class="error-message">
+            <h2>哎呀，出错了！</h2>
+            <p>${message}</p>
+            <a href="javascript:location.reload();">点击刷新重试</a>
+        </div>
+    `;
+    }
+
+</script>
+<body>
+
+<div class="app-container">
+    <!-- 左侧导航栏 -->
+    <aside class="sidebar">
+        <h2 class="sidebar-title">术语分类</h2>
+        <nav class="nav-menu">
+            <!-- 这9个链接，当前选中的会有 active 类 -->
+            <a href="?category=clx" class="nav-item active">材料学</a>
+            <a href="?category=smkx" class="nav-item">生命科学</a>
+            <a href="?category=nx" class="nav-item">农学</a>
+            <a href="?category=hjkx" class="nav-item">环境科学</a>
+            <a href="?category=ly" class="nav-item">旅游</a>
+            <a href="?category=jyx" class="nav-item">教育学</a>
+            <a href="?category=xlx" class="nav-item">心理学</a>
+            <a href="?category=shx" class="nav-item">社会学</a>
+            <a href="?category=jr" class="nav-item">金融</a>
+        </nav>
+    </aside>
+
+    <!-- 右侧主内容区 -->
+    <main class="main-content">
+        <!-- 标题区域 -->
+        <header class="content-header">
+            <h1 id="category-title">材料学</h1>
+            <p id="category-desc">探索材料世界的专业术语</p>
+        </header>
+
+        <!-- 三栏数据容器 -->
+        <div class="terms-grid">
+            <!-- 第一栏 -->
+            <div class="terms-column" id="column-1">
+                <!-- 数据会通过JS动态插入这里 -->
+            </div>
+            <!-- 第二栏 -->
+            <div class="terms-column" id="column-2">
+                <!-- 数据会通过JS动态插入这里 -->
+            </div>
+            <!-- 第三栏 -->
+            <div class="terms-column" id="column-3">
+                <!-- 数据会通过JS动态插入这里 -->
+            </div>
+        </div>
+    </main>
+</div>
+
+
+</body>
+</html>
