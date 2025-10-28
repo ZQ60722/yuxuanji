@@ -1,21 +1,360 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>chuxi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>翻译质量评估系统</title>
     <style>
-        *{
-            background-color: black;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        .input-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .input-box {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+
+        .input-box:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.1);
+        }
+
+        .input-box h3 {
+            color: #495057;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .input-box h3::before {
+            content: "📝";
+            font-size: 1.2em;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 15px;
+            border: 2px solid #dee2e6;
+            border-radius: 10px;
+            font-size: 1em;
+            resize: vertical;
+            transition: border-color 0.3s ease;
+            font-family: inherit;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .secondary-btn {
+            background: #6c757d;
+            box-shadow: 0 4px 15px rgba(108, 117, 125, 0.3);
+        }
+
+        .results-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .result-box {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            border: 2px solid #e9ecef;
+            min-height: 200px;
+        }
+
+        .result-box h3 {
+            color: #495057;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .reference-box h3::before {
+            content: "🔄";
+        }
+
+        .evaluation-box h3::before {
+            content: "📊";
+        }
+
+        .chart-box h3::before {
+            content: "📈";
+        }
+
+        .result-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 150px;
+            border: 1px solid #dee2e6;
+            color: #495057;
+            line-height: 1.6;
+        }
+
+        .placeholder-text {
+            color: #adb5bd;
+            font-style: italic;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            color: #667eea;
+        }
+
+        .loading.show {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .input-section,
+            .results-section {
+                grid-template-columns: 1fr;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
 <body>
-<canvas id="yekong">
+<div class="container">
+    <header>
+        <h1>翻译质量评估系统</h1>
+        <p>基于AI的智能翻译评估工具</p>
+    </header>
 
-</canvas>
+    <main>
+        <section class="input-section">
+            <div class="input-box">
+                <h3>中文原文</h3>
+                <textarea id="original-text" placeholder="请输入需要翻译的中文原文..."></textarea>
+            </div>
 
-</body>
+            <div class="input-box">
+                <h3>英文译文</h3>
+                <textarea id="translated-text" placeholder="请输入对应的英文译文..."></textarea>
+            </div>
+        </section>
+
+        <div class="action-buttons">
+            <button onclick="generateReference()">生成参考译文</button>
+            <button onclick="evaluateTranslation()">开始评估</button>
+            <button class="secondary-btn" onclick="clearAll()">清空内容</button>
+        </div>
+
+        <div class="loading" id="loading">
+            <p>🔄 正在处理中，请稍候...</p>
+        </div>
+
+        <section class="results-section">
+            <div class="result-box reference-box">
+                <h3>参考译文</h3>
+                <div class="result-content" id="reference-result">
+                    <p class="placeholder-text">参考译文将在这里显示...</p>
+                </div>
+            </div>
+
+            <div class="result-box evaluation-box">
+                <h3>AI评估建议</h3>
+                <div class="result-content" id="evaluation-result">
+                    <p class="placeholder-text">AI评估结果将在这里显示...</p>
+                </div>
+            </div>
+
+            <div class="result-box chart-box" style="grid-column: 1 / -1;">
+                <h3>评分可视化</h3>
+                <div class="result-content" id="chart-result">
+                    <p class="placeholder-text">评分图表将在这里显示...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
 <script>
-    const canvas = document.getElementById("yekong")
-</script>
-</html>
+    // 显示加载状态
+    function showLoading() {
+        document.getElementById('loading').classList.add('show');
+    }
+
+    function hideLoading() {
+        document.getElementById('loading').classList.remove('show');
+    }
+
+    // 生成参考译文
+    function generateReference() {
+        const originalText = document.getElementById('original-text').value.trim();
+
+        if (!originalText) {
+            alert('请先输入中文原文！');
+            return;
+        }
+
+        showLoading();
+
+        // 这里暂时用模拟数据，后面会连接后端
+        setTimeout(() => {
+            document.getElementById('reference-result').innerHTML =
+                `<p><strong>参考译文：</strong></p><p>The rapid development of artificial intelligence has transformed various industries and brought revolutionary changes to our lives.</p>`;
+            hideLoading();
+        }, 1500);
+    }
+
+    // 评估翻译
+    function evaluateTranslation() {
+        const originalText = document.getElementById('original-text').value.trim();
+        const translatedText = document.getElementById('translated-text').value.trim();
+
+        if (!originalText || !translatedText) {
+            alert('请输入原文和译文！');
+            return;
+        }
+
+        showLoading();
+
+        // 模拟评估结果
+        setTimeout(() => {
+            document.getElementById('evaluation-result').innerHTML = `
+                    <div style="line-height: 1.8;">
+                        <p><strong>准确性：</strong>8/10</p>
+                        <p>翻译基本准确，很好地传达了原文的核心意思。</p>
+                        <br>
+                        <p><strong>流畅性：</strong>7/10</p>
+                        <p>表达较为自然，但某些句式可以更符合英文习惯。</p>
+                        <br>
+                        <p><strong>改进建议：</strong></p>
+                        <p>建议注意冠词的使用，如"artificial intelligence"前可以加上"the"。</p>
+                    </div>
+                `;
+
+            document.getElementById('chart-result').innerHTML = `
+                    <div style="display: flex; justify-content: space-around; align-items: center; height: 150px;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2em; font-weight: bold; color: #667eea;">8.2</div>
+                            <div>总分</div>
+                        </div>
+                        <div style="display: flex; gap: 20px;">
+                            <div style="text-align: center;">
+                                <div style="width: 30px; height: 80px; background: linear-gradient(to top, #667eea 80%, #e9ecef 20%); border-radius: 5px;"></div>
+                                <div style="margin-top: 5px;">准确性</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="width: 30px; height: 80px; background: linear-gradient(to top, #764ba2 70%, #e9ecef 30%); border-radius: 5px;"></div>
+                                <div style="margin-top: 5px;">流畅性</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="width: 30px; height: 80px; background: linear-gradient(to top, #667eea 90%, #e9ecef 10%); border-radius: 5px;"></div>
+                                <div style="margin-top: 5px;">完整性</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            hideLoading();
+        }, 2000);
+    }
+
+    // 清空所有内容
+    function clearAll() {
+        document.getElementById('original-text').value = '';
+        document.getElementById('translated-text').value = '';
+        document.getElementById('reference-result').innerHTML = '<p class="placeholder-text">参考译文将在这里显示...</p>';
+        document.getElementById('evaluation-
