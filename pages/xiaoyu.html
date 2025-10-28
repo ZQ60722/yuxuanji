@@ -3,242 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI智能助手</title>
-    <link rel="stylesheet" href="../css/daohanlan.css"></link>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/react@18.0.0/umd/react.development.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.0.0/umd/react-dom.development.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>AI口译</title>
+    <script src="../js/xiaoyu.js"></script>
+    <link rel="stylesheet" href="../css/xiaoyu.css">
+    <link rel="stylesheet" href="../css/daohanlan.css">
     <script src="../js/daohanlan.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
-
-        body {
-            font-family: 'Noto Sans SC', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
-            margin: 0;
-            padding: 0;
-        }
-        /* 为 history-item 添加相对定位，作为删除按钮的定位基准 */
-        .history-item {
-            position: relative;
-            /* 确保内容不会被删除按钮遮挡 */
-            padding-right: 40px;
-        }
-
-        /* 删除按钮的样式 */
-        .delete-btn {
-            position: absolute;
-            top: 50%;
-            right: 10px;
-            transform: translateY(-50%); /* 垂直居中 */
-
-            /* 按钮外观 */
-            background: none;
-            border: none;
-            color: #9CA3AF; /* 灰色 */
-            cursor: pointer;
-            padding: 4px;
-            border-radius: 4px;
-
-            /* 默认隐藏 */
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.2s ease-in-out;
-        }
-
-        /* 鼠标悬停在 history-item 上时，显示删除按钮 */
-        .history-item:hover .delete-btn {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        /* 鼠标悬停在删除按钮上时，变红 */
-        .delete-btn:hover {
-            color: #EF4444; /* 红色 */
-            background-color: #FEE2E2; /* 浅红色背景 */
-        }
-
-        /* --- 浮动操作按钮 (FAB) 样式 --- */
-        .fab-button {
-            /* 1. 定位和尺寸 */
-            position: absolute; /* 固定定位，不随页面滚动 */
-            bottom: 6rem;    /* 距离底部 2rem (32px) */
-            right: 2rem;     /* 距离右侧 2rem (32px) */
-            width: 60px;     /* 宽度 */
-            height: 60px;    /* 高度 */
-            border-radius: 50%; /* 关键：设置成正圆形 */
-
-            /* 2. 外观和布局 */
-            background-color: #3B82F6; /* 蓝色背景，和你的主题色保持一致 */
-            color: white;             /* 图标颜色为白色 */
-            border: none;             /* 去掉默认边框 */
-            font-size: 1.5rem;        /* 图标大小 */
-
-            /* 3. 阴影和过渡效果 */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 添加阴影，使其“浮”起来 */
-            cursor: pointer;          /* 鼠标悬停时显示手型光标 */
-            transition: all 0.3s ease; /* 所有属性变化都有0.3秒的平滑过渡 */
-
-            /* 4. 布局居中图标 */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            /* 5. 确保在其他元素之上 */
-            z-index: 1000;
-        }
-
-        /* 6. 悬停和点击反馈 */
-        .fab-button:hover {
-            background-color: #2563EB; /* 悬停时颜色变深 */
-            transform: scale(1.1);     /* 悬停时轻微放大 */
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* 阴影加深 */
-        }
-
-        .fab-button:active {
-            transform: scale(0.95); /* 点击时瞬间缩小，提供“按下”的反馈 */
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* 阴影变浅 */
-        }
-
-        .floating-ball {
-            position: fixed;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            z-index: 1000;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .floating-ball:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .left-ball {
-            top: 50%;
-            left: 20px;
-            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
-        }
-
-        .right-ball {
-            top: 50%;
-            right: 20px;
-            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-        }
-
-        .sidebar {
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            width: 320px;
-            background: white;
-            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-            transform: translateX(-100%);
-            transition: transform 0.3s ease;
-            z-index: 999;
-            overflow-y: auto;
-        }
-        .sidebar-right {
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            width: 320px;
-            background: white;
-            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-            transform: translateX(100%);
-            transition: transform 0.3s ease;
-            z-index: 999;
-            overflow-y: auto;
-        }
-
-        #leftSidebar {
-            left: 0;
-        }
-
-        #rightSidebar {
-            right: 0;
-        }
-
-        .sidebar.open {
-            transform: translateX(0);
-        }
-        .sidebar-right.open {
-            transform: translateX(0);
-        }
-        .chat-container {
-            transition: margin 0.3s ease;
-        }
-
-        .ball-text {
-            position: absolute;
-            top: -40px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            white-space: nowrap;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            color: #56aaf3;
-        }
-
-        .floating-ball:hover .ball-text {
-            opacity: 1;
-        }
-        /* 模态框样式 */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(5px);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .modal-content {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            width: 80%;
-            max-width: 600px;
-            max-height: 80vh;
-            overflow-y: auto;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            position: relative;
-        }
-
-        .close-button {
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            font-size: 24px;
-            cursor: pointer;
-            color: #666;
-        }
-
-        .close-button:hover {
-            color: #000;
-        }
-
-    </style>
 </head>
 <header>
     <div class="container1">
@@ -250,10 +19,10 @@
         <nav>
             <ul>
                 <li><a href="../index.html">首页</a></li>
-                <li><a href="ai.html">在线ai</a></li>
+                <li><a href="ai.html">智能体</a></li>
                 <li><a href="shuyuku.html">术语库</a></li>
                 <li><a href="luntan.html">论坛</a></li>
-                <li><a href="xiaoyu.html" class="active">智能口译</a></li>
+                <li><a href="xiaoyu.html" class="active">AI口译</a></li>
             </ul>
         </nav>
 
@@ -281,462 +50,73 @@
     </div>
 </header>
 <body>
-<!-- 浮动圆球 -->
-<div class="floating-ball left-ball" onclick="openLeftSidebar()">
-    <i class="fas fa-lightbulb"></i>
-    <div class="ball-text">灵感库</div>
-</div>
+<div class="container">
+    <header>
+        <h1>翻译质量评估系统</h1>
+        <p>基于AI的智能翻译评估工具</p>
+    </header>
 
-<div class="floating-ball right-ball" onclick="openRightSidebar()">
-    <i class="fas fa-book"></i>
-    <div class="ball-text">知识库</div>
-</div>
+    <main>
 
-<!-- 左侧边栏 -->
-<div class="sidebar" id="leftSidebar">
-    <div class="p-6 bg-blue-500 text-white">
-        <h2 class="text-xl font-bold mb-2">灵感库</h2>
-        <p class="text-sm opacity-90">获取创意灵感和建议</p>
-    </div>
-    <div class="p-6">
-        <ul class="space-y-4">
-            <li id="one" class="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
-                <div class="font-medium">写作灵感</div>
-                <div class="text-sm text-gray-600 mt-1">获取文章创作灵感</div>
-            </li>
-            <li id="two" class="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
-                <div class="font-medium">设计思路</div>
-                <div class="text-sm text-gray-600 mt-1">UI/UX设计参考</div>
-            </li>
-            <li id="three" class="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
-                <div class="font-medium">营销策略</div>
-                <div class="text-sm text-gray-600 mt-1">推广活动建议</div>
-            </li>
-            <li id="four" class="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
-                <div class="font-medium">创意技巧</div>
-                <div class="text-sm text-gray-600 mt-1">提高创造力的方法</div>
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- 主聊天容器 -->
-<!-- 修改后的结构 -->
-<div class="container mx-auto my-8 px-4 max-w-6xl chat-container" id="chatContainer">
-    <div class="flex gap-4 h-[calc(100vh-120px)]"> <!-- 使用flex布局，并设定一个固定高度 -->
-
-        <!-- 左侧：历史记录侧边栏 -->
-        <aside class="w-1/4 bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-            <div class="bg-gray-700 text-white p-4">
-                <h2 class="text-lg font-bold">历史记录</h2>
-            </div>
-            <div class="flex-grow overflow-y-auto p-2" id="historyList">
-                <!-- 历史记录列表会在这里动态生成 -->
-                <div class="history-item p-3 mb-2 rounded-lg cursor-pointer hover:bg-gray-100 bg-blue-50">
-                    <p class="font-semibold text-sm truncate">新的对话</p>
-                    <p class="text-xs text-gray-500">刚刚</p>
+        <section class="input-section">
+            <div class="input-box">
+                <h3>翻译方向</h3>
+                <div class="direction-selector">
+                    <label>
+                        <input type="radio" name="direction" value="zh-to-en" checked>
+                        <span>中文 → 英文</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="direction" value="en-to-zh">
+                        <span>英文 → 中文</span>
+                    </label>
                 </div>
             </div>
-        </aside>
-
-        <!-- 右侧：原来的聊天区域 -->
-        <main class="flex-grow bg-white rounded-xl shadow-lg overflow-hidden flex flex-col relative">
-            <!-- 头部 -->
-            <div class="bg-blue-500 text-white p-4">
-                <h1 class="text-2xl font-bold text-center">AI智能助手</h1>
-                <p class="text-center text-sm opacity-90">随时为您解答问题</p>
+            <div class="input-box">
+                <h3>原文</h3>
+                <textarea id="original-text" placeholder="请输入需要翻译的原文..."></textarea>
             </div>
 
-            <!-- 聊天区域 -->
-            <div class="flex-grow overflow-y-auto p-4" id="chatMessages">
-                <div class="flex justify-start mb-4">
-                    <div class="bg-gray-100 rounded-lg p-3 max-w-xs">
-                        <p class="text-gray-800">您好！我是AI助手，有什么可以帮助您的吗？</p>
-                    </div>
-                </div>
-                <!-- 这里可以动态添加更多消息 -->
-            </div>
-            <!-- 新建对话按钮 -->
-            <button id="newChatBtn" class="fab-button" title="新建对话">
-                <!-- 使用Font Awesome的加号图标 -->
-                <i class="fas fa-plus"></i>
-            </button>
-            <!-- 输入区域 -->
-            <div class="p-4 border-t">
-                <div class="flex items-center space-x-2">
-                    <input type="text" id="userInput" placeholder="请输入您的问题..."
-                           class="flex-grow p-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <button id="sendButton" class="bg-blue-500 text-white p-3 rounded-full hover:bg-blue-600 transition-colors">
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </div>
-            </div>
-        </main>
 
-    </div>
-</div>
-<!-- 右侧边栏 -->
-<div class="sidebar-right" id="rightSidebar">
-    <div class="p-6 bg-green-500 text-white">
-        <h2 class="text-xl font-bold mb-2">知识库</h2>
-        <p class="text-sm opacity-90">查找相关信息和资料</p>
-    </div>
-    <div class="p-6">
-        <ul class="space-y-4">
-            <li class="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
-                <div class="font-medium">技术文档</div>
-                <div class="text-sm text-gray-600 mt-1">编程语言和框架</div>
-            </li>
-            <li class="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
-                <div class="font-medium">历史资料</div>
-                <div class="text-sm text-gray-600 mt-1">重要事件和人物</div>
-            </li>
-            <li class="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
-                <div class="font-medium">科学知识</div>
-                <div class="text-sm text-gray-600 mt-1">物理化学生物等</div>
-            </li>
-            <li class="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
-                <div class="font-medium">文化百科</div>
-                <div class="text-sm text-gray-600 mt-1">各国文化和传统</div>
-            </li>
-        </ul>
-    </div>
-</div>
-<div id="modal" class="modal">
-    <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <div id="modal-body">
-            <!-- 内容将根据点击的li元素动态加载 -->
+        </section>
+
+        <div class="action-buttons">
+            <button onclick="generateReference()">生成参考译文</button>
+            <button onclick="evaluateTranslation()">开始评估</button>
+            <button class="secondary-btn" onclick="clearAll()">清空内容</button>
         </div>
-    </div>
+
+        <div class="loading" id="loading">
+            <p>🔄 正在处理中，请稍候...</p>
+        </div>
+
+        <section class="results-section">
+            <div class="input-box">
+                <h3>译文</h3>
+                <textarea id="translated-text" placeholder="请输入你自己的译文..."></textarea>
+            </div>
+            <div class="result-box reference-box">
+                <h3>参考译文</h3>
+                <div class="result-content" id="reference-result">
+                    <p class="placeholder-text">参考译文将在这里显示...</p>
+                </div>
+            </div>
+
+            <div class="result-box evaluation-box" style="grid-column: 1 / -1;">
+                <h3>AI评估建议</h3>
+                <div class="result-content" id="evaluation-result">
+                    <p class="placeholder-text">AI评估结果将在这里显示...</p>
+                </div>
+            </div>
+
+            <div class="result-box chart-box" style="grid-column: 1 / -1;">
+                <h3>评分可视化</h3>
+                <div class="result-content" id="chart-result">
+                    <p class="placeholder-text">评分图表将在这里显示...</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </div>
-<!-- 关于我们模态框 -->
-<div id="aboutModal" class="modal">
-    <div class="modal-backdrop"></div>
-    <div class="modal-content">
-        <span class="modal-close">&times;</span>
-        <h2>关于我们</h2>
-        <p>
-            这里是你的“关于我们”页面内容。你可以写任何你想介绍的信息，比如你的团队故事、使命愿景、联系方式等等。
-        </p>
-        <p>
-            欢迎访问我们的网站，希望你能喜欢！
-        </p>
-    </div>
-</div>
-
-<script>
-    // --- 数据管理 ---
-    document.getElementById('newChatBtn').addEventListener('click',createNewSession);
-    // 从 localStorage 读取历史会话，如果没有则初始化为空数组
-    let allSessions = JSON.parse(localStorage.getItem('chatHistory')) || [];
-    // 当前选中的会话ID，默认为null
-    let currentSessionId = null;
-
-    // 检查是否有历史会话，如果没有，则创建一个新会话
-    if (allSessions.length === 0) {
-        createNewSession();
-    } else {
-        // 如果有历史会话，默认选中第一个
-        currentSessionId = allSessions[0].id;
-        // 渲染第一个会话的内容
-        renderCurrentChat();
-    }
-
-    // --- 工具函数 ---
-
-    // 创建一个新会话
-    function createNewSession() {
-        const newSession = {
-            id: Date.now(), // 使用时间戳作为唯一ID
-            title: '新对话',
-            messages: []
-        };
-        allSessions.unshift(newSession); // 将新会话添加到数组开头
-        currentSessionId = newSession.id;
-        saveToLocalStorage();
-        renderHistoryList(); // 更新左侧列表
-        renderCurrentChat(); // 更新右侧聊天区
-    }
-
-    // 保存数据到 localStorage
-    function saveToLocalStorage() {
-        localStorage.setItem('chatHistory', JSON.stringify(allSessions));
-    }
-
-    // 【新增】删除一个会话
-    function deleteSession(sessionIdToDelete) {
-        // 过滤掉要删除的会话，生成一个新数组
-        allSessions = allSessions.filter(session => session.id !== sessionIdToDelete);
-
-        // 关键判断：如果删除的是当前正在显示的会话
-        if (sessionIdToDelete === currentSessionId) {
-            // 如果列表里还有其他会话，就选中第一个
-            if (allSessions.length > 0) {
-                currentSessionId = allSessions[0].id;
-            } else {
-                // 如果列表空了，就创建一个新会话并选中
-                createNewSession();
-                return; // createNewSession 自己会调用渲染，所以这里直接 return
-            }
-        }
-
-        // 保存并重新渲染
-        saveToLocalStorage();
-        renderHistoryList();
-        renderCurrentChat();
-    }
-
-
-    // --- 渲染函数 ---
-
-    // 渲染左侧的历史会话列表
-    function renderHistoryList() {
-        const historyListEl = document.getElementById('historyList');
-        historyListEl.innerHTML = ''; // 清空现有列表
-
-        allSessions.forEach(session => {
-            // 创建一个容器 div，用于包裹标题和删除按钮
-            const listItem = document.createElement('div');
-            listItem.className = `p-3 rounded-lg cursor-pointer transition-colors relative group ${
-                session.id === currentSessionId ? 'bg-blue-100 text-blue-700' : 'hover:bg-gray-100'
-            }`;
-
-            // 创建标题元素
-            const titleEl = document.createElement('p');
-            titleEl.className = 'font-semibold text-sm truncate pr-8'; // 增加 pr-8 防止文字和按钮重叠
-            titleEl.textContent = session.title;
-
-            // 【新增】创建删除按钮
-            const deleteBtn = document.createElement('button');
-            deleteBtn.innerHTML = '✕'; // 使用一个简单的 'X' 符号
-            deleteBtn.className = 'absolute top-1/2 right-2 transform -translate-y-1/2 text-gray-400 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity p-1';
-            deleteBtn.title = "删除此会话";
-
-            // 【核心】为删除按钮添加点击事件
-            deleteBtn.addEventListener('click', (event) => {
-                event.stopPropagation(); // 阻止事件冒泡，防止触发切换会话
-                if (confirm('确定要删除这个会话吗？')) { // 增加一个确认弹窗，防止误删
-                    deleteSession(session.id);
-                }
-            });
-
-            // 将标题和删除按钮添加到列表项中
-            listItem.appendChild(titleEl);
-            listItem.appendChild(deleteBtn);
-
-            // 【修改】原来的点击事件现在要绑定在 listItem 上，但只针对标题区域
-            // 为了更好的用户体验，我们让点击整个区域（除了删除按钮）都能切换会话
-            listItem.addEventListener('click', () => {
-                // 如果点击的不是删除按钮，就切换会话
-                if (event.target !== deleteBtn) {
-                    currentSessionId = session.id;
-                    renderHistoryList(); // 重新渲染列表以更新高亮
-                    renderCurrentChat(); // 渲染被点击会话的聊天内容
-                }
-            });
-
-            historyListEl.appendChild(listItem);
-        });
-    }
-
-    // 渲染右侧的当前聊天内容
-    function renderCurrentChat() {
-        const chatMessagesEl = document.getElementById('chatMessages');
-        chatMessagesEl.innerHTML = ''; // 清空现有聊天内容
-
-        const currentSession = allSessions.find(s => s.id === currentSessionId);
-
-        if (currentSession && currentSession.messages.length > 0) {
-            currentSession.messages.forEach(msg => {
-                addMessage(msg.content, msg.role);
-            });
-        } else {
-            // 如果会话为空，显示欢迎语
-            addMessage('您好！我是AI助手，有什么可以帮助您的吗？', 'ai');
-        }
-    }
-
-
-    // 发送消息功能
-    document.getElementById('sendButton').addEventListener('click', sendMessage);
-    document.getElementById('userInput').addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            sendMessage();
-        }
-    });
-
-    // --- 核心逻辑：发送消息 ---
-
-    async function sendMessage() {
-        const input = document.getElementById('userInput');
-        const message = input.value.trim();
-
-        if (message === '') return;
-
-        // 找到当前会话
-        let currentSession = allSessions.find(s => s.id === currentSessionId);
-
-        // 如果是第一条消息，更新会话标题
-        if (currentSession.messages.length === 0) {
-            currentSession.title = message.substring(0, 20) + (message.length > 20 ? '...' : '');
-        }
-
-        // 1. 添加用户消息到当前会话的messages数组
-        currentSession.messages.push({ role: 'user', content: message });
-
-        // 2. 立即在界面上显示用户消息
-        addMessage(message, 'user');
-        input.value = '';
-
-        // 3. 显示加载指示器
-        const loadingMessage = addMessage('正在思考...', 'ai');
-
-        try {
-            // 发送请求到后端
-            const response = await fetch('http://127.0.0.1:8000/chat', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: message }),
-            });
-
-            if (!response.ok) {
-                const errorData = await response.json();
-                throw new Error(`服务器错误: ${errorData.detail || '未知错误'}`);
-            }
-
-            const data = await response.json();
-
-            // 4. 移除加载消息
-            loadingMessage.remove();
-
-            // 5. 添加AI回复到当前会话的messages数组
-            currentSession.messages.push({ role: 'ai', content: data.response });
-
-            // 6. 在界面上显示AI回复
-            addMessage(data.response, 'ai');
-
-        } catch (error) {
-            console.error('Error:', error);
-            loadingMessage.remove();
-            addMessage('抱歉，出现了错误，请稍后再试。', 'ai');
-        } finally {
-            // 7. 无论成功失败，都保存数据并更新历史列表
-            saveToLocalStorage();
-            renderHistoryList(); // 更新左侧列表（主要是为了更新标题）
-        }
-    }
-
-    function addMessage(text, sender) {
-        const chatMessages = document.getElementById('chatMessages');
-        const messageDiv = document.createElement('div');
-        messageDiv.className = `flex ${sender === 'user' ? 'justify-end' : 'justify-start'} mb-4`;
-
-        const messageContent = document.createElement('div');
-        messageContent.className = `${sender === 'user' ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-800'} rounded-lg p-3 max-w-xs`;
-        messageContent.textContent = text;
-
-        messageDiv.appendChild(messageContent);
-        chatMessages.appendChild(messageDiv);
-
-        // 滚动到底部
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-
-        // 返回消息元素，以便后续可以删除（如加载消息）
-        return messageDiv;
-    }
-
-    // 模态框内容数据
-    const modalContent = {
-        'one': {
-            title: '写作灵感',
-            content: `
-            <h2>写作灵感</h2>
-            <p>这里是一些写作灵感的详细内容：</p>
-            <ul>
-                <li>观察日常生活中的小细节</li>
-                <li>阅读不同类型的书籍和文章</li>
-                <li>尝试自由写作，不设限制</li>
-                <li>与他人交流，获取新观点</li>
-                <li>旅行或探索新环境</li>
-            </ul>
-            <p>通过这些方法，你可以不断激发自己的创作灵感，写出更加生动有趣的内容。</p>
-        `
-        },
-        'two': {
-            title: '设计思路',
-            content: `
-            <h2>设计思路</h2>
-            <p>UI/UX设计参考和思路：</p>
-            <ul>
-                <li>用户研究：了解目标用户的需求和行为</li>
-                <li>信息架构：合理组织和布局内容</li>
-                <li>视觉层次：通过大小、颜色和对比度引导用户注意力</li>
-                <li>一致性：保持设计元素的一致性</li>
-                <li>可访问性：确保所有用户都能使用你的设计</li>
-            </ul>
-            <p>好的设计不仅要美观，更要实用和易用。</p>
-        `
-        },
-        'three': {
-            title: '营销策略',
-            content: `
-            <h2>营销策略</h2>
-            <p>有效的推广活动建议：</p>
-            <ul>
-                <li>明确目标受众和营销目标</li>
-                <li>选择合适的营销渠道</li>
-                <li>创造有吸引力的内容</li>
-                <li>利用社交媒体扩大影响力</li>
-                <li>分析数据并优化策略</li>
-            </ul>
-            <p>成功的营销策略需要不断测试和调整，以适应市场变化。</p>
-        `
-        },
-        'four': {
-            title: '创意技巧',
-            content: `
-            <h2>创意技巧</h2>
-            <p>提高创造力的方法：</p>
-            <ul>
-                <li>头脑风暴：不受限制地产生想法</li>
-                <li>思维导图：可视化思考过程</li>
-                <li>六顶思考帽：从不同角度思考问题</li>
-                <li>SCAMPER技术：通过替代、组合等方式创新</li>
-                <li>跨界思考：将不同领域的知识结合起来</li>
-            </ul>
-            <p>创造力是可以培养的，通过练习这些技巧，你可以提高自己的创新能力。</p>
-        `
-        }
-    };
-
-    // 获取模态框元素
-    const modal = document.getElementById('modal');
-    const modalBody = document.getElementById('modal-body');
-    const closeButton = document.querySelector('.close-button');
-
-    // 为所有li元素添加点击事件
-    document.querySelectorAll('#leftSidebar li').forEach(li => {
-        li.addEventListener('click', function() {
-            const id = this.id;
-            if (modalContent[id]) {
-                modalBody.innerHTML = modalContent[id].content;
-                modal.style.display = 'flex';
-            }
-        });
-    });
-
-    // 关闭模态框
-    closeButton.addEventListener('click', function() {
-        modal.style.display = 'none';
-    });
-
-    // 点击模态框外部关闭模态框
-    window.addEventListener('click', function(event) {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
-    });
-
-</script>
 </body>
 </html>

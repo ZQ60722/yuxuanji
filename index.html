@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>主页</title>
     <link rel="stylesheet" type="text/css" href="css/index1.css">
     <link rel="stylesheet" href="css/daohanlan.css">
     <script src="js/daohanlan.js"></script>
@@ -29,7 +29,7 @@
                 <li><a href="pages/ai.html">智能体</a></li>
                 <li><a href="pages/shuyuku.html">术语库</a></li>
                 <li><a href="pages/luntan.html">论坛</a></li>
-                <li><a href="pages/xiaoyu.html">智能口译</a></li>
+                <li><a href="pages/xiaoyu.html">AI口译</a></li>
             </ul>
         </nav>
 
@@ -234,8 +234,8 @@
                     img.className = 'cloud-logo';
 
                     // 随机大小（词云效果）
-                    const minSize = 120;
-                    const maxSize = 160;
+                    const minSize = 110;
+                    const maxSize = 126;
                     const randomValue = pseudoRandom();
                     const randomWidth = Math.floor(randomValue * (maxSize - minSize + 1)) + minSize;
                     img.style.width = `${randomWidth}px`;
