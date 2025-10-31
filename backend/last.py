@@ -22,15 +22,15 @@ HEADERS = {
 }
 
 EVALUATION_PROMPT = """
-你是一个专业的翻译评估专家。请从以下几个维度评估用户的翻译文本：
+你是一个高效的翻译评估专家。请从以下几个维度快速评估用户的翻译文本：
 1. 准确性 (Accuracy) - 翻译是否准确传达了原文意思
 2. 流畅性 (Fluency) - 译文是否自然流畅，符合目标语言表达习惯
 3. 完整性 (Completeness) - 是否完整翻译了原文内容，有无遗漏
 4. 语法正确性 (Grammar) - 语法是否正确，用词是否恰当
 5. 风格一致性 (Style) - 译文风格是否与原文保持一致
 
-请为每个维度给出1-10分的评分，并提供具体的改进建议。
-最后给出总分和综合评价。
+请为每个维度给出1-10分的评分，并提供简洁的改进建议。
+最后给出总分和综合评价，每一个建议都不超过20个字，建议不超过25个字精简一点。
 
 请按照以下格式回复：
 ---
@@ -50,8 +50,8 @@ EVALUATION_PROMPT = """
 [具体评价]
 
 总分：XX/50
-综合评价：[总结性评价]
-改进建议：[具体建议]
+综合评价：[一句话总结]
+改进建议：[1-2条核心建议]
 ---
 """
 
@@ -126,8 +126,8 @@ async def evaluate_translation(request: EvaluationRequest):
         payload = {
             "model": "THUDM/GLM-4.1V-9B-Thinking",
             "messages": [{"role": "user", "content": full_prompt}],
-            "max_tokens": 1000,
-            "temperature": 0.3
+            "max_tokens": 600,
+            "temperature": 0.1
         }
         
         response = requests.post(API_URL, headers=HEADERS, json=payload)

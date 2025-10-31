@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI口译</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../js/xiaoyu.js"></script>
     <link rel="stylesheet" href="../css/xiaoyu.css">
     <link rel="stylesheet" href="../css/daohanlan.css">
@@ -112,7 +113,24 @@
             <div class="result-box chart-box" style="grid-column: 1 / -1;">
                 <h3>评分可视化</h3>
                 <div class="result-content" id="chart-result">
-                    <p class="placeholder-text">评分图表将在这里显示...</p>
+                    <div style="margin-bottom: 40px;">
+                        <h4>各项评分详情</h4>
+                        <canvas id="barChart" width="400" height="200"></canvas>
+                    </div>
+
+                    <div style="display: flex; gap: 20px; justify-content: space-around;">
+                        <!-- 饼图盒子 -->
+                        <div style="text-align: center;">
+                            <h4>分数构成占比</h4>
+                            <canvas id="pieChart" width="380" height="380"></canvas>
+                        </div>
+
+                        <!-- 【新增】五维图（雷达图）盒子 -->
+                        <div style="text-align: center;">
+                            <h4>能力雷达图</h4>
+                            <canvas id="radarChart" width="380" height="380"></canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
